@@ -125,11 +125,15 @@ h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.015em;text-wrap:balance}
 .slot .n{font-size:19px;font-weight:600;min-width:0;overflow-wrap:anywhere}
 .slot .n em{display:block;font-style:normal;font-weight:400;font-size:14px;color:var(--muted);margin-top:2px}
 .slot .lv{font-size:14px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
-.tag{font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:980px;margin-left:8px;vertical-align:3px}
+.tag{white-space:nowrap;display:inline-block;font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:980px;margin-left:8px;vertical-align:3px}
 .t-meta{background:var(--ok-bg);color:var(--ok)} .t-swap{background:var(--swap-bg);color:var(--swap)} .t-extra{background:var(--extra-bg);color:var(--extra)}
 .stylebox{margin:48px auto 0;max-width:760px;display:flex;flex-direction:column;align-items:center;gap:14px}
 .stylebox .chip{background:var(--alt);font-size:15px;padding:10px 18px}
 .stylebox .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.slot .n em.fx{color:var(--muted);font-size:13px}
+.cmbox{margin:28px auto 0;max-width:620px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.cmcode{display:flex;gap:14px;align-items:center}
+.cmcode code{white-space:nowrap;font-size:17px;font-weight:600;letter-spacing:.04em;background:var(--alt);padding:8px 14px;border-radius:12px}
 .t-style{background:rgba(0,113,227,.12);color:var(--link)}
 .maxrow{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}
 .maxrow .link{font-size:15px}
@@ -336,27 +340,32 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Locus PX3 Canted",
-     "lvl": 32
+     "lvl": 32,
+     "st": "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads14"
     },
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 21
+     "lvl": 21,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
      "name": "IO-556 Tac 18\"",
-     "lvl": 54
+     "lvl": 54,
+     "st": "hr-8,vr-8,vel15,hk-8,vk-8,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads11,stf8"
     },
     {
      "slot": "Magazin",
      "name": "60 Round Mag",
-     "lvl": 42
+     "lvl": 42,
+     "st": "mag2,spr-2,mov-2,tac-2,adm-3,str-2,ads6,rel16"
     },
     {
      "slot": "Munition",
      "name": "5.56 NATO High Velocity",
-     "lvl": 68
+     "lvl": 68,
+     "st": "vel20"
     }
    ],
    "alts": [],
@@ -364,7 +373,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Unterlauf",
      "name": "FSS Tac90 Grip",
-     "lvl": 6
+     "lvl": 6,
+     "st": "sway-30"
     },
     {
      "slot": "Laser",
@@ -374,13 +384,191 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Fade Tac 9L",
-     "lvl": 57
+     "lvl": 57,
+     "st": "spr1,mov4,tac1,adm10,str4,sway18"
     }
    ],
    "src": "Alle 4 Quellen: Top-Waffe. Build bei 4 von 5 Teilen gleich.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 70,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Magazin",
+     "100 Round Drum",
+     59,
+     "mag3,spr-9,mov-7,tac-9,adm-14,str-7,ads55,rel19"
+    ],
+    [
+     "Hinterer Griff",
+     "A56 Stout",
+     46,
+     "hr-6,vr-6,hk-6,vk-6,ads5,stf4"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     43,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Hinterer Griff",
+     "Cronen 56",
+     67,
+     "sway-10"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     23,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
+    ],
+    [
+     "Hinterer Griff",
+     "Cronen Shear-56",
+     37,
+     "ads-9,stf-9,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     30,
+     "mov3,str3,ads9"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     16,
+     "hr-8,vr-8,hk-8,vk-8,ads9,stf8"
+    ],
+    [
+     "Schaft",
+     "FT Stalwart MK2",
+     50,
+     "sway-51,adm-1"
+    ],
+    [
+     "Mündung",
+     "FTAC Dominion",
+     26,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Lauf",
+     "GKL-700 14\"",
+     39,
+     "spr3,mov3,tac2,adm6,str4,ads-6,stf-3,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     29,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     12,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Lauf",
+     "RG5 Hark 10\"",
+     62,
+     "sway-10,spr1,mov6,tac1,adm3,str6,ads-8,stf-6,hr10,vr10,vel-8,hk10,vk10"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     27,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     5,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     66,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     4,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads14"
+    ],
+    [
+     "Schaft",
+     "SPAN-10 Stock",
+     41,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Mündung",
+     "TZL-110 V1",
+     18,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     10,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Schaft",
+     "XR-9 Tac V2",
+     69,
+     "hr-7,vr-7,hk-7,vk-7,ads7"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     34,
+     "ads7"
+    ],
+    [
+     "Mündung",
+     "ZLR Reverb90",
+     14,
+     "vr-10,vk-10,ads5"
+    ]
+   ],
+   "cm": {
+    "code": "A02-2TKF8-24ZCN-11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Locus PX3 Canted",
+      "lvl": 32
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 21
+     },
+     {
+      "slot": "Lauf",
+      "name": "IO-556 Tac 18\"",
+      "lvl": 54
+     },
+     {
+      "slot": "Unterlauf",
+      "name": "FSS Fireline Grip",
+      "lvl": 16
+     },
+     {
+      "slot": "Magazin",
+      "name": "60 Round Mag",
+      "lvl": 42
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/cronen-osprey"
+   }
   },
   {
    "id": "han-86",
@@ -393,27 +581,32 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 19
+     "lvl": 19,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 6
+     "lvl": 6,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
      "name": "Hanbit Lightning-7 465mm",
-     "lvl": 18
+     "lvl": 18,
+     "st": "hr-10,vr-10,vel10,hk-10,vk-10,sway8,spr-2,mov-4,tac-2,adm-5,str-4,ads12,stf5"
     },
     {
      "slot": "Magazin",
      "name": "60 Round Drum",
-     "lvl": 10
+     "lvl": 10,
+     "st": "mag2,spr-3,mov-2,tac-3,adm-5,str-2,ads9,rel16"
     },
     {
      "slot": "Munition",
      "name": "5.56 NATO High Velocity",
-     "lvl": 70
+     "lvl": 70,
+     "st": "vel20"
     }
    ],
    "alts": [
@@ -425,7 +618,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Lauf",
      "name": "Hanbit RK8 406.4mm",
-     "lvl": 7
+     "lvl": 7,
+     "st": "hr-10,vr-10,vel8,hk-10,vk-10,spr-2,mov-3,tac-2,adm-4,str-3,ads13"
     },
     {
      "slot": "Munition",
@@ -437,23 +631,239 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "XRK Clutch-LS",
-     "lvl": 3
+     "lvl": 3,
+     "st": "ads-4"
     },
     {
      "slot": "Schaft",
      "name": "FR4 Retractable Stock",
-     "lvl": 4
+     "lvl": 4,
+     "st": "ads-8,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Hinterer Griff",
      "name": "XRK Justice II Grip",
-     "lvl": 14
+     "lvl": 14,
+     "st": "ads-7,hr3,vr3,hk3,vk3"
     }
    ],
    "src": "3 von 4 Quellen: Meta. Build bei 4 von 5 Teilen gleich.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 70,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Magazin",
+     "45 Round Mag",
+     51,
+     "mag2,spr-2,mov-1,tac-2,adm-3,str-1,ads5,rel10"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     26,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     69,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Schaft",
+     "EXP Umbral Pro 7",
+     61,
+     "hr-5,vr-5,hk-5,vk-5,ads7"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     11,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     35,
+     "mov3,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     16,
+     "hr-8,vr-8,hk-8,vk-8,ads8,stf8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     54,
+     "sway-30"
+    ],
+    [
+     "Mündung",
+     "FTAC Dominion",
+     24,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Hinterer Griff",
+     "FTAC Griplord 80",
+     2,
+     "sway-15"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     60,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Lauf",
+     "HAN 86 Silenced 413mm",
+     55,
+     "hr-7,vr-7,vel5,hk-7,vk-7,sway5,ads9"
+    ],
+    [
+     "Lauf",
+     "Hanbit Combat-S 264mm",
+     39,
+     "sway-10,spr1,mov6,tac1,adm3,str6,ads-9,stf-6,hr10,vr10,vel-13,hk10,vk10"
+    ],
+    [
+     "Hinterer Griff",
+     "Hanbit H86 Grip",
+     34,
+     "hr-6,vr-6,hk-6,vk-6,ads6,stf5"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     20,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Schaft",
+     "Meiko L9P-Fold",
+     45,
+     "spr2,mov4,tac1,adm9,str4,sway18"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     62,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     15,
+     "stf-17"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     40,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Lauf",
+     "SA H86 465mm",
+     68,
+     "hr-4,vr-4,vel15,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads10,stf8"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     23,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     52,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     71,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Laser",
+     "Schlager Visiv-5",
+     46,
+     "ads-8,stf-17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     42,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Mündung",
+     "TZL-110 V1",
+     32,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     12,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Schaft",
+     "XRK Firewrath Stock",
+     30,
+     "sway-51,adm-1"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     44,
+     "ads7"
+    ],
+    [
+     "Mündung",
+     "ZLR Reverb90",
+     41,
+     "vr-10,vk-10,ads5"
+    ]
+   ],
+   "cm": {
+    "code": "A03-3KB4J-BPH2Q-FL11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 19
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 6
+     },
+     {
+      "slot": "Lauf",
+      "name": "Hanbit Lightning-7 465mm",
+      "lvl": 18
+     },
+     {
+      "slot": "Magazin",
+      "name": "45 Round Mag",
+      "lvl": 51
+     },
+     {
+      "slot": "Munition",
+      "name": "5.56 NATO High Velocity",
+      "lvl": 70
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/han-86"
+   }
   },
   {
    "id": "m4",
@@ -466,12 +876,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 70
+     "lvl": 70,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
     },
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 4
+     "lvl": 4,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
@@ -481,7 +893,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Magazin",
      "name": "45 Round Mag",
-     "lvl": 9
+     "lvl": 9,
+     "st": "mag2,spr-1,mov-1,tac-1,adm-1,str-1,ads3,rel15"
     },
     {
      "slot": "Munition",
@@ -505,23 +918,239 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "SZ Gen.6 PEQ",
-     "lvl": 2
+     "lvl": 2,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Hinterer Griff",
      "name": "Brace DX Grip",
-     "lvl": 10
+     "lvl": 10,
+     "st": "hr-6,vr-6,hk-6,vk-6,ads6,stf4"
     },
     {
      "slot": "Schaft",
      "name": "PF1 Fixed Stock",
-     "lvl": 14
+     "lvl": 14,
+     "st": "hr-8,vr-8,hk-7,vk-8,ads9"
     }
    ],
    "src": "Build in beiden Build-Quellen identisch. Rang schwankt zwischen Meta und A.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 72,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Magazin",
+     "60 Round Drum",
+     39,
+     "mag2,spr-3,mov-2,tac-3,adm-4,str-2,ads8,rel26"
+    ],
+    [
+     "Laser",
+     "Bruen 22-LPW",
+     49,
+     "stf-17"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     12,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     8,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads14"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     53,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Schaft",
+     "Demo Dozer Stock",
+     28,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Schaft",
+     "Demo HVR2 Stock",
+     6,
+     "sway-51,adm-1"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     36,
+     "mov2,str3,ads9"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     38,
+     "hr-8,vr-8,hk-8,vk-8,ads9,stf8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     17,
+     "sway-30"
+    ],
+    [
+     "Mündung",
+     "FTAC Dominion",
+     45,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     25,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
+    ],
+    [
+     "Unterlauf",
+     "Hurricane Grip",
+     72,
+     "hr-10,vr-3,adm6,hk-10,vk-3,ads6,stf6"
+    ],
+    [
+     "Schaft",
+     "Hurricane Stock",
+     72,
+     "mov3,adm6,str3,ads-10,stf-4,hr9,vr9,hk9,vk9"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     46,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads14"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     5,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     64,
+     "spr3,mov4,tac3,adm15,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     31,
+     "sway-5,adm-15,ads20"
+    ],
+    [
+     "Laser",
+     "SA Laz-500",
+     24,
+     "ads-4"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     23,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     71,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     63,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads14"
+    ],
+    [
+     "Hinterer Griff",
+     "Schlager STB Grip",
+     22,
+     "sway-30,adm-3,ads4"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     50,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
+    ],
+    [
+     "Mündung",
+     "TZL-110 V1",
+     41,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     61,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     65,
+     "ads7"
+    ],
+    [
+     "Schaft",
+     "ZLR ASP50 Stock",
+     44,
+     "spr1,mov4,tac1,adm9,str4,sway18"
+    ],
+    [
+     "Hinterer Griff",
+     "ZLR Phase Grip",
+     55,
+     "ads-9,stf-8,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Mündung",
+     "ZLR Reverb90",
+     34,
+     "vr-10,vk-10,ads5"
+    ]
+   ],
+   "cm": {
+    "code": "A05-3KB4J-BPH2Q-EW11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 70
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 4
+     },
+     {
+      "slot": "Lauf",
+      "name": "16 Highmark Barrel",
+      "lvl": 18
+     },
+     {
+      "slot": "Magazin",
+      "name": "45 Round Mag",
+      "lvl": 5
+     },
+     {
+      "slot": "Munition",
+      "name": "5.56 NATO High Velocity",
+      "lvl": 57
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/m4"
+   }
   },
   {
    "id": "iso-nightshade",
@@ -544,12 +1173,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Demo STP-1",
-     "lvl": 6
+     "lvl": 6,
+     "st": "ads-6,hr3,vr3,hk3,vk3"
     },
     {
      "slot": "Schaft",
      "name": "EXP G2-44 Stock",
-     "lvl": 5
+     "lvl": 5,
+     "st": "ads-7,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Munition",
@@ -568,13 +1199,174 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "FSS Crackdown",
-     "lvl": 4
+     "lvl": 4,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads17"
     }
    ],
    "src": "Alle 4 Quellen: Top-MP. Warzone-Build von Warzone Loadout, Level von WZ Stats.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 63,
-   "maxSure": true
+   "maxSure": true,
+   "cat": [
+    [
+     "Hinterer Griff",
+     "Bruen MOD3",
+     35,
+     "hr-6,vr-6,hk-6,vk-6,ads7,stf7"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     63,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads18"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     29,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads18"
+    ],
+    [
+     "Schaft",
+     "Demo Kilo90 Stock",
+     47,
+     "sway-51,adm-1"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     14,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     23,
+     "hr-8,vr-8,hk-8,vk-8,ads11,stf14"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     55,
+     "sway-30"
+    ],
+    [
+     "Schaft",
+     "GI-80 MilSpec Stock",
+     16,
+     "hr-7,vr-7,hk-7,vk-7,ads9"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     20,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads18"
+    ],
+    [
+     "Mündung",
+     "Haebang ORC70",
+     37,
+     "vr-10,vk-10,ads7"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     7,
+     "mov4,str5,ads10"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     28,
+     "spr2,mov4,tac3,adm7,str5,ads-13,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     59,
+     "stf-17"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     48,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads18"
+    ],
+    [
+     "Laser",
+     "Schlager Visiv-5",
+     43,
+     "ads-8,stf-17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     34,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads18"
+    ],
+    [
+     "Mündung",
+     "TA Lightning R3M",
+     11,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Mündung",
+     "TA TacPro-56",
+     58,
+     "hr-8,vr-8,hk-8,vk-8,ads7"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     33,
+     "ads-5"
+    ],
+    [
+     "Mündung",
+     "XRK Herder 40",
+     17,
+     "ads9"
+    ],
+    [
+     "Lauf",
+     "ZLR Carbon-900",
+     41,
+     "hr-4,vr-4,vel15,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads13,stf9"
+    ],
+    [
+     "Hinterer Griff",
+     "ZLR Veloci Gen.2",
+     60,
+     "sway-10"
+    ]
+   ],
+   "cm": {
+    "code": "S06-3K9Y5-K39PZ-B911",
+    "parts": [
+     {
+      "slot": "Magazin",
+      "name": "40 Round Mag",
+      "lvl": 10
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Demo STP-1",
+      "lvl": 6
+     },
+     {
+      "slot": "Schaft",
+      "name": "EXP G2-44 Stock",
+      "lvl": 5
+     },
+     {
+      "slot": "Munition",
+      "name": "9mm Parabellum High Velocity",
+      "lvl": 61
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/iso-nightshade"
+   }
   },
   {
    "id": "vel-46",
@@ -592,12 +1384,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Lauf",
      "name": "VB-46 Series 11",
-     "lvl": 3
+     "lvl": 3,
+     "st": "hr-4,vr-4,sway-8,vel15,hk-4,vk-4,spr-1,mov-2,tac-1,adm-2,str-3,ads16,stf9"
     },
     {
      "slot": "Unterlauf",
      "name": "FSS Tac90 Grip",
-     "lvl": 46
+     "lvl": 46,
+     "st": "sway-30"
     },
     {
      "slot": "Magazin",
@@ -607,47 +1401,195 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "EXP U-Turn Stock",
-     "lvl": 37
+     "lvl": 37,
+     "st": "spr1,mov4,tac1,adm7,str4,sway18"
     }
    ],
    "alts": [
     {
      "slot": "Mündung",
      "name": "FSS Crackdown",
-     "lvl": 4
+     "lvl": 4,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads16"
     },
     {
      "slot": "Unterlauf",
      "name": "FSS Fireline Grip",
-     "lvl": 10
+     "lvl": 10,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads11,stf14"
     },
     {
      "slot": "Schaft",
      "name": "VEL 46 Extended",
-     "lvl": 20
+     "lvl": 20,
+     "st": "ads-8,hr4,vr4,hk4,vk4"
     },
     {
      "slot": "Schaft",
      "name": "EXP Lockdown Stock",
-     "lvl": 15
+     "lvl": 15,
+     "st": "hr-4,vr-4,sway-10,hk-4,vk-4,spr-1,mov-1,tac-1,adm-1,str-1,ads5,stf5"
     }
    ],
    "extras": [
     {
      "slot": "Hinterer Griff",
      "name": "V46 R-Skel Grip",
-     "lvl": 9
+     "lvl": 9,
+     "st": "hr-6,vr-6,hk-6,vk-6,ads5,stf7"
     },
     {
      "slot": "Laser",
      "name": "Schlager Visiv-5",
-     "lvl": 23
+     "lvl": 23,
+     "st": "ads-8,stf-17"
     }
    ],
    "src": "3 von 4 Quellen: Top-MP. Build von WZ Stats (nur dort für die neue VEL 46).",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 60,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Visier",
+     "Corio Bisect",
+     59,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads17"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     18,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads17"
+    ],
+    [
+     "Schaft",
+     "EXP Defiant Stock",
+     6,
+     "sway-51,adm-1"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     14,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads17"
+    ],
+    [
+     "Mündung",
+     "Haebang ORC70",
+     16,
+     "vr-10,vk-10,ads6"
+    ],
+    [
+     "Hinterer Griff",
+     "LM Combat Grip",
+     40,
+     "ads-6,hr3,vr3,hk3,vk3"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     5,
+     "stf-17"
+    ],
+    [
+     "Lauf",
+     "RV-B v2 Barrel",
+     45,
+     "spr3,mov3,tac2,adm5,str3,ads-5,stf-3,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Hinterer Griff",
+     "Sakin Rubber Grip",
+     52,
+     "sway-10"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     53,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     38,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads17"
+    ],
+    [
+     "Mündung",
+     "TA Lightning R3M",
+     35,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Mündung",
+     "TA TacPro-56",
+     42,
+     "hr-8,vr-8,hk-8,vk-8,ads6"
+    ],
+    [
+     "Unterlauf",
+     "V46 Vert-Tac",
+     50,
+     "mov4,str4,ads12"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     39,
+     "ads-4"
+    ],
+    [
+     "Mündung",
+     "XRK Herder 40",
+     51,
+     "ads9"
+    ],
+    [
+     "Lauf",
+     "XRK Tango 380 Barrel",
+     25,
+     "hr-10,vr-10,vel8,hk-10,vk-10,spr-2,mov-3,tac-2,adm-4,str-3,ads10"
+    ]
+   ],
+   "cm": {
+    "code": "S03-3K9Y5-L7T46-8711",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "TA TacPro-56",
+      "lvl": 42
+     },
+     {
+      "slot": "Lauf",
+      "name": "RV-B v2 Barrel",
+      "lvl": 45
+     },
+     {
+      "slot": "Unterlauf",
+      "name": "FSS Fireline Grip",
+      "lvl": 10
+     },
+     {
+      "slot": "Schaft",
+      "name": "EXP U-Turn Stock",
+      "lvl": 37
+     },
+     {
+      "slot": "Munition",
+      "name": "4.6x30mm High Velocity",
+      "lvl": 57
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/vel-46"
+   }
   },
   {
    "id": "x-58-nyx",
@@ -660,12 +1602,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Lauf",
      "name": "Doksa 4F 304.8mm",
-     "lvl": 37
+     "lvl": 37,
+     "st": "spr3,mov3,tac2,adm5,str4,ads-5,stf-3,hr9,vr9,hk9,vk9"
     },
     {
      "slot": "Unterlauf",
      "name": "Mire-50 Tac Grip",
-     "lvl": 7
+     "lvl": 7,
+     "st": "mov4,str5,ads7"
     },
     {
      "slot": "Magazin",
@@ -680,7 +1624,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Mugi HUL-73.M Stock",
-     "lvl": 3
+     "lvl": 3,
+     "st": "spr2,mov4,tac1,adm9,str4,sway18"
     }
    ],
    "alts": [],
@@ -688,11 +1633,123 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "Schlager Visiv-5",
-     "lvl": 12
+     "lvl": 12,
+     "st": "ads-8,stf-17"
     }
    ],
    "src": "Build in beiden Build-Quellen identisch.",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "cat": [
+    [
+     "Lauf",
+     "Eunmil 898 355mm",
+     13,
+     "hr-14,vr-14,vel8,hk-14,vk-14,spr-2,mov-3,tac-2,adm-4,str-4,ads9"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     30,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     19,
+     "hr-9,vr-9,hk-9,vk-9,ads8,stf14"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     39,
+     "sway-50"
+    ],
+    [
+     "Schaft",
+     "GI MilSpec Stock",
+     27,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Lauf",
+     "LX3-V 409mm",
+     44,
+     "hr-4,vr-4,vel20,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads12,stf9"
+    ],
+    [
+     "Schaft",
+     "MC1 Hardtail",
+     51,
+     "sway-51,adm-2"
+    ],
+    [
+     "Hinterer Griff",
+     "Mugi 050-T Grip",
+     6,
+     "hr-6,vr-6,hk-6,vk-6,ads5,stf7"
+    ],
+    [
+     "Lauf",
+     "Mugi HYU-90 228mm",
+     5,
+     "sway-10,spr1,mov6,tac1,adm2,str6,ads-10,stf-6,hr10,vr10,vel-11,hk10,vk10"
+    ],
+    [
+     "Hinterer Griff",
+     "Mugi-X Wrap",
+     40,
+     "sway-10"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     17,
+     "spr2,mov4,tac3,adm8,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     4,
+     "stf-17"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     38,
+     "ads-4"
+    ]
+   ],
+   "cm": {
+    "code": "S08-5CPV8-3911",
+    "parts": [
+     {
+      "slot": "Lauf",
+      "name": "Doksa 4F 305mm",
+      "lvl": 37
+     },
+     {
+      "slot": "Unterlauf",
+      "name": "Mire-50 Tac Grip",
+      "lvl": 7
+     },
+     {
+      "slot": "Magazin",
+      "name": "60 Round Mag",
+      "lvl": 9
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "BOK-980",
+      "lvl": 20
+     },
+     {
+      "slot": "Schaft",
+      "name": "Mugi HUL-73.M Stock",
+      "lvl": 3
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/x-58-nyx"
+   }
   }
  ],
  "library": [
@@ -706,22 +1763,26 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Schlager 7X",
-     "lvl": 33
+     "lvl": 33,
+     "st": "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads14,rel83"
     },
     {
      "slot": "Mündung",
      "name": "FTAC Silent Recon",
-     "lvl": 34
+     "lvl": 34,
+     "st": "hr-6,vr-6,vel10,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads9"
     },
     {
      "slot": "Lauf",
      "name": "Mosin K025 Barrel",
-     "lvl": 3
+     "lvl": 3,
+     "st": "hr-4,vr-4,vel20,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads9,stf6"
     },
     {
      "slot": "Laser",
      "name": "XRK Clutch-LS",
-     "lvl": 20
+     "lvl": 20,
+     "st": "ads-4"
     },
     {
      "slot": "Munition",
@@ -733,24 +1794,28 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "GL K230",
-     "lvl": 24
+     "lvl": 24,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads9,rel83"
     },
     {
      "slot": "Mündung",
      "name": "DS RKT-90",
-     "lvl": 22
+     "lvl": 22,
+     "st": "ads5"
     },
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 9
+     "lvl": 9,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads9,rel83"
     }
    ],
    "extras": [
     {
      "slot": "Schaft",
      "name": "Lockwood Eagle Stock",
-     "lvl": 27
+     "lvl": 27,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads6"
     },
     {
      "slot": "Magazin",
@@ -762,7 +1827,208 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 41,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Lauf",
+     "762 Dozor Barrel",
+     41,
+     "spr3,mov3,tac2,adm7,str4,ads-7,stf-3,hr9,vr9,hk9,vk9"
+    ],
+    [
+     "Visier",
+     "Corio D51 Scope",
+     36,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads21,rel83"
+    ],
+    [
+     "Mündung",
+     "EXP R3000-V",
+     2,
+     "vr-10,vk-10,ads4"
+    ],
+    [
+     "Visier",
+     "Expedite 308 DR2",
+     59,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads21,rel83"
+    ],
+    [
+     "Mündung",
+     "Field Tac 1.4 Comp",
+     11,
+     "hr-8,vr-8,hk-8,vk-8,ads4"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     45,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     7,
+     "mov3,str3,ads6"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     13,
+     "hr-9,vr-9,hk-9,vk-9,ads6,stf6"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     25,
+     "sway-50"
+    ],
+    [
+     "Visier",
+     "GW Löwe-55",
+     55,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads21,rel83"
+    ],
+    [
+     "Visier",
+     "Luca Stormwatch",
+     52,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads21,rel83"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     39,
+     "mov4,str5,ads5"
+    ],
+    [
+     "Schaft",
+     "Mosin Pistol Stock",
+     30,
+     "sway-1,spr3,mov10,tac5,adm33,str12,ads-26,stf-16,hr14,vr14,vel-51,hk257,vk258"
+    ],
+    [
+     "Lauf",
+     "Mosin S762 Barrel",
+     60,
+     "sway-10,spr1,mov6,tac1,adm3,str7,ads-8,stf-6,hr10,vr10,vel-5,hk10,vk10"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     49,
+     "spr2,mov4,tac4,adm12,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     47,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads14,rel83"
+    ],
+    [
+     "Lauf",
+     "SA LYR-762 Barrel",
+     14,
+     "hr-20,vr-20,hk-20,vk-20,spr-2,mov-2,tac-2,adm-2,str-2,ads5"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     21,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads14,rel83"
+    ],
+    [
+     "Visier",
+     "Schlager Indigo-RF",
+     42,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads21,rel83"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     38,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads9,rel83"
+    ],
+    [
+     "Laser",
+     "Schlager Visiv-5",
+     5,
+     "ads-8,stf-17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     48,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads9,rel83"
+    ],
+    [
+     "Visier",
+     "SZ MN-Scout 9x",
+     44,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads18,rel83"
+    ],
+    [
+     "Mündung",
+     "Usenko 308-1L",
+     66,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Mündung",
+     "Usenko KD-L2",
+     65,
+     "hr-15,hk-20,ads4"
+    ],
+    [
+     "Schaft",
+     "Usenko Shturm 76",
+     6,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Visier",
+     "VLK 1940-R 9x",
+     19,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads21,rel83"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     15,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads14,rel83"
+    ]
+   ],
+   "cm": {
+    "code": "M03-3KBGU-ZNAJV-K711",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "VLK Rize-40",
+      "lvl": 15
+     },
+     {
+      "slot": "Mündung",
+      "name": "FTAC Silent Recon",
+      "lvl": 34
+     },
+     {
+      "slot": "Lauf",
+      "name": "Mosin K025 Barrel",
+      "lvl": 3
+     },
+     {
+      "slot": "Schaft",
+      "name": "Usenko Shturm 76",
+      "lvl": 6
+     },
+     {
+      "slot": "Munition",
+      "name": "7.62x54mmR High Velocity",
+      "lvl": 18
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/mosin-nagant"
+   }
   },
   {
    "id": "axion",
@@ -774,12 +2040,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 13
+     "lvl": 13,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 28
+     "lvl": 28,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
@@ -794,7 +2062,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "TA Harrow Stock",
-     "lvl": 2
+     "lvl": 2,
+     "st": "sway-51,adm-1"
     }
    ],
    "alts": [
@@ -808,17 +2077,20 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Unterlauf",
      "name": "FSS Fireline Grip",
-     "lvl": 7
+     "lvl": 7,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads8,stf7"
     },
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 9
+     "lvl": 9,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Hinterer Griff",
      "name": "GS50 Grip",
-     "lvl": 55
+     "lvl": 55,
+     "st": "ads-9,stf-8,hr6,vr6,hk6,vk6"
     },
     {
      "slot": "Munition",
@@ -830,7 +2102,203 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 69,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Hinterer Griff",
+     "C838 Grip",
+     4,
+     "hr-7,vr-7,hk-7,vk-7,ads5,stf5"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     58,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     63,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Schaft",
+     "Cronen Blackstone-6P",
+     15,
+     "hr-7,vr-7,hk-7,vk-7,ads8"
+    ],
+    [
+     "Lauf",
+     "Cronen DC-Forge 40",
+     40,
+     "hr-12,vr-12,vel8,hk-12,vk-12,spr-2,mov-3,tac-2,adm-3,str-3,ads13"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     33,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     40,
+     "mov3,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     31,
+     "sway-30"
+    ],
+    [
+     "Mündung",
+     "FTAC Dominion",
+     36,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     46,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     21,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Hinterer Griff",
+     "Matuzek Lockgrip",
+     23,
+     "sway-28,adm-3,ads4"
+    ],
+    [
+     "Lauf",
+     "Matuzek S5-Brace",
+     29,
+     "hr-8,vr-8,vel7,hk-8,vk-8,sway5,ads9"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     64,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     60,
+     "stf-17"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     11,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     30,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     39,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     27,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     25,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Mündung",
+     "TZL-110 V1",
+     18,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     61,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Lauf",
+     "XRK 09-RTAC Pro",
+     52,
+     "sway-10,spr1,mov6,tac1,adm3,str6,ads-9,stf-6,hr6,vr6,vel-5,hk6,vk6"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     44,
+     "ads-4"
+    ],
+    [
+     "Schaft",
+     "XRK FTR-30",
+     45,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     14,
+     "ads7"
+    ],
+    [
+     "Schaft",
+     "XRK Relay 7",
+     59,
+     "spr1,mov4,tac1,adm10,str4,sway18"
+    ],
+    [
+     "Mündung",
+     "ZLR Reverb90",
+     5,
+     "vr-10,vk-10,ads5"
+    ]
+   ],
+   "cm": {
+    "code": "A04-26ERW-3NG95-11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 13
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 28
+     },
+     {
+      "slot": "Magazin",
+      "name": "40 Round Mag",
+      "lvl": 65
+     },
+     {
+      "slot": "Schaft",
+      "name": "TA Harrow Stock",
+      "lvl": 2
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/axion"
+   }
   },
   {
    "id": "kg-7-vulcan",
@@ -842,7 +2310,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Gauge-12 Mono",
-     "lvl": 32
+     "lvl": 32,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads5"
     },
     {
      "slot": "Lauf",
@@ -852,7 +2321,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "TT G76-RP Stock",
-     "lvl": 47
+     "lvl": 47,
+     "st": "ads-7,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Munition",
@@ -874,31 +2344,315 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "DS RKT-90",
-     "lvl": 4
+     "lvl": 4,
+     "st": "ads3"
     }
    ],
    "extras": [
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 7
+     "lvl": 7,
+     "st": "ads-7,stf-17"
     },
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 3
+     "lvl": 3,
+     "st": "adm9,ads-8,hr80,vr80,sway25,hk75,vk75"
     },
     {
      "slot": "Visier",
      "name": "Hanbit 3080 Fireline",
-     "lvl": 14
+     "lvl": 14,
+     "st": "ads-8"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 71,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Schaft",
+     "Bruen KG-7 Mk. IV",
+     28,
+     "sway-51,adm-4"
+    ],
+    [
+     "Visier",
+     "Bruen THRM-60 Optic",
+     67,
+     "adm18,ads-13,sway25"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     15,
+     "adm6,ads-8,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Corio D51 Scope",
+     25,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Corvus Avis-0",
+     61,
+     "ads-8,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Custom Ironsights",
+     17,
+     "adm18,ads-16,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Mündung",
+     "EXP R3000-V",
+     48,
+     "vr-10,vk-10,ads2"
+    ],
+    [
+     "Visier",
+     "Expedite 308 DR2",
+     36,
+     "ads-1,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Mündung",
+     "Field Tac 1.4 Comp",
+     20,
+     "hr-8,vr-8,hk-8,vk-8,ads2"
+    ],
+    [
+     "Visier",
+     "FJX 708 PRO",
+     70,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     65,
+     "sway-40,mov2,adm3,str2"
+    ],
+    [
+     "Mündung",
+     "FT Hyperport 408",
+     30,
+     "hr-15,hk-20,ads2"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     33,
+     "adm9,ads-8,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "GW Löwe-55",
+     12,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Schaftkappe",
+     "Haebang YNC-45",
+     34,
+     "ads-5,hr4,vr4"
+    ],
+    [
+     "Schaftkappe",
+     "Hanbit CHK-1",
+     51,
+     "hr-7,vr-7,hk-7,vk-7,ads2,stf3"
+    ],
+    [
+     "Schaft",
+     "Hanbit RTR Mk. I",
+     2,
+     "spr2,mov4,tac1,adm17,str5,sway18"
+    ],
+    [
+     "Visier",
+     "IOTA-D",
+     42,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "KV Corsac Holo",
+     56,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     49,
+     "adm6,ads-8,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Luca Stormwatch",
+     46,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     35,
+     "ads-5,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     19,
+     "ads-5,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Bigsky",
+     57,
+     "hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     62,
+     "ads-5,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Indigo-RF",
+     74,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     60,
+     "adm6,ads-8,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Slimline Elite",
+     31,
+     "adm18,ads-13,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ Echelon Holo",
+     29,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ Helios Holo",
+     41,
+     "adm18,ads-13,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     44,
+     "adm9,ads-8,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Holo",
+     16,
+     "adm18,ads-13,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ Micro D-3",
+     26,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ Prima-4 Dot",
+     66,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ SRE-7",
+     50,
+     "adm18,ads-13,hk-150,vk-150,sway25"
+    ],
+    [
+     "Mündung",
+     "TT Solgae F7",
+     38,
+     "hr-3,vr-3,vel10,hk-3,vk-3,spr-1,mov-1,tac-1,adm-2,str-1,ads7,stf4"
+    ],
+    [
+     "Schaftkappe",
+     "TT Type 40 Comb",
+     6,
+     "sway-10,adm-3"
+    ],
+    [
+     "Mündung",
+     "Usenko 308-1L",
+     72,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     40,
+     "ads-5,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "VLK Trimmer",
+     39,
+     "adm18,ads-13,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     59,
+     "ads-4"
+    ],
+    [
+     "Visier",
+     "ZLR Type C",
+     52,
+     "adm18,ads-13,hr100,vr100,sway25,hk150,vk150"
+    ]
+   ],
+   "cm": {
+    "code": "R04-3K9Y5-JTFYN-8S51",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "Gauge-12 Mono",
+      "lvl": 32
+     },
+     {
+      "slot": "Schaft",
+      "name": "TT G76-RP Stock",
+      "lvl": 47
+     },
+     {
+      "slot": "Munition",
+      "name": "7.62x54mmR High Velocity",
+      "lvl": 71
+     },
+     {
+      "slot": "Verschluss",
+      "name": "KT76 Light Bolt",
+      "lvl": 63
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/kg-7-vulcan"
+   }
   },
   {
    "id": "astaroth-57",
@@ -910,7 +2664,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Usenko 900 BL-X",
-     "lvl": 33
+     "lvl": 33,
+     "st": "hr-3,vr-3,vel12,hk-3,vk-3,spr-1,mov-1,tac-1,adm-2,str-1,ads8,stf2"
     },
     {
      "slot": "Lauf",
@@ -920,12 +2675,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Usenko V8-LKR",
-     "lvl": 3
+     "lvl": 3,
+     "st": "ads-6,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Laser",
      "name": "XRK Clutch-LS",
-     "lvl": 27
+     "lvl": 27,
+     "st": "ads-4"
     },
     {
      "slot": "Munition",
@@ -949,19 +2706,193 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "FJX S-TAC Grip",
-     "lvl": 44
+     "lvl": 44,
+     "st": "sway-30,adm-6,ads1"
     },
     {
      "slot": "Visier",
      "name": "Schlager 7x",
-     "lvl": 9
+     "lvl": 9,
+     "st": "ads-5,hr40,vr40,sway19,hk50,vk50"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 50,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Visier",
+     "Corvus Avis-0",
+     52,
+     "ads-7,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     2,
+     "adm10,ads-7,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Schaft",
+     "Cronen Strand-BG Stock",
+     28,
+     "sway-51,adm-4"
+    ],
+    [
+     "Schaft",
+     "Demo Ire-350",
+     11,
+     "hr-8,vr-8,hk-8,vk-8,ads3"
+    ],
+    [
+     "Mündung",
+     "DS Op-67M Flash",
+     12,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "Expedite 308 DR2",
+     37,
+     "ads-1,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     18,
+     "sway-40,mov2,adm3,str2"
+    ],
+    [
+     "Hinterer Griff",
+     "FSS Centre Grip",
+     7,
+     "hr-6,vr-6,hk-6,vk-6,ads2,stf2"
+    ],
+    [
+     "Mündung",
+     "FSS DES-Tac70",
+     26,
+     "ads2"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     29,
+     "adm10,ads-7,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "GW Löwe-55",
+     10,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Hanbit 3080 Fireline",
+     35,
+     "ads-7"
+    ],
+    [
+     "Mündung",
+     "LM Deadstop-99",
+     42,
+     "hr-15,hk-20,ads2"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     45,
+     "adm6,ads-7,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Luca Stormwatch",
+     46,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     34,
+     "ads-5,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Bigsky",
+     48,
+     "hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     49,
+     "ads-5,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Indigo-RF",
+     17,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     21,
+     "adm6,ads-7,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Laser",
+     "Schlager Visiv-5",
+     6,
+     "ads-7,stf-17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     51,
+     "ads-7"
+    ],
+    [
+     "Mündung",
+     "TA Honeypot 670",
+     15,
+     "vr-10,vk-10,ads2"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     23,
+     "ads-5,hr80,vr80,sway25,hk75,vk75"
+    ]
+   ],
+   "cm": {
+    "code": "R03-32TK3-3KTW6-1D11",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "Usenko 900 BL-X",
+      "lvl": 33
+     },
+     {
+      "slot": "Schaft",
+      "name": "Usenko V8-LKR",
+      "lvl": 3
+     },
+     {
+      "slot": "Laser",
+      "name": "XRK Clutch-LS",
+      "lvl": 27
+     },
+     {
+      "slot": "Munition",
+      "name": ".57 Cal High Velocity",
+      "lvl": 50
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/astaroth-57"
+   }
   },
   {
    "id": "oden",
@@ -978,12 +2909,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "TV Multical-77",
-     "lvl": 4
+     "lvl": 4,
+     "st": "hr-6,vr-6,vel16,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads9"
     },
     {
      "slot": "Lauf",
      "name": "Rockfall-900 Barrel",
-     "lvl": 5
+     "lvl": 5,
+     "st": "hr-10,vr-10,vel15,hk-10,vk-10,sway8,spr-3,mov-4,tac-2,adm-7,str-4,ads9,stf9"
     },
     {
      "slot": "Magazin",
@@ -1007,34 +2940,216 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Unterlauf",
      "name": "FSS Fireline Grip",
-     "lvl": 22
+     "lvl": 22,
+     "st": "hr-9,vr-9,hk-9,vk-9,ads6,stf7"
     },
     {
      "slot": "Schaft",
      "name": "Haebang Stal-W5",
-     "lvl": 3
+     "lvl": 3,
+     "st": "sway-51,adm-3"
     },
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 6
+     "lvl": 6,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Schaft",
      "name": "VLK NVS-32 Pad",
-     "lvl": 36
+     "lvl": 36,
+     "st": "ads-8,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Laser",
      "name": "XRK Clutch-LS",
-     "lvl": 47
+     "lvl": 47,
+     "st": "ads-4"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 65,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Mündung",
+     "Bryson Bullhide 90",
+     37,
+     "vr-13,vk-13,ads4"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     31,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads10"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     21,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads10"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     25,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     62,
+     "mov3,str3,ads6"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     38,
+     "sway-50"
+    ],
+    [
+     "Lauf",
+     "GL Block-12",
+     55,
+     "hr-3,vr-3,vel20,hk-3,vk-3,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads7,stf6"
+    ],
+    [
+     "Schaft",
+     "GL HOX-20 Stock",
+     44,
+     "spr2,mov4,tac1,adm13,str4,sway17"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     48,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads10"
+    ],
+    [
+     "Mündung",
+     "K41A2 Comp",
+     50,
+     "hr-8,vr-8,hk-8,vk-8,ads4"
+    ],
+    [
+     "Schaftkappe",
+     "KV-R98 Comb",
+     24,
+     "ads-6,hr3,vr3"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     16,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads10"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     8,
+     "mov5,str5,ads5"
+    ],
+    [
+     "Schaftkappe",
+     "NXK-9F Comb",
+     2,
+     "sway-11,adm-2"
+    ],
+    [
+     "Mündung",
+     "Oden Thunder-S",
+     14,
+     "hr-25,hk-30,ads4"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     46,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads15"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     18,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads15"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     60,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads15"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     19,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads10"
+    ],
+    [
+     "Mündung",
+     "Schlager Operator-S70",
+     27,
+     "ads5"
+    ],
+    [
+     "Lauf",
+     "Stonewall-12 Barrel",
+     32,
+     "sway-10,spr1,mov6,tac1,adm3,str7,ads-8,stf-7,hr9,vr9,vel-12,hk9,vk9"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     9,
+     "adm-7,ads10"
+    ],
+    [
+     "Mündung",
+     "VGD-11 Flash",
+     53,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     40,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads15"
+    ]
+   ],
+   "cm": {
+    "code": "B01-3KANR-WR1EX-PN11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "SZ Lonewolf Holo",
+      "lvl": 15
+     },
+     {
+      "slot": "Mündung",
+      "name": "TV Multical-77",
+      "lvl": 4
+     },
+     {
+      "slot": "Lauf",
+      "name": "Rockfall-900 Barrel",
+      "lvl": 5
+     },
+     {
+      "slot": "Magazin",
+      "name": "30 Round Mag",
+      "lvl": 10
+     },
+     {
+      "slot": "Munition",
+      "name": "12.7x55mm High Velocity",
+      "lvl": 61
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/oden"
+   }
   },
   {
    "id": "patriot-xmr",
@@ -1046,12 +3161,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 13
+     "lvl": 13,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "EXP Undertow GEN. 2",
-     "lvl": 25
+     "lvl": 25,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
@@ -1066,43 +3183,221 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Hanbit B56T-L9",
-     "lvl": 22
+     "lvl": 22,
+     "st": "sway-51,adm-1"
     }
    ],
    "alts": [
     {
      "slot": "Mündung",
      "name": "HET-S6 Comp",
-     "lvl": 14
+     "lvl": 14,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads5"
     }
    ],
    "extras": [
     {
      "slot": "Hinterer Griff",
      "name": "Schlager Attack-7 Grip",
-     "lvl": 30
+     "lvl": 30,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads5,stf4"
     },
     {
      "slot": "Unterlauf",
      "name": "FSS Fireline Grip",
-     "lvl": 33
+     "lvl": 33,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads8,stf8"
     },
     {
      "slot": "Laser",
      "name": "SA LAZ-500",
-     "lvl": 12
+     "lvl": 12,
+     "st": "ads-4"
     },
     {
      "slot": "Laser",
      "name": "SZ GEN.6 PEQ",
-     "lvl": 23
+     "lvl": 23,
+     "st": "ads-8,stf-17"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 62,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Bruen 22-LPW",
+     16,
+     "stf-17"
+    ],
+    [
+     "Mündung",
+     "Bruen R12 Gen. 4",
+     29,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     40,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     28,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Hinterer Griff",
+     "EXP TR-Wrap",
+     3,
+     "sway-10"
+    ],
+    [
+     "Hinterer Griff",
+     "FJX Fury IV Grip",
+     54,
+     "ads-9,stf-8,hr4,vr4,hk4,vk4"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     20,
+     "hr-10,mov3,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     8,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Schaft",
+     "Hanbit Mk.3 H70",
+     9,
+     "ads-10,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     68,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "Matuzek Blackveil",
+     39,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     27,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     67,
+     "spr2,mov4,tac4,adm13,str5,ads-15,stf-7,hr28,vr28,sway10,hk28,vk28"
+    ],
+    [
+     "Mündung",
+     "Octa-63 Comp",
+     66,
+     "vr-10,vk-10,ads5"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     55,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     18,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     11,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     69,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Laser",
+     "STOVL IRX-6",
+     51,
+     "sway-7"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     58,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     46,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Schaft",
+     "XRK Ranger D4",
+     47,
+     "spr2,mov4,tac1,adm9,str4,sway15"
+    ],
+    [
+     "Mündung",
+     "ZLR Cold Echo",
+     2,
+     "ads7"
+    ]
+   ],
+   "cm": {
+    "code": "B04-26ERW-3NI1L-11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 13
+     },
+     {
+      "slot": "Mündung",
+      "name": "EXP Undertow Gen. 2",
+      "lvl": 25
+     },
+     {
+      "slot": "Magazin",
+      "name": "50 Round Drum Mag",
+      "lvl": 10
+     },
+     {
+      "slot": "Schaft",
+      "name": "Hanbit B56T-L9",
+      "lvl": 22
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/patriot-xmr"
+   }
   },
   {
    "id": "ppsh-41",
@@ -1119,29 +3414,34 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Full Port Comp",
-     "lvl": 48
+     "lvl": 48,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads6"
     },
     {
      "slot": "Lauf",
      "name": "TT Banseok-24N",
-     "lvl": 49
+     "lvl": 49,
+     "st": "spr3,mov3,tac2,adm5,str4,ads-6,stf-3,hr6,vr6,hk6,vk6"
     },
     {
      "slot": "Unterlauf",
      "name": "MIRE-50 Tac Grip",
-     "lvl": 52
+     "lvl": 52,
+     "st": "mov4,str5,ads8"
     },
     {
      "slot": "Schaft",
      "name": "MT-L5 Jinhwa",
-     "lvl": 41
+     "lvl": 41,
+     "st": "spr2,mov4,tac1,adm8,str4,sway18"
     }
    ],
    "alts": [
     {
      "slot": "Lauf",
      "name": "Hanbit RDR-Tiger 50",
-     "lvl": 33
+     "lvl": 33,
+     "st": "hr-10,vr-10,vel8,hk-10,vk-10,spr-2,mov-3,tac-2,adm-4,str-4,ads14"
     },
     {
      "slot": "Mündung",
@@ -1156,29 +3456,34 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Lauf",
      "name": "Hanbit RDR-Tiger 50-XL",
-     "lvl": 15
+     "lvl": 15,
+     "st": "hr-7,vr-7,vel15,hk-7,vk-7,sway8,spr-2,mov-4,tac-2,adm-5,str-4,ads14,stf9"
     },
     {
      "slot": "Mündung",
      "name": "FTAC Silent Recon",
-     "lvl": 12
+     "lvl": 12,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads14"
     },
     {
      "slot": "Lauf",
      "name": "Hanbit Chimmuk-Intr",
-     "lvl": 5
+     "lvl": 5,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway5,ads11"
     },
     {
      "slot": "Unterlauf",
      "name": "FSS TAC90 Grip",
-     "lvl": 2
+     "lvl": 2,
+     "st": "sway-30"
     }
    ],
    "extras": [
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 4
+     "lvl": 4,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Magazin",
@@ -1195,7 +3500,130 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 61,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Mündung",
+     "330TC2 Gridlock",
+     58,
+     "ads8"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     16,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads15"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     34,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads15"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     13,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     61,
+     "hr-8,vr-8,hk-8,vk-8,ads10,stf13"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     18,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads15"
+    ],
+    [
+     "Schaft",
+     "Hanbit Janggun-H9",
+     25,
+     "hr-8,vr-8,hk-8,vk-8,ads10"
+    ],
+    [
+     "Schaft",
+     "Hanbit RDW7-F",
+     8,
+     "ads-9,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Mündung",
+     "L980-S Comp",
+     6,
+     "vr-10,vk-10,ads6"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     55,
+     "spr2,mov4,tac3,adm8,str5,ads-17,stf-8,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     42,
+     "stf-17"
+    ],
+    [
+     "Mündung",
+     "RX-5 Overstrike",
+     45,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads15"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     54,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads15"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     21,
+     "ads-4"
+    ]
+   ],
+   "cm": {
+    "code": "S05-AV35W-SP4W1-1",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "ZLR Type C",
+      "lvl": 7
+     },
+     {
+      "slot": "Mündung",
+      "name": "Full Port Comp",
+      "lvl": 48
+     },
+     {
+      "slot": "Lauf",
+      "name": "TT Banseok-24N",
+      "lvl": 49
+     },
+     {
+      "slot": "Unterlauf",
+      "name": "Mire-50 Tac Grip",
+      "lvl": 52
+     },
+     {
+      "slot": "Schaft",
+      "name": "MT-L5 Jinhwa",
+      "lvl": 41
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/ppsh-41"
+   }
   },
   {
    "id": "wz55-striga",
@@ -1207,12 +3635,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Full Port Comp",
-     "lvl": 3
+     "lvl": 3,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads7"
     },
     {
      "slot": "Lauf",
      "name": "GW Sender 500",
-     "lvl": 5
+     "lvl": 5,
+     "st": "hr-4,vr-4,vel15,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads10,stf5"
     },
     {
      "slot": "Magazin",
@@ -1222,12 +3652,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Matuzek 532-L Grip",
-     "lvl": 15
+     "lvl": 15,
+     "st": "ads-8,hr3,vr3,hk3,vk3"
     },
     {
      "slot": "Schaft",
      "name": "Wire Stock",
-     "lvl": 52
+     "lvl": 52,
+     "st": "hr-23,vr-23,adm1,hk-87,vk-87,sway7,mov-1,tac-2,str-1,ads12,stf8"
     }
    ],
    "alts": [
@@ -1241,12 +3673,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 32
+     "lvl": 32,
+     "st": "ads-7,stf-19"
     },
     {
      "slot": "Laser",
      "name": "QFL-S4.5",
-     "lvl": 45
+     "lvl": 45,
+     "st": "stf-19"
     },
     {
      "slot": "Visier",
@@ -1258,7 +3692,142 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 60,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Lauf",
+     "Ballistarc Dreadline 80",
+     26,
+     "hr-10,vr-10,vel8,hk-10,vk-10,spr-2,mov-3,tac-2,adm-4,str-3,ads14"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     19,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads20"
+    ],
+    [
+     "Lauf",
+     "DS 9x18 Pro",
+     44,
+     "spr2,mov3,tac2,adm5,str3,ads-5,stf-5,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Schaft",
+     "EXP Calvary II Stock",
+     20,
+     "hr-23,vr-23,sway-55,hk-87,vk-87,spr-2,mov-4,tac-3,adm-8,str-5,ads12,stf8"
+    ],
+    [
+     "Schaft",
+     "EXP Narrow-Lite",
+     2,
+     "hr-25,vr-25,sway-9,hk-87,vk-87,spr-2,mov-4,tac-3,adm-7,str-5,ads1"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     35,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     38,
+     "hr-8,vr-8,hk-8,vk-8,ads11,stf16"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     7,
+     "sway-30"
+    ],
+    [
+     "Hinterer Griff",
+     "FTAC Guard5",
+     34,
+     "hr-6,vr-6,hk-6,vk-6,ads7,stf8"
+    ],
+    [
+     "Mündung",
+     "FTAC Silent Recon",
+     13,
+     "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads19"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     33,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads20"
+    ],
+    [
+     "Mündung",
+     "L980-S Comp",
+     46,
+     "vr-10,vk-10,ads7"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     25,
+     "mov4,str5,ads9"
+    ],
+    [
+     "Mündung",
+     "RX-5 Overstrike",
+     40,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     22,
+     "hr-10,vr-10,hk-30,vk-30,adm-9,ads20"
+    ],
+    [
+     "Hinterer Griff",
+     "Striga Wood Grip",
+     4,
+     "sway-10"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     8,
+     "ads-4"
+    ]
+   ],
+   "cm": {
+    "code": "S04-9YGGZ-311",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "Full Port Comp",
+      "lvl": 3
+     },
+     {
+      "slot": "Lauf",
+      "name": "GW Sender 500",
+      "lvl": 5
+     },
+     {
+      "slot": "Magazin",
+      "name": "50 Round Drum Mag",
+      "lvl": 49
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Matuzek 532-L Grip",
+      "lvl": 15
+     },
+     {
+      "slot": "Schaft",
+      "name": "Wire Stock",
+      "lvl": 52
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/wz55-striga"
+   }
   },
   {
    "id": "kastov-762",
@@ -1270,17 +3839,20 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 26
+     "lvl": 26,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "Gauge-12 Mono",
-     "lvl": 34
+     "lvl": 34,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads12"
     },
     {
      "slot": "Lauf",
      "name": "BCS-K 589.28MM Barrel",
-     "lvl": 24
+     "lvl": 24,
+     "st": "hr-4,vr-4,vel15,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads10,stf8"
     },
     {
      "slot": "Magazin",
@@ -1290,58 +3862,250 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Hanbit Blitz V.9",
-     "lvl": 67
+     "lvl": 67,
+     "st": "hr-7,vr-7,sway-22,hk-7,vk-7,spr-1,mov-2,tac-1,adm-3,str-2,ads6"
     }
    ],
    "alts": [
     {
      "slot": "Schaft",
      "name": "Kastov Dogfighter 27",
-     "lvl": 42
+     "lvl": 42,
+     "st": "spr2,mov4,tac1,adm11,str4,sway17"
     },
     {
      "slot": "Schaft",
      "name": "Spetsnaz S10 Stock",
-     "lvl": 19
+     "lvl": 19,
+     "st": "hr-10,vr-10,hk-10,vk-10,ads6"
     },
     {
      "slot": "Mündung",
      "name": "FT Hyperport 408",
-     "lvl": 16
+     "lvl": 16,
+     "st": "hr-15,hk-20,ads5"
     },
     {
      "slot": "Lauf",
      "name": "Haebang MT-414MM",
-     "lvl": 14
+     "lvl": 14,
+     "st": "hr-15,vr-15,vel8,hk-15,vk-15,spr-2,mov-3,tac-2,adm-4,str-3,ads12"
     },
     {
      "slot": "Lauf",
      "name": "TT 414-R Hightac",
-     "lvl": 2
+     "lvl": 2,
+     "st": "spr3,mov3,tac2,adm6,str4,ads-6,stf-3,hr9,vr9,hk9,vk9"
     }
    ],
    "extras": [
     {
      "slot": "Unterlauf",
      "name": "FSS Fireline Grip",
-     "lvl": 3
+     "lvl": 3,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads8,stf8"
     },
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 30
+     "lvl": 30,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Hinterer Griff",
      "name": "Hanbit Techgrip",
-     "lvl": 4
+     "lvl": 4,
+     "st": "sway-10"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 71,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Visier",
+     "Corio Bisect",
+     40,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "DS RKT-90",
+     49,
+     "ads7"
+    ],
+    [
+     "Mündung",
+     "EXP R3000-V",
+     8,
+     "vr-10,vk-10,ads5"
+    ],
+    [
+     "Mündung",
+     "Field Tac 1.4 Comp",
+     23,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     15,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Hinterer Griff",
+     "FJX Kastov Grip",
+     17,
+     "hr-10,vr-10,hk-10,vk-10,ads5,stf4"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     32,
+     "mov3,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     47,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     22,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Schaft",
+     "Hanbit 655L-M Stock",
+     33,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Schaft",
+     "Kastov Combat Lite Stock",
+     27,
+     "spr2,mov3,tac1,adm7,str4,ads-6,stf-4,hr7,vr7,sway9,hk7,vk7"
+    ],
+    [
+     "Schaft",
+     "Kastov Ridgewood 7",
+     5,
+     "sway-51,adm-1"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     20,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     38,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Hinterer Griff",
+     "Mugi 00-YK1 Grip",
+     45,
+     "ads-9,stf-8,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     51,
+     "spr2,mov4,tac4,adm12,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     6,
+     "stf-17"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     46,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     60,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     28,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     56,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     13,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Mündung",
+     "Usenko 308-1L",
+     25,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     55,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     53,
+     "ads-4"
+    ]
+   ],
+   "cm": {
+    "code": "A01-23Y1W-CE5UH-11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 26
+     },
+     {
+      "slot": "Mündung",
+      "name": "Gauge-12 Mono",
+      "lvl": 34
+     },
+     {
+      "slot": "Lauf",
+      "name": "BCS-K 589mm Barrel",
+      "lvl": 24
+     },
+     {
+      "slot": "Magazin",
+      "name": "45 Round Mag 7.62",
+      "lvl": 10
+     },
+     {
+      "slot": "Schaft",
+      "name": "Hanbit Blitz v.9",
+      "lvl": 67
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/kastov-762"
+   }
   },
   {
    "id": "apoc-338",
@@ -1358,7 +4122,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "TV Multical-77",
-     "lvl": 2
+     "lvl": 2,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads10"
     },
     {
      "slot": "Lauf",
@@ -1368,38 +4133,197 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "FSS TCB-1 Grip",
-     "lvl": 7
+     "lvl": 7,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads6,stf3"
     },
     {
      "slot": "Schaft",
      "name": "EXP ARC-7 Stock",
-     "lvl": 47
+     "lvl": 47,
+     "st": "ads-8,hr5,vr5,hk5,vk5"
     }
    ],
    "alts": [
     {
      "slot": "Schaft",
      "name": "DEMO BAR-7 Stock",
-     "lvl": 15
+     "lvl": 15,
+     "st": "spr2,mov4,tac1,adm9,str4,sway18"
     }
    ],
    "extras": [
     {
      "slot": "Laser",
      "name": "SZ GEN.6 PEQ",
-     "lvl": 10
+     "lvl": 10,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Unterlauf",
      "name": "Bruen Renegade Grip",
-     "lvl": 8
+     "lvl": 8,
+     "st": "sway-50"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 47,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Mündung",
+     "Bryson Bullhide 90",
+     31,
+     "vr-10,vk-10,ads4"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     17,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     37,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads11"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     16,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads11"
+    ],
+    [
+     "Hinterer Griff",
+     "EXP Dyna-3 Grip",
+     26,
+     "sway-30,adm-2,ads3"
+    ],
+    [
+     "Schaft",
+     "EXP Exodus-338 Stock",
+     5,
+     "sway-51,adm-1"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads11"
+    ],
+    [
+     "Mündung",
+     "K41A2 Comp",
+     14,
+     "hr-8,vr-8,hk-8,vk-8,ads4"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     21,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads11"
+    ],
+    [
+     "Mündung",
+     "Matuzek Ironcall 31",
+     24,
+     "hr-15,hk-20,ads4"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     33,
+     "spr2,mov5,tac4,adm13,str5,ads-14,stf-7,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     29,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads17"
+    ],
+    [
+     "Laser",
+     "SA Laz-500",
+     25,
+     "ads-4"
+    ],
+    [
+     "Hinterer Griff",
+     "SA Winder-5 Grip",
+     51,
+     "ads-6,hr3,vr3,hk3,vk3"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     38,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads17"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     55,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads17"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     45,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads11"
+    ],
+    [
+     "Mündung",
+     "Schlager Operator-S70",
+     43,
+     "ads6"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     13,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads11"
+    ],
+    [
+     "Mündung",
+     "VGD-11 Flash",
+     35,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     50,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads17"
+    ]
+   ],
+   "cm": {
+    "code": "L02-VJU6U-6MEJ1-1",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "SZ Helios Holo",
+      "lvl": 6
+     },
+     {
+      "slot": "Mündung",
+      "name": "TV Multical-77",
+      "lvl": 2
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "FSS TCB-1 Grip",
+      "lvl": 7
+     },
+     {
+      "slot": "Schaft",
+      "name": "EXP Arc-7 Stock",
+      "lvl": 47
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/apoc-338"
+   }
   },
   {
    "id": "cronen-squall",
@@ -1411,12 +4335,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 15
+     "lvl": 15,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "EXP Undertow GEN. 2",
-     "lvl": 22
+     "lvl": 22,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads12"
     },
     {
      "slot": "Lauf",
@@ -1448,21 +4374,207 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Octa-63 Comp",
-     "lvl": 12
+     "lvl": 12,
+     "st": "vr-10,vk-10,ads5"
     }
    ],
    "extras": [
     {
      "slot": "Laser",
      "name": "SZ GEN.6 PEQ",
-     "lvl": 6
+     "lvl": 6,
+     "st": "ads-8,stf-17"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 67,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Schaftkappe",
+     "Bryson N40 Comb",
+     7,
+     "sway-10,adm-2"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     38,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     29,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Hinterer Griff",
+     "Cronen SQL Grip",
+     4,
+     "ads-8,stf-10,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Mündung",
+     "Cronen Viel-68 Suppressor",
+     49,
+     "hr-3,vr-3,vel15,hk-3,vk-3,spr-1,mov-1,tac-1,adm-1,str-1,ads11,stf5"
+    ],
+    [
+     "Schaftkappe",
+     "EXP FCO-44",
+     30,
+     "hr-6,vr-6,hk-6,vk-6,ads6,stf5"
+    ],
+    [
+     "Schaftkappe",
+     "FJX C-Band",
+     65,
+     "ads-8,hr3,vr3"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     41,
+     "mov3,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     24,
+     "hr-8,vr-8,hk-8,vk-8,ads8,stf7"
+    ],
+    [
+     "Hinterer Griff",
+     "FSS Grip 50",
+     23,
+     "hr-7,vr-7,hk-7,vk-7,ads5,stf4"
+    ],
+    [
+     "Hinterer Griff",
+     "FSS SQ-XT2",
+     59,
+     "sway-10"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     53,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     56,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Mündung",
+     "HET-S6 Comp",
+     2,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     55,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "Matuzek Blackveil",
+     61,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     36,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     20,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Laser",
+     "SA Laz-500",
+     18,
+     "ads-4"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     34,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     47,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     51,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "SQ68 Large Brake",
+     14,
+     "hr-13,hk-13,ads24"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     17,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     66,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Mündung",
+     "ZLR Cold Echo",
+     32,
+     "ads7"
+    ]
+   ],
+   "cm": {
+    "code": "B03-3KB4J-BPH2Q-EW11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 15
+     },
+     {
+      "slot": "Mündung",
+      "name": "EXP Undertow Gen. 2",
+      "lvl": 22
+     },
+     {
+      "slot": "Magazin",
+      "name": "30 Round Mag",
+      "lvl": 8
+     },
+     {
+      "slot": "Munition",
+      "name": "6.8 Wrath High Velocity",
+      "lvl": 63
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/cronen-squall"
+   }
   },
   {
    "id": "finn-lmg",
@@ -1479,7 +4591,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 35
+     "lvl": 35,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads11"
     },
     {
      "slot": "Lauf",
@@ -1489,7 +4602,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Schlager KM60-G",
-     "lvl": 25
+     "lvl": 25,
+     "st": "hr-6,vr-6,hk-6,vk-6,ads4,stf4"
     },
     {
      "slot": "Munition",
@@ -1501,7 +4615,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "FTAC Dominion",
-     "lvl": 9
+     "lvl": 9,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads4"
     },
     {
      "slot": "Hinterer Griff",
@@ -1523,7 +4638,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "Hanbit TECH50 GEN.5",
-     "lvl": 5
+     "lvl": 5,
+     "st": "spr2,mov4,tac1,adm10,str5,sway18"
     },
     {
      "slot": "Magazin",
@@ -1533,19 +4649,151 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "SZ GEN.6 PEQ",
-     "lvl": 50
+     "lvl": 50,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Unterlauf",
      "name": "Bruen Renegade Grip",
-     "lvl": 51
+     "lvl": 51,
+     "st": "sway-50"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 51,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Bruen 22-LPW",
+     27,
+     "stf-17"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     12,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     11,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     24,
+     "hr-15,hk-20,ads4"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     58,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Schaft",
+     "EXP Bulldog-9",
+     55,
+     "sway-51,adm-1"
+    ],
+    [
+     "Hinterer Griff",
+     "FTAC R7 Wrap",
+     44,
+     "sway-30,adm-4,ads4"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     48,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     20,
+     "spr2,mov5,tac4,adm14,str5,ads-12,stf-11,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Laser",
+     "SA Laz-500",
+     34,
+     "ads-4"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     21,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Laser",
+     "STOVL IRX-6",
+     22,
+     "hr-7"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     31,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Lauf",
+     "TT Seongun 508mm",
+     14,
+     "hr-4,vr-4,vel18,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads10,stf7"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     40,
+     "ads6"
+    ],
+    [
+     "Hinterer Griff",
+     "XRK Singularity-13",
+     8,
+     "ads-6,stf-7,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Mündung",
+     "ZLR Reverb90",
+     19,
+     "vr-10,vk-10,ads4"
+    ]
+   ],
+   "cm": {
+    "code": "L03-3KAR8-MWQ56-JH11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "SZ Helios Holo",
+      "lvl": 43
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 35
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Schlager KM60-G",
+      "lvl": 25
+     },
+     {
+      "slot": "Munition",
+      "name": "5.56 NATO High Velocity",
+      "lvl": 42
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/finn-lmg"
+   }
   },
   {
    "id": "krait-p68",
@@ -1557,7 +4805,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "SFO Proto-33",
-     "lvl": 29
+     "lvl": 29,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads13"
     },
     {
      "slot": "Lauf",
@@ -1572,7 +4821,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Shonay R-Wrap",
-     "lvl": 35
+     "lvl": 35,
+     "st": "ads-5,hr3,vr3,hk3,vk3"
     }
    ],
    "alts": [
@@ -1586,14 +4836,109 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "GW 700-V",
-     "lvl": 20
+     "lvl": 20,
+     "st": "ads-4"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 38,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Corvus Aves-3",
+     22,
+     "ads-8,stf-17"
+    ],
+    [
+     "Mündung",
+     "Expedite Drill L4",
+     36,
+     "ads10"
+    ],
+    [
+     "Hinterer Griff",
+     "FTAC Gridlock 45",
+     15,
+     "sway-10"
+    ],
+    [
+     "Laser",
+     "GW MDL-2",
+     3,
+     "stf-17"
+    ],
+    [
+     "Mündung",
+     "I-Comp .45 Auto",
+     19,
+     "hr-15,hk-20,ads8"
+    ],
+    [
+     "Abzug",
+     "KP68 Curve-H",
+     9,
+     "ads-6,stf-5"
+    ],
+    [
+     "Mündung",
+     "KP68 Flash",
+     12,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Mündung",
+     "XRK Intra-K",
+     10,
+     "vr-10,vk-10,ads8"
+    ],
+    [
+     "Hinterer Griff",
+     "XRK Response Grip",
+     26,
+     "hr-6,vr-6,hk-6,vk-6,ads8,stf10"
+    ],
+    [
+     "Mündung",
+     "XRK Severance 68",
+     2,
+     "hr-8,vr-8,hk-8,vk-8,ads8"
+    ],
+    [
+     "Laser",
+     "XT-100",
+     25,
+     "sway-40,mov2,adm1,str2"
+    ]
+   ],
+   "cm": {
+    "code": "P03-3YHFT-QL11",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "SFO Proto-33",
+      "lvl": 29
+     },
+     {
+      "slot": "Magazin",
+      "name": "20 Round Mag",
+      "lvl": 30
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Shonay R-Wrap",
+      "lvl": 35
+     },
+     {
+      "slot": "Abzug",
+      "name": "P68 Tapper 9",
+      "lvl": 33
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/krait-p68"
+   }
   },
   {
    "id": "rezi-12",
@@ -1605,17 +4950,20 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Haebang Bulsae-10",
-     "lvl": 28
+     "lvl": 28,
+     "st": "ads5"
     },
     {
      "slot": "Lauf",
      "name": "Haebang 635R-7",
-     "lvl": 26
+     "lvl": 26,
+     "st": "hr-4,vr-4,vel20,mag1,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads5,stf12,rel27"
     },
     {
      "slot": "Schaft",
      "name": "No Stock",
-     "lvl": 18
+     "lvl": 18,
+     "st": "spr2,mov4,tac3,adm10,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
     },
     {
      "slot": "Laser",
@@ -1637,12 +4985,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Sakin Omega 13",
-     "lvl": 13
+     "lvl": 13,
+     "st": "ads8"
     },
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 5
+     "lvl": 5,
+     "st": "ads-8,stf-17"
     }
    ],
    "extras": [
@@ -1656,7 +5006,184 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 60,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Schaft",
+     "EXP FR67-U0",
+     2,
+     "sway-51,adm-2"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     41,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     7,
+     "hr-8,vr-8,hk-8,vk-8,ads10,stf12"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     44,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     46,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads15"
+    ],
+    [
+     "Mündung",
+     "GW Slashtop V1",
+     40,
+     "hr-15,hk-20,ads6"
+    ],
+    [
+     "Schaftkappe",
+     "LM Stock Sleeve",
+     30,
+     "sway-10,adm-1"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     57,
+     "mov4,str5,ads8"
+    ],
+    [
+     "Hinterer Griff",
+     "POM12-F Grip",
+     22,
+     "sway-10"
+    ],
+    [
+     "Laser",
+     "QFL-S4.5",
+     16,
+     "stf-17"
+    ],
+    [
+     "Handschutz",
+     "Rushline L-WATT20",
+     63,
+     "stf-8"
+    ],
+    [
+     "Hinterer Griff",
+     "SA B40 Grip",
+     11,
+     "hr-6,vr-6,hk-6,vk-6,ads5,stf6"
+    ],
+    [
+     "Mündung",
+     "SA One Tap",
+     36,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Schaftkappe",
+     "Sakin V14 Tactical",
+     9,
+     "hr-7,vr-7,hk-7,vk-7,ads7,stf6"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     55,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads15"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     17,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads15"
+    ],
+    [
+     "Mündung",
+     "TA Ribcage Gen.1",
+     4,
+     "hr-8,vr-8,hk-8,vk-8,ads6"
+    ],
+    [
+     "Schaft",
+     "TV XR-14 Kilo",
+     58,
+     "spr2,mov3,tac1,adm5,str4,sway8"
+    ],
+    [
+     "Hinterer Griff",
+     "XRK Bygone-39",
+     51,
+     "ads-10,stf-8,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     37,
+     "ads-4"
+    ],
+    [
+     "Mündung",
+     "XRK Spine Ripper",
+     56,
+     "vr-10,vk-10,ads6"
+    ],
+    [
+     "Handschutz",
+     "XRK Warlord 700",
+     63,
+     "hk-12,vk-12"
+    ],
+    [
+     "Visier",
+     "ZLR Swordfish",
+     3,
+     "hr-30,vr-30,hk-40,vk-40,adm-15,ads30"
+    ],
+    [
+     "Schaft",
+     "ZLR Tac12 Pro",
+     34,
+     "ads-8,hr5,vr5,hk5,vk5"
+    ]
+   ],
+   "cm": {
+    "code": "C03-2JD6Z-LDIT6-5L11",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "Haebang Bulsae-10",
+      "lvl": 28
+     },
+     {
+      "slot": "Lauf",
+      "name": "Haebang 635R-7",
+      "lvl": 26
+     },
+     {
+      "slot": "Schaft",
+      "name": "No Stock",
+      "lvl": 18
+     },
+     {
+      "slot": "Laser",
+      "name": "Pulse-MW Laser",
+      "lvl": 48
+     },
+     {
+      "slot": "Munition",
+      "name": "12 Gauge Slug",
+      "lvl": 10
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/rezi-12"
+   }
   },
   {
    "id": "signal-50",
@@ -1668,7 +5195,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "FSS HOC-30",
-     "lvl": 59
+     "lvl": 59,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads6"
     },
     {
      "slot": "Lauf",
@@ -1678,12 +5206,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "EXP TRIM-54F",
-     "lvl": 5
+     "lvl": 5,
+     "st": "ads-8,stf-8,hr6,vr6,hk6,vk6"
     },
     {
      "slot": "Schaft",
      "name": "Cronen SN-PAD50",
-     "lvl": 26
+     "lvl": 26,
+     "st": "ads-6,hr5,vr5,hk5,vk5"
     },
     {
      "slot": "Munition",
@@ -1702,14 +5232,313 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "XRK Clutch-LS",
-     "lvl": 40
+     "lvl": 40,
+     "st": "ads-4"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 73,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Visier",
+     "Bruen THRM-60 Optic",
+     37,
+     "adm18,ads-15,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     3,
+     "adm6,ads-9,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Corio D51 Scope",
+     25,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Corvus Avis-0",
+     62,
+     "ads-9,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Hinterer Griff",
+     "Corvus OP-One v.4",
+     22,
+     "hr-6,vr-6,hk-6,vk-6,ads2,stf3"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     18,
+     "adm9,ads-9,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Mündung",
+     "DS Op-67M Flash",
+     65,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Schaft",
+     "EXP T50-S Heavy",
+     9,
+     "sway-51,adm-4"
+    ],
+    [
+     "Visier",
+     "Expedite 308 DR2",
+     36,
+     "ads-1,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "FJX 708 PRO",
+     69,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     35,
+     "sway-40,mov2,adm3,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     72,
+     "mov3,str3,ads4"
+    ],
+    [
+     "Mündung",
+     "FSS DES-Tac70",
+     13,
+     "ads3"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     12,
+     "hr-8,vr-8,hk-8,vk-8,ads4,stf5"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     50,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     66,
+     "adm9,ads-9,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Hinterer Griff",
+     "GL Zero Drop 6",
+     63,
+     "sway-10"
+    ],
+    [
+     "Visier",
+     "GW Löwe-55",
+     15,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Hanbit 3080 Fireline",
+     16,
+     "ads-9"
+    ],
+    [
+     "Visier",
+     "IOTA-D",
+     43,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "KV Corsac Holo",
+     59,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Mündung",
+     "LM Deadstop-99",
+     48,
+     "hr-15,hk-20,ads2"
+    ],
+    [
+     "Schaft",
+     "Lockwood Mobile-1",
+     46,
+     "spr2,mov4,tac1,adm15,str4,sway18"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     68,
+     "adm6,ads-9,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Luca Stormwatch",
+     49,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     29,
+     "mov5,str5,ads3"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     54,
+     "ads-6,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     28,
+     "ads-6,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Bigsky",
+     11,
+     "hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     73,
+     "ads-6,hr40,vr40,sway19,hk50,vk50"
+    ],
+    [
+     "Visier",
+     "Schlager Indigo-RF",
+     71,
+     "ads-1,hr20,vr20,sway12,hk25,vk25"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     39,
+     "adm6,ads-9,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Laser",
+     "Schlager Visiv-5",
+     58,
+     "ads-7,stf-17"
+    ],
+    [
+     "Visier",
+     "Slimline Elite",
+     26,
+     "adm18,ads-15,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ Echelon Holo",
+     33,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ Helios Holo",
+     47,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     53,
+     "adm9,ads-9,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Holo",
+     21,
+     "adm18,ads-15,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ Micro D-3",
+     31,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ],
+    [
+     "Visier",
+     "SZ Prima-4 Dot",
+     64,
+     "adm18,ads-15,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Visier",
+     "SZ SRE-7",
+     56,
+     "adm18,ads-15,hr100,vr100,sway25,hk150,vk150"
+    ],
+    [
+     "Mündung",
+     "TA Honeypot 670",
+     2,
+     "vr-10,vk-10,ads2"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     41,
+     "ads-6,hr80,vr80,sway25,hk75,vk75"
+    ],
+    [
+     "Visier",
+     "VLK Trimmer",
+     45,
+     "adm18,ads-15,sway25"
+    ],
+    [
+     "Visier",
+     "ZLR Type C",
+     55,
+     "adm18,ads-15,hk-150,vk-150,sway25"
+    ]
+   ],
+   "cm": {
+    "code": "R02-43QCD-A5U4U-5911",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "FSS HOC-30",
+      "lvl": 60
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "EXP Trim-54F",
+      "lvl": 5
+     },
+     {
+      "slot": "Schaft",
+      "name": "Cronen SN-Pad50",
+      "lvl": 27
+     },
+     {
+      "slot": "Munition",
+      "name": ".50 Cal High Velocity",
+      "lvl": 70
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/signal-50"
+   }
   },
   {
    "id": "warlord",
@@ -1721,17 +5550,20 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "WX-600 Choke",
-     "lvl": 44
+     "lvl": 44,
+     "st": "ads4"
     },
     {
      "slot": "Lauf",
      "name": "NK Gangta-12G",
-     "lvl": 40
+     "lvl": 40,
+     "st": "hr-4,vr-4,vel20,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-2,ads4,stf7"
     },
     {
      "slot": "Unterlauf",
      "name": "MIRE-50 Tac Grip",
-     "lvl": 55
+     "lvl": 55,
+     "st": "mov4,str5,ads6"
     },
     {
      "slot": "Laser",
@@ -1748,19 +5580,22 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Mugi Kalnal-H 12G",
-     "lvl": 34
+     "lvl": 34,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads11"
     },
     {
      "slot": "Lauf",
      "name": "Mugi Chujeok-800",
-     "lvl": 6
+     "lvl": 6,
+     "st": "spr3,mov3,tac2,adm5,str4,ads-7,stf-5,hr9,vr9,hk9,vk9"
     }
    ],
    "extras": [
     {
      "slot": "Schaft",
      "name": "Mugi D40 Stock",
-     "lvl": 5
+     "lvl": 5,
+     "st": "spr1,mov4,tac1,adm9,str4,sway18"
     },
     {
      "slot": "Hinterer Griff",
@@ -1772,7 +5607,142 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 59,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     28,
+     "hr-8,vr-8,hk-8,vk-8,ads7,stf7"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     7,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     19,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Mündung",
+     "GW Slashtop-LB V6",
+     26,
+     "hr-15,hk-20,ads4"
+    ],
+    [
+     "Mündung",
+     "Mugi Kalnal-T 12G",
+     46,
+     "ads6"
+    ],
+    [
+     "Schaft",
+     "Mugi Tac-717 Stock",
+     31,
+     "ads-7,hr5,vr5,hk5,vk5"
+    ],
+    [
+     "Schaft",
+     "MX Mae-IV Stock",
+     50,
+     "hr-7,vr-7,hk-7,vk-7,ads7"
+    ],
+    [
+     "Lauf",
+     "NK Retribution-X Barrel",
+     22,
+     "hr-14,vr-14,vel8,hk-14,vk-14,spr-2,mov-3,tac-2,adm-3,str-3,ads6"
+    ],
+    [
+     "Laser",
+     "SA Laz-500",
+     14,
+     "ads-4"
+    ],
+    [
+     "Mündung",
+     "SA One Tap v.3",
+     2,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Hinterer Griff",
+     "Simpan-7 grip",
+     38,
+     "sway-10"
+    ],
+    [
+     "Laser",
+     "SZ Gen.6 PEQ",
+     37,
+     "ads-8,stf-17"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     43,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Mündung",
+     "TA Ribcage-L Gen.4",
+     11,
+     "hr-8,vr-8,hk-8,vk-8,ads4"
+    ],
+    [
+     "Mündung",
+     "XRK Spine Ripper XL",
+     20,
+     "vr-10,vk-10,ads4"
+    ],
+    [
+     "Visier",
+     "ZLR Swordfish",
+     16,
+     "hr-30,vr-30,hk-40,vk-40,adm-15,ads24"
+    ]
+   ],
+   "cm": {
+    "code": "C04-21WSP-A93CU-VW71",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "WX-600 Choke",
+      "lvl": 44
+     },
+     {
+      "slot": "Lauf",
+      "name": "NK Gangta-12G",
+      "lvl": 40
+     },
+     {
+      "slot": "Unterlauf",
+      "name": "Mire-50 Tac Grip",
+      "lvl": 55
+     },
+     {
+      "slot": "Laser",
+      "name": "Bruen 22-LPW",
+      "lvl": 23
+     },
+     {
+      "slot": "Munition",
+      "name": "12 Gauge Slug",
+      "lvl": 10
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/warlord"
+   }
   },
   {
    "id": "hyeon-burst",
@@ -1784,12 +5754,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 12
+     "lvl": 12,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
     },
     {
      "slot": "Mündung",
      "name": "FSS IS300",
-     "lvl": 67
+     "lvl": 67,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads12"
     },
     {
      "slot": "Lauf",
@@ -1799,7 +5771,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "HYN-Meipeul",
-     "lvl": 8
+     "lvl": 8,
+     "st": "sway-10"
     },
     {
      "slot": "Munition",
@@ -1816,36 +5789,229 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "ZLR REVERB90",
-     "lvl": 19
+     "lvl": 19,
+     "st": "vr-10,vk-10,ads5"
     }
    ],
    "extras": [
     {
      "slot": "Unterlauf",
      "name": "FSS TAC90 Grip",
-     "lvl": 41
+     "lvl": 41,
+     "st": "sway-30"
     },
     {
      "slot": "Laser",
      "name": "SZ GEN.6 PEQ",
-     "lvl": 4
+     "lvl": 4,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Schaft",
      "name": "Hvy-80 Stockpad",
-     "lvl": 5
+     "lvl": 5,
+     "st": "sway-51,adm-1"
     },
     {
      "slot": "Laser",
      "name": "SA LAZ-500",
-     "lvl": 51
+     "lvl": 51,
+     "st": "ads-4"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 68,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Bruen 22-LPW",
+     16,
+     "stf-17"
+    ],
+    [
+     "Laser",
+     "Corio 4DV-3",
+     42,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     45,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Mündung",
+     "Corvus LVL-40",
+     55,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     7,
+     "hr-8,vr-8,hk-8,vk-8,ads8,stf7"
+    ],
+    [
+     "Mündung",
+     "FTAC Dominion",
+     2,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     63,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Schaft",
+     "Hyeon Stockpad Tac",
+     57,
+     "ads-8,hr4,vr4,hk4,vk4"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     11,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     49,
+     "mov4,str5,hk-12,vk-12,ads7"
+    ],
+    [
+     "Schaft",
+     "Mugi BAL-202 Stock",
+     18,
+     "spr2,mov4,tac1,adm10,str4,sway18"
+    ],
+    [
+     "Lauf",
+     "Mugi Hwando-Z3 521mm",
+     3,
+     "spr3,mov3,tac2,adm6,str4,ads-6,stf-3,hr7,vr7,hk7,vk7"
+    ],
+    [
+     "Lauf",
+     "Mugi Ingoem 559mm",
+     46,
+     "hr-12,vr-12,vel8,hk-12,vk-12,spr-2,mov-3,tac-2,adm-4,str-3,ads12"
+    ],
+    [
+     "Lauf",
+     "Mugi Nullifier 482mm",
+     14,
+     "sway-10,spr1,mov6,tac1,adm3,str7,ads-9,stf-6,hr10,vr10,vel-12,hk10,vk10"
+    ],
+    [
+     "Lauf",
+     "Mugi Seungri-0P 609mm",
+     36,
+     "hr-4,vr-4,vel15,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads10,stf7"
+    ],
+    [
+     "Hinterer Griff",
+     "Mugi UN-R5 Grip",
+     43,
+     "ads-5,hr3,vr3,hk3,vk3"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     34,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     15,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     50,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads20"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     56,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads13"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     33,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+    ],
+    [
+     "Mündung",
+     "TZL-110 V1",
+     47,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     23,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads20"
+    ],
+    [
+     "Hinterer Griff",
+     "X-Vector 799 Grip",
+     27,
+     "ads-9,stf-8,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Mündung",
+     "XRK Mil-Tac Suppressor",
+     64,
+     "ads7"
+    ]
+   ],
+   "cm": {
+    "code": "A09-3KB4J-C2AT3-3P11",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "Cronen R808",
+      "lvl": 12
+     },
+     {
+      "slot": "Mündung",
+      "name": "FSS IS300",
+      "lvl": 67
+     },
+     {
+      "slot": "Lauf",
+      "name": "Mugi Seungri-0P 609mm",
+      "lvl": 36
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "HYN-Meipeul",
+      "lvl": 8
+     },
+     {
+      "slot": "Munition",
+      "name": "6.8x43mm High Velocity",
+      "lvl": 52
+     },
+     {
+      "slot": "ApexApex",
+      "name": "Hyeon Hyperburst",
+      "lvl": 68
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/hyeon-burst"
+   }
   },
   {
    "id": "csg-35",
@@ -1857,12 +6023,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "EXP Forage-Hvy",
-     "lvl": 35
+     "lvl": 35,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads20"
     },
     {
      "slot": "Unterlauf",
      "name": "CQC Stop",
-     "lvl": 28
+     "lvl": 28,
+     "st": "hr-9,vr-9,hk-9,vk-9,ads13,stf15"
     },
     {
      "slot": "Magazin",
@@ -1872,12 +6040,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "XRK Slight Stock",
-     "lvl": 26
+     "lvl": 26,
+     "st": "mov2,adm4,str2,ads-5,hr4,vr4,hk4,vk4"
     },
     {
      "slot": "Laser",
      "name": "SA Laz-500",
-     "lvl": 40
+     "lvl": 40,
+     "st": "ads-4"
     }
    ],
    "alts": [],
@@ -1890,14 +6060,132 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Matuzek Fire-Pro",
-     "lvl": 39
+     "lvl": 39,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads8,stf8"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 42,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Corio 4DV-3",
+     23,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Mündung",
+     "EXP Forage-Tac",
+     41,
+     "ads11"
+    ],
+    [
+     "Unterlauf",
+     "IV-M Hand Stop",
+     15,
+     "mov4,str5,ads11"
+    ],
+    [
+     "Mündung",
+     "NIL-RISE 90 Comp",
+     16,
+     "vr-10,vk-10,ads8"
+    ],
+    [
+     "Mündung",
+     "OCR-9F",
+     22,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Schaft",
+     "RASH-90 Heavy Stock",
+     14,
+     "sway-51,adm-1"
+    ],
+    [
+     "Mündung",
+     "RTR-8 Pro",
+     24,
+     "hr-8,vr-8,hk-8,vk-8,ads8"
+    ],
+    [
+     "Hinterer Griff",
+     "Sakin Contour-7",
+     20,
+     "sway-6,adm2"
+    ],
+    [
+     "Laser",
+     "SZ Gen.6 PEQ",
+     7,
+     "ads-8,stf-17"
+    ],
+    [
+     "Handschutz",
+     "TA Operator-6",
+     31,
+     "hr-14,vr-14,hk-14,vk-14,spr-2,mov-3,tac-2,adm-4,str-3,ads16"
+    ],
+    [
+     "Handschutz",
+     "TA Ration-424",
+     19,
+     "spr3,mov3,tac2,adm5,str3,ads-5,stf-3,hr9,vr9,hk9,vk9"
+    ],
+    [
+     "Schaft",
+     "XRK Fury-8",
+     34,
+     "hr-7,vr-7,hk-7,vk-7,ads13"
+    ],
+    [
+     "Hinterer Griff",
+     "XRK TAC Grip",
+     30,
+     "ads-7,hr3,vr3,hk3,vk3"
+    ],
+    [
+     "Mündung",
+     "ZLR TKO-35",
+     38,
+     "hr-15,hk-20,ads8"
+    ]
+   ],
+   "cm": {
+    "code": "S01-32TJW-V12UW-B511",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "RTR-8 Pro",
+      "lvl": 24
+     },
+     {
+      "slot": "Magazin",
+      "name": "40 Round Mag",
+      "lvl": 17
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Matuzek Fire-Pro",
+      "lvl": 39
+     },
+     {
+      "slot": "Schaft",
+      "name": "XRK Slight Stock",
+      "lvl": 26
+     },
+     {
+      "slot": "Munition",
+      "name": "9mm Parabellum High Velocity",
+      "lvl": 11
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/csg-35"
+   }
   },
   {
    "id": "type-73",
@@ -1914,12 +6202,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Gauge-12 Mono",
-     "lvl": 43
+     "lvl": 43,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads12"
     },
     {
      "slot": "Lauf",
      "name": "Haebang ET-9D 772.16MM",
-     "lvl": 37
+     "lvl": 37,
+     "st": "hr-4,vr-4,vel18,hk-4,vk-4,sway8,spr-1,mov-3,tac-1,adm-3,str-3,ads15,stf7"
     },
     {
      "slot": "Hinterer Griff",
@@ -1929,7 +6219,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Schaft",
      "name": "FTAC RZR0 Stock",
-     "lvl": 22
+     "lvl": 22,
+     "st": "ads-8,hr5,vr5,hk5,vk5"
     }
    ],
    "alts": [
@@ -1946,7 +6237,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "EXP ZBR-904",
-     "lvl": 9
+     "lvl": 9,
+     "st": "ads-5,hr3,vr3,hk3,vk3"
     },
     {
      "slot": "Visier",
@@ -1963,19 +6255,180 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "QFL-S4.5",
-     "lvl": 6
+     "lvl": 6,
+     "st": "stf-17"
     },
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 27
+     "lvl": 27,
+     "st": "ads-8,stf-17"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 64,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Hinterer Griff",
+     "Assault-L9 Wood Grip",
+     51,
+     "sway-10"
+    ],
+    [
+     "Unterlauf",
+     "Bruen Renegade Grip",
+     50,
+     "sway-50"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     32,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Visier",
+     "Cronen R808",
+     55,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Mündung",
+     "DS RKT-90",
+     31,
+     "ads6"
+    ],
+    [
+     "Mündung",
+     "EXP R3000-V",
+     53,
+     "vr-10,vk-10,ads5"
+    ],
+    [
+     "Mündung",
+     "Field Tac 1.4 Comp",
+     39,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     35,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Mündung",
+     "FT Hyperport 408",
+     58,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     28,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     17,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads12"
+    ],
+    [
+     "Schaft",
+     "No Stock",
+     2,
+     "spr2,mov3,tac3,adm8,str3,ads-12,stf-8,hr30,vr30,sway10,hk30,vk30"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     48,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     34,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     21,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     42,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Schaft",
+     "ST v.1 Woodgrain",
+     57,
+     "sway-51,adm-1"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     14,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Mündung",
+     "Usenko 308-1L",
+     3,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     52,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads18"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     61,
+     "ads-4"
+    ]
+   ],
+   "cm": {
+    "code": "L04-VJU46-5X391-1",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "SZ Helios Holo",
+      "lvl": 45
+     },
+     {
+      "slot": "Mündung",
+      "name": "Gauge-12 Mono",
+      "lvl": 43
+     },
+     {
+      "slot": "Lauf",
+      "name": "Haebang ET-9D 772mm",
+      "lvl": 37
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Assault-L5 Grip",
+      "lvl": 44
+     },
+     {
+      "slot": "Schaft",
+      "name": "FTAC RZR0 Stock",
+      "lvl": 22
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/type-73"
+   }
   },
   {
    "id": "oris-86",
@@ -2019,12 +6472,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "Bruen R7-TC Grip",
-     "lvl": 30
+     "lvl": 30,
+     "st": "sway-10"
     },
     {
      "slot": "Visier",
      "name": "Cronen R808",
-     "lvl": 12
+     "lvl": 12,
+     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
     },
     {
      "slot": "Magazin",
@@ -2036,22 +6491,26 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "Schlager VISIV-5",
-     "lvl": 8
+     "lvl": 8,
+     "st": "ads-8,stf-17"
     },
     {
      "slot": "Mündung",
      "name": "EXP Undertow GEN. 2",
-     "lvl": 56
+     "lvl": 56,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads12"
     },
     {
      "slot": "Schaft",
      "name": "No Stock",
-     "lvl": 3
+     "lvl": 3,
+     "st": "spr2,mov4,tac4,adm13,str5,ads-17,stf-7,hr30,vr30,sway10,hk30,vk30"
     },
     {
      "slot": "Mündung",
      "name": "Matuzek Blackveil",
-     "lvl": 14
+     "lvl": 14,
+     "st": "hr-3,vr-3,hk-3,vk-3"
     },
     {
      "slot": "Schaft",
@@ -2063,7 +6522,209 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 70,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Mündung",
+     "Bruen R12 Gen. 4",
+     35,
+     "hr-15,hk-20,ads5"
+    ],
+    [
+     "Visier",
+     "Corio Bisect",
+     64,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Visier",
+     "Corio D51 Scope",
+     63,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads28"
+    ],
+    [
+     "Visier",
+     "Corvus Avis-0",
+     58,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads12"
+    ],
+    [
+     "Visier",
+     "Expedite 308 DR2",
+     54,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads28"
+    ],
+    [
+     "Laser",
+     "FJX EVR7",
+     13,
+     "sway-40,mov2,adm2,str2"
+    ],
+    [
+     "Unterlauf",
+     "FSS Beargrip",
+     29,
+     "mov2,str3,ads8"
+    ],
+    [
+     "Unterlauf",
+     "FSS Fireline Grip",
+     25,
+     "hr-8,vr-8,hk-8,vk-8,ads8,stf6"
+    ],
+    [
+     "Unterlauf",
+     "FSS Tac90 Grip",
+     41,
+     "sway-30"
+    ],
+    [
+     "Visier",
+     "GL K230",
+     28,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Visier",
+     "GW Löwe-55",
+     69,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads28"
+    ],
+    [
+     "Mündung",
+     "HET-S6 Comp",
+     19,
+     "hr-8,vr-8,hk-8,vk-8,ads5"
+    ],
+    [
+     "Visier",
+     "Locus PX3 Canted",
+     17,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads12"
+    ],
+    [
+     "Visier",
+     "Luca Stormwatch",
+     59,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads28"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     4,
+     "mov4,str5,ads7"
+    ],
+    [
+     "Mündung",
+     "Octa-63 Comp",
+     32,
+     "vr-10,vk-10,ads5"
+    ],
+    [
+     "Hinterer Griff",
+     "OPS-45 XP Grip",
+     7,
+     "ads-9,stf-8,hr6,vr6,hk6,vk6"
+    ],
+    [
+     "Visier",
+     "RVX9 Thermo",
+     34,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Schaft",
+     "SA Dynamo-90 Stock",
+     66,
+     "sway-51,adm-3"
+    ],
+    [
+     "Visier",
+     "Schlager 7x",
+     65,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Visier",
+     "Schlager Dogfight GI",
+     50,
+     "hr-30,vr-30,sway-5,hk-40,vk-40,adm-15,ads18"
+    ],
+    [
+     "Visier",
+     "Schlager Indigo-RF",
+     67,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads28"
+    ],
+    [
+     "Visier",
+     "Schlager Night View Pro",
+     47,
+     "hr-10,vr-10,hk-30,vk-30,adm-10,ads12"
+    ],
+    [
+     "Visier",
+     "SZ CNT-R6 Optic",
+     27,
+     "hr-40,vr-40,sway-10,hk-50,vk-50,adm-15,ads28"
+    ],
+    [
+     "Visier",
+     "SZ Lonewolf Flip",
+     36,
+     "hr-10,vr-10,hk-30,vk-30,adm-7,ads12"
+    ],
+    [
+     "Schaft",
+     "Vectorlite-80S",
+     42,
+     "spr2,mov4,tac1,adm11,str4,sway18"
+    ],
+    [
+     "Visier",
+     "VLK Rize-40",
+     53,
+     "hr-10,vr-10,hk-30,vk-30,adm-15,ads18"
+    ],
+    [
+     "Laser",
+     "XRK Clutch-LS",
+     57,
+     "ads-4"
+    ],
+    [
+     "Mündung",
+     "ZLR Cold Echo",
+     44,
+     "ads6"
+    ]
+   ],
+   "cm": {
+    "code": "M01-Y1K6I-VQN55-1",
+    "parts": [
+     {
+      "slot": "Visier",
+      "name": "SZ Helios Holo",
+      "lvl": 46
+     },
+     {
+      "slot": "Magazin",
+      "name": "20 Round Mag",
+      "lvl": 61
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "Bruen C-Wrap 60",
+      "lvl": 49
+     },
+     {
+      "slot": "Verschluss",
+      "name": "Lightfire-5 Quick Bolt",
+      "lvl": 45
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/oris-86"
+   }
   },
   {
    "id": "mar-9",
@@ -2117,34 +6778,40 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "SFO Proto-33",
-     "lvl": 36
+     "lvl": 36,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads20"
     },
     {
      "slot": "Lauf",
      "name": "TT CP-9mm Barrel",
-     "lvl": 6
+     "lvl": 6,
+     "st": "hr-4,vr-4,vel20,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads10,stf19"
     },
     {
      "slot": "Magazin",
      "name": "17 Round Mag",
-     "lvl": 5
+     "lvl": 5,
+     "st": "mag1,spr-1,mov-1,tac-1,adm-1,str-1,ads3,rel7"
     },
     {
      "slot": "Hinterer Griff",
      "name": "XRK M-Line Grip",
-     "lvl": 11
+     "lvl": 11,
+     "st": "ads-5,hr3,vr3,hk3,vk3"
     },
     {
      "slot": "Munition",
      "name": "9mm Parabellum High Velocity",
-     "lvl": 32
+     "lvl": 32,
+     "st": "vel20"
     }
    ],
    "alts": [
     {
      "slot": "Mündung",
      "name": "Expedite Drill L4",
-     "lvl": 23
+     "lvl": 23,
+     "st": "ads11"
     }
    ],
    "extras": [
@@ -2158,7 +6825,130 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 38,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Magazin",
+     "24 Round Mag",
+     25,
+     "mag2,spr-2,mov-1,tac-2,adm-2,str-1,ads7,rel13"
+    ],
+    [
+     "Hinterer Griff",
+     "Akimbo",
+     20,
+     "stf38,rel13"
+    ],
+    [
+     "Mündung",
+     "BAL-XC Gen. 0",
+     16,
+     "hr-8,vr-8,hk-8,vk-8,ads8"
+    ],
+    [
+     "Mündung",
+     "Chevron 90 Comp",
+     10,
+     "hr-15,hk-20,ads8"
+    ],
+    [
+     "Laser",
+     "DCR-78 Laser",
+     4,
+     "ads-7,stf-17"
+    ],
+    [
+     "Laser",
+     "DCR-80 Laser",
+     13,
+     "ads-4"
+    ],
+    [
+     "Laser",
+     "Hanbit 2BA-00",
+     17,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Lauf",
+     "Hanbit SK Elite 9",
+     28,
+     "spr2,mov3,tac2,adm5,str3,ads-5,stf-3,hr7,vr7,hk7,vk7"
+    ],
+    [
+     "Mündung",
+     "NIL-P 40 Comp",
+     31,
+     "vr-10,vk-10,ads8"
+    ],
+    [
+     "Mündung",
+     "P45 Flash-M",
+     14,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Hinterer Griff",
+     "Sakin B7 Assault",
+     21,
+     "hr-6,vr-6,hk-6,vk-6,ads10,stf10"
+    ],
+    [
+     "Abzug",
+     "SANG Highmatch",
+     9,
+     "ads-4,stf-5"
+    ],
+    [
+     "Hinterer Griff",
+     "SANG Wood Grip",
+     3,
+     "sway-10"
+    ],
+    [
+     "Laser",
+     "SZ DP5 Laser",
+     35,
+     "stf-17"
+    ],
+    [
+     "Lauf",
+     "XRK Vantage Barrel",
+     15,
+     "hr-14,vr-14,vel8,hk-14,vk-14,spr-2,mov-2,tac-2,adm-3,str-3,ads11"
+    ]
+   ],
+   "cm": {
+    "code": "P04-3K9Y5-JZM9L-T311",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "SFO Proto-33",
+      "lvl": 36
+     },
+     {
+      "slot": "Lauf",
+      "name": "TT CP-9mm Barrel",
+      "lvl": 6
+     },
+     {
+      "slot": "Magazin",
+      "name": "17 Round Mag",
+      "lvl": 5
+     },
+     {
+      "slot": "Hinterer Griff",
+      "name": "XRK M-Line Grip",
+      "lvl": 11
+     },
+     {
+      "slot": "Munition",
+      "name": "9mm Parabellum High Velocity",
+      "lvl": 32
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/sang-9mm"
+   }
   },
   {
    "id": "50-gs",
@@ -2170,12 +6960,14 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "FTAC Hvy-S50",
-     "lvl": 33
+     "lvl": 33,
+     "st": "hr-6,vr-6,vel16,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads15"
     },
     {
      "slot": "Lauf",
      "name": "Matuzek Monarch",
-     "lvl": 29
+     "lvl": 29,
+     "st": "hr-10,vr-10,vel15,hk-10,vk-10,sway8,spr-2,mov-4,tac-2,adm-4,str-4,ads13,stf11"
     },
     {
      "slot": "Magazin",
@@ -2199,7 +6991,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "TT Bulkkot Grip",
-     "lvl": 39
+     "lvl": 39,
+     "st": "ads-3,hr3,vr3,hk3,vk3"
     },
     {
      "slot": "Visier",
@@ -2209,14 +7002,132 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "GW 700-V",
-     "lvl": 36
+     "lvl": 36,
+     "st": "ads-5"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 50,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Hinterer Griff",
+     "Bruen Operator .50 Grip",
+     4,
+     "hr-6,vr-6,hk-6,vk-6,ads8,stf10"
+    ],
+    [
+     "Mündung",
+     "Bruen Retort .50",
+     17,
+     "ads8"
+    ],
+    [
+     "Laser",
+     "Corvus Aves-3",
+     22,
+     "ads-8,stf-17"
+    ],
+    [
+     "Lauf",
+     "FT Reckoner",
+     43,
+     "hr-4,vr-4,vel20,hk-4,vk-4,sway8,spr-1,mov-2,tac-1,adm-2,str-3,ads15,stf17"
+    ],
+    [
+     "Laser",
+     "GW MDL-2",
+     9,
+     "stf-17"
+    ],
+    [
+     "Unterlauf",
+     "Mire-50 Tac Grip",
+     16,
+     "mov4,str5,ads9"
+    ],
+    [
+     "Mündung",
+     "Mugi G30-Tac",
+     13,
+     "hr-25,hk-30,ads6"
+    ],
+    [
+     "Mündung",
+     "PCR90 Flash Hider",
+     45,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Abzug",
+     "Schlager GS Match",
+     6,
+     "ads-5,stf-5"
+    ],
+    [
+     "Lauf",
+     "TA Warlord",
+     8,
+     "sway-10,spr1,mov5,tac1,adm2,str6,ads-9,stf-10,hr10,vr10,vel-13,hk10,vk10"
+    ],
+    [
+     "Mündung",
+     "XRK Portmaster v2",
+     23,
+     "hr-8,vr-8,hk-8,vk-8,ads6"
+    ],
+    [
+     "Laser",
+     "XT-100",
+     12,
+     "sway-40,mov2,adm1,str2"
+    ],
+    [
+     "Mündung",
+     "ZLR Igni P5",
+     27,
+     "vr-13,vk-13,ads6"
+    ],
+    [
+     "Hinterer Griff",
+     "ZLR Tact-99 Grip",
+     25,
+     "sway-10"
+    ]
+   ],
+   "cm": {
+    "code": "P02-3K9Y5-JTNTJ-HQ11",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "FTAC HVY-S50",
+      "lvl": 33
+     },
+     {
+      "slot": "Lauf",
+      "name": "Matuzek Monarch",
+      "lvl": 29
+     },
+     {
+      "slot": "Magazin",
+      "name": "14 Round Mag",
+      "lvl": 9
+     },
+     {
+      "slot": "Munition",
+      "name": ".50 Pistol High Velocity",
+      "lvl": 47
+     },
+     {
+      "slot": "Abzug",
+      "name": "Corio Lightning N6",
+      "lvl": 41
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/50-gs"
+   }
   },
   {
    "id": "mojave-357",
@@ -2228,7 +7139,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Mündung",
      "name": "Matuzek H357-M Comp",
-     "lvl": 2
+     "lvl": 2,
+     "st": "vr-13,ads6"
     },
     {
      "slot": "Lauf",
@@ -2243,7 +7155,8 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Laser",
      "name": "GW MDL-2",
-     "lvl": 5
+     "lvl": 5,
+     "st": "stf-17"
     },
     {
      "slot": "Munition",
@@ -2262,14 +7175,97 @@ footer{background:var(--alt);padding:40px 0 calc(40px + env(safe-area-inset-bott
     {
      "slot": "Hinterer Griff",
      "name": "CP37 Grip",
-     "lvl": 35
+     "lvl": 35,
+     "st": "ads-5,hr3,vr3,hk3,vk3"
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
    "maxLvl": 44,
-   "maxSure": false
+   "maxSure": false,
+   "cat": [
+    [
+     "Laser",
+     "Corvus Aves-3",
+     41,
+     "ads-7,stf-17"
+    ],
+    [
+     "Laser",
+     "GW 700-V",
+     24,
+     "ads-4"
+    ],
+    [
+     "Abzug",
+     "M357 Heavy",
+     8,
+     "ads-4,stf-5"
+    ],
+    [
+     "Mündung",
+     "Mojave Flash",
+     17,
+     "hr-3,vr-3,hk-3,vk-3"
+    ],
+    [
+     "Trommel",
+     "Mojave Speed Cylinder",
+     9,
+     "hr4,vr4,hk4,vk4"
+    ],
+    [
+     "Hinterer Griff",
+     "SA Tyrant Grip",
+     3,
+     "sway-10"
+    ],
+    [
+     "Mündung",
+     "TA Dom-35",
+     25,
+     "hr-8,vr-8,hk-8,vk-8,ads6"
+    ],
+    [
+     "Mündung",
+     "XRK .357 Comp",
+     11,
+     "hr-25,hk-30,ads6"
+    ],
+    [
+     "Laser",
+     "XT-100",
+     14,
+     "sway-40,mov2,adm1,str2"
+    ]
+   ],
+   "cm": {
+    "code": "P07-43QCL-4VT7C-XN11",
+    "parts": [
+     {
+      "slot": "Mündung",
+      "name": "Matuzek H357-M Comp",
+      "lvl": 2
+     },
+     {
+      "slot": "Laser",
+      "name": "GW MDL-2",
+      "lvl": 5
+     },
+     {
+      "slot": "Munition",
+      "name": ".357 Magnum Snake Shot",
+      "lvl": 42
+     },
+     {
+      "slot": "Trommel",
+      "name": "Mojave Speed Cylinder",
+      "lvl": 9
+     }
+    ],
+    "url": "https://codmunity.gg/weapon/mw4/mojave-357"
+   }
   }
  ]
 }
@@ -2460,64 +7456,80 @@ loadData().then(function(DATA){
     {id:'range',   name:'Weite Distanz',   desc:'Mehr Reichweite und schnellere Kugeln für weite Schüsse.'},
     {id:'control', name:'Wenig Rückstoß',  desc:'Ruhigere Waffe beim Dauerfeuer. Leichter zu treffen.'}
   ];
-  const SLOT_W = {
-    move:    {'Laser':3,'Schaft':2,'Hinterer Griff':2,'Lauf':1,'Munition':1,'Mündung':-1,'Unterlauf':-1},
-    range:   {'Mündung':3,'Lauf':3,'Munition':2,'Unterlauf':1,'Visier':1,'Laser':-1},
-    control: {'Mündung':3,'Unterlauf':3,'Hinterer Griff':2,'Schaft':1,'Lauf':1,'Laser':-1},
-    ammo:    {'Magazin':6}
-  };
   let style = STYLES.some(s=>s.id===store.get('rm-style','meta')) ? store.get('rm-style','meta') : 'meta';
-  function size(p){
-    let m;
-    if(p.slot==='Magazin'){ m = p.name.match(/(\d+)\s*Round/i); return m ? +m[1] : null; }
-    if(p.slot==='Lauf'){
-      m = p.name.match(/(\d+(?:\.\d+)?)\s*"/); if(m) return +m[1];
-      m = p.name.match(/(\d+(?:\.\d+)?)\s*mm/i); if(m) return +m[1]/25.4;
-    }
-    return null;
+  // Echte Aufsatz-Werte (Quelle: codmunity.gg), z. B. "ads13,hr-10,spr-2".
+  // ads/stf = Zeit (minus = schneller), Bewegung/Kugeln = Tempo (plus = schneller), Rückstoß minus = ruhiger.
+  function stats(p){
+    const o = {}; String(p.st||'').split(',').forEach(x=>{ const m = x.match(/^([a-z]+)(-?\d+(?:\.\d+)?)$/); if(m) o[m[1]] = +m[2]; });
+    return o;
   }
-  function score(p, st, pool){
-    let s = p.kind==='meta' ? 3 : p.kind==='swap' ? 2 : 1;           // Meta bleibt bevorzugt
-    if(p.tags && p.tags.includes(st)) s += 5;                         // aus Quellen markiert
-    s += (SLOT_W[st]||{})[p.slot] || 0;
-    const n = p.name.toLowerCase(), v = size(p);
-    if(v!=null){
-      const vs = pool.filter(q=>q.slot===p.slot).map(size).filter(x=>x!=null);
-      const mx = Math.max(...vs), mn = Math.min(...vs), rel = mx>mn ? (v-mn)/(mx-mn) : 0;
-      if(p.slot==='Magazin'){ if(st==='ammo') s += 6*rel; if(st==='move') s -= rel; }
-      if(p.slot==='Lauf'){ if(st==='range') s += 3*rel; if(st==='move') s += 3*(1-rel); }
+  const g = (o,k) => o[k] || 0;
+  function value(p, st){
+    const o = stats(p);
+    if(!p.st){ // keine Zahlen: nur ganz grobe, sichere Annahmen
+      if(st==='range' && p.slot==='Munition' && /high velocity/i.test(p.name)) return 15;
+      return 0;
     }
-    if(p.slot==='Schaft' && /no stock|wire|slight|retract|light|skel/.test(n)) s += st==='move' ? 3 : st==='control' ? -2 : 0;
-    if(p.slot==='Munition'){
-      if(/high velocity/.test(n) && st==='range') s += 2;
-      if(/frangible|snake/.test(n)) s += st==='move' ? 1 : st==='range' ? -1 : 0;
-    }
-    if(p.slot==='Mündung' && /comp|brake|port/.test(n) && st==='control') s += 2;
-    return s;
+    const recoil = -(g(o,'hr')+g(o,'vr'))/2 - (g(o,'hk')+g(o,'vk'))/4;
+    if(st==='move')    return (g(o,'spr')+g(o,'tac')+g(o,'mov')+g(o,'str'))/4*2 + g(o,'adm')*0.3 - g(o,'ads')*0.4 - g(o,'stf')*0.4;
+    if(st==='control') return recoil;
+    if(st==='range')   return g(o,'vel') + g(o,'rng') + g(o,'hit') + recoil*0.3;
+    return 0;
+  }
+  function rounds(p){ const o = stats(p); const m = p.name.match(/(\d+)\s*Round/i); return m ? +m[1] : (o.mag ? 100+o.mag : null); }
+  function fx(p){
+    if(!p.st) return '';
+    const o = stats(p), out = [];
+    const mv = (g(o,'spr')+g(o,'tac')+g(o,'mov')+g(o,'str'))/4, rc = (g(o,'hr')+g(o,'vr'))/2;
+    if(Math.abs(g(o,'ads'))>=3) out.push([Math.abs(o.ads), 'Zielen '+Math.abs(o.ads)+' % '+(o.ads<0?'schneller':'langsamer')]);
+    if(Math.abs(mv)>=1) out.push([Math.abs(mv)*2, 'Laufen '+Math.round(Math.abs(mv))+' % '+(mv>0?'schneller':'langsamer')]);
+    if(Math.abs(rc)>=3) out.push([Math.abs(rc), 'Rückstoß '+(rc<0?'−':'+')+Math.round(Math.abs(rc))+' %']);
+    if(g(o,'vel')) out.push([Math.abs(o.vel), 'Kugeln '+Math.abs(o.vel)+' % '+(o.vel>0?'schneller':'langsamer')]);
+    if(g(o,'mag')) out.push([99, '+'+o.mag+' Schuss']);
+    if(Math.abs(g(o,'sway'))>=10 && out.length<2) out.push([1, 'Wackeln '+(o.sway<0?'−':'+')+Math.abs(o.sway)+' %']);
+    return out.sort((x,y)=>y[0]-x[0]).slice(0,3).map(x=>x[1]).join(' · ');
   }
   function styleBuild(w, L, st){
     const base = build(w, L);
     if(st==='meta') return base;
     const atMax = !!(w.maxSure && w.maxLvl && L >= w.maxLvl);
     const ok = l => l!=null ? l <= L : atMax;
+    const seen = new Set();
     const pool = [].concat(
       w.meta.map(p=>({...p, kind:'meta'})),
       (w.alts||[]).map(p=>({...p, kind:'swap'})),
-      (w.extras||[]).map(p=>({...p, kind:'extra'}))
-    ).filter(p=>ok(p.lvl));
-    const best = {};
-    for(const p of pool){
-      const s = score(p, st, pool);
-      if(!best[p.slot] || s > best[p.slot].s) best[p.slot] = {p, s};
+      (w.extras||[]).map(p=>({...p, kind:'extra'})),
+      (w.cat||[]).map(c=>({slot:c[0], name:c[1], lvl:c[2], st:c[3], kind:'cat'}))
+    ).filter(p=>{ const k = p.slot+'|'+p.name.toLowerCase(); if(seen.has(k)) return false; seen.add(k); return ok(p.lvl); });
+    const metaBySlot = Object.fromEntries(w.meta.map(m=>[m.slot,m]));
+    let picked;
+    if(st==='ammo'){
+      // Meta-Build behalten, nur das größte freie Magazin einsetzen
+      const mags = pool.filter(p=>p.slot==='Magazin' && rounds(p)!=null).sort((x,y)=>rounds(y)-rounds(x));
+      picked = base.out.map(a=>({...a})).filter(a=>a.slot!=='Magazin');
+      if(mags.length){
+        if(picked.length >= SLOTS){ // Platz schaffen: Teil mit dem kleinsten Nutzen raus
+          let worst = 0; picked.forEach((p,i)=>{ if(value(p,'control')+value(p,'range') < value(picked[worst],'control')+value(picked[worst],'range')) worst = i; });
+          picked.splice(worst,1);
+        }
+        picked.push(mags[0]);
+      }
+    } else {
+      const best = {};
+      for(const p of pool){
+        const v = value(p, st);
+        if(p.kind!=='meta' && v < 3) continue;                // nur klar passende Teile ersetzen die Meta
+        const s = v + (p.kind==='meta' ? 4 : 0);              // Meta-Teil bleibt, wenn die Alternative nicht klar besser ist
+        if(!best[p.slot] || s > best[p.slot].s) best[p.slot] = {p, s};
+      }
+      picked = Object.values(best).sort((a,b)=>b.s-a.s).slice(0, SLOTS).map(x=>x.p);
     }
     const ORDER = ['Visier','Mündung','Lauf','Unterlauf','Magazin','Hinterer Griff','Schaft','Laser','Munition'];
-    const picked = Object.values(best).sort((a,b)=>b.s-a.s).slice(0, SLOTS).map(x=>x.p)
-      .sort((a,b)=>ORDER.indexOf(a.slot)-ORDER.indexOf(b.slot));
-    const metaBySlot = Object.fromEntries(w.meta.map(m=>[m.slot,m]));
+    picked.sort((a,b)=>ORDER.indexOf(a.slot)-ORDER.indexOf(b.slot));
     const out = picked.map(p=>{
       const m = metaBySlot[p.slot];
-      if(p.kind==='meta') return {...p, kind:'meta'};
-      return {...p, kind:'style', for: m && m.name!==p.name ? m : null};
+      if(m && m.name===p.name) return {...p, kind:'meta'};
+      return {...p, kind:'style', for: m || null};
     });
     return {out, locked: base.locked, changed: out.filter(a=>a.kind!=='meta').length};
   }
@@ -2598,13 +7610,14 @@ loadData().then(function(DATA){
       STYLES.map(s=>'<button type="button" class="chip" data-style="'+s.id+'" aria-pressed="'+(s.id===style)+'">'+esc(s.name)+'</button>').join('')+
       '</div><span class="small">'+esc(st.desc)+'</span>'+
       (style!=='meta' ? '<p class="notice" style="margin-top:4px">'+(changed
-        ? changed+' '+(changed===1?'Teil weicht':'Teile weichen')+' von der Meta ab. Zusammengestellt aus den Meta-Teilen und bewährten Alternativen dieser Waffe.'
+        ? changed+' '+(changed===1?'Teil weicht':'Teile weichen')+' von der Meta ab. Berechnet aus den echten Werten der Aufsätze (Quelle: codmunity).'
         : 'Für diesen Stil kenne ich bei dieser Waffe noch keine passenderen Teile. Du siehst den Meta-Build.')+'</p>' : '')+
       '</div>';
     const slots = out.length ? '<ul class="slots">'+out.map(a=>{
       const tag = a.kind==='meta' ? '<span class="tag t-meta">Meta</span>' : a.kind==='swap' ? '<span class="tag t-swap">Ersatz</span>' : a.kind==='style' ? '<span class="tag t-style">'+esc(st.name)+'</span>' : '<span class="tag t-extra">Füller</span>';
       const sub = a.kind==='swap' ? '<em>bis '+esc(a.for.name)+' frei ist'+(a.for.lvl!=null?' (Level '+a.for.lvl+')':'')+'</em>' : a.kind==='extra' ? '<em>füllt einen freien Platz</em>' : a.kind==='style' ? '<em>'+(a.for?'statt '+esc(a.for.name)+' (Meta)':'passt zu deinem Spielstil')+'</em>' : '';
-      return '<li class="slot"><span class="s">'+esc(a.slot)+'</span><span class="n">'+esc(a.name)+tag+sub+'</span><span class="lv">'+(a.lvl==null?'Max-Level':'ab Lv '+a.lvl)+'</span></li>';
+      const f = fx(a);
+      return '<li class="slot"><span class="s">'+esc(a.slot)+'</span><span class="n">'+esc(a.name)+tag+sub+(f?'<em class="fx">'+esc(f)+'</em>':'')+'</span><span class="lv">'+(a.lvl==null?'Max-Level':'ab Lv '+a.lvl)+'</span></li>';
     }).join('')+'</ul>' : '<p class="empty">Auf Level '+L+' ist noch nichts Passendes frei. Spiel die Waffe ein paar Runden, das erste Teil kommt bald.</p>';
 
     bi.innerHTML = head + (w.note?'<p class="notice">'+esc(w.note)+'</p>':'') +
@@ -2613,7 +7626,8 @@ loadData().then(function(DATA){
       '<input type="range" id="lvl-range" min="1" max="'+maxOf(w)+'" value="'+L+'" aria-label="Waffenlevel Regler">'+
       (w.maxSure ? '<div class="maxrow"><span class="small">Maximallevel: '+w.maxLvl+'</span>'+(L<w.maxLvl?'<button type="button" class="link" id="lvl-max">Auf Max setzen ›</button>':'<span class="small maxok">✓ Waffe ist voll gelevelt</span>')+'</div>'
                  : '<div class="maxrow"><span class="small">Maximallevel noch nicht bekannt</span></div>')+'</div>'+ styleBox + slots +
-      '<div class="ctas"><a class="link" href="'+esc(w.codeUrl||'https://wzhub.gg/loadouts')+'" target="_blank" rel="noopener">Waffencode holen ›</a></div>';
+      '<div class="ctas"><a class="link" href="'+esc(w.codeUrl||'https://wzhub.gg/loadouts')+'" target="_blank" rel="noopener">Waffencode holen ›</a></div>'+
+      (w.cm ? '<div class="cmbox"><span class="small">Fertiger Build mit Code (von codmunity, kann von der Meta oben abweichen)</span><div class="cmcode"><code>'+esc(w.cm.code)+'</code><button type="button" class="link" id="cm-copy">Kopieren</button></div><span class="small">'+w.cm.parts.map(p=>esc(p.name)).join(' · ')+'</span></div>' : '');
 
     ni.innerHTML = locked.length
       ? '<h2 class="h2">Als Nächstes.</h2><p class="lead">Diese Meta-Aufsätze fehlen dir noch für den vollen Build.</p><div class="tiles">'+
@@ -2624,6 +7638,7 @@ loadData().then(function(DATA){
     document.getElementById('lvl-dec').onclick = ()=>setLevel(L-1);
     document.getElementById('lvl-inc').onclick = ()=>setLevel(L+1);
     const mx = document.getElementById('lvl-max'); if(mx) mx.onclick = ()=>setLevel(w.maxLvl);
+    const cc = document.getElementById('cm-copy'); if(cc) cc.onclick = ()=>{ try{ navigator.clipboard.writeText(w.cm.code); cc.textContent = 'Kopiert ✓'; }catch(e){} };
     document.getElementById('style-chips').onclick = e=>{
       const b = e.target.closest('.chip'); if(!b) return;
       style = b.dataset.style; store.set('rm-style', style); render();
