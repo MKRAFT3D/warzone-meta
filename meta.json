@@ -379,5 +379,271 @@
    "src": "Build in beiden Build-Quellen identisch.",
    "codeUrl": "https://wzhub.gg/loadouts"
   }
+ ],
+ "library": [
+  {
+   "id": "mosin-nagant",
+   "name": "Mosin-Nagant",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4"
+  },
+  {
+   "id": "axion",
+   "name": "Axion",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4"
+  },
+  {
+   "id": "kg-7-vulcan",
+   "name": "KG-7 Vulcan",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4"
+  },
+  {
+   "id": "astaroth-57",
+   "name": "Astaroth .57",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4"
+  },
+  {
+   "id": "oden",
+   "name": "Oden",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4"
+  },
+  {
+   "id": "patriot-xmr",
+   "name": "Patriot XMR",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4"
+  },
+  {
+   "id": "ppsh-41",
+   "name": "PPSh-41",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4"
+  },
+  {
+   "id": "wz55-striga",
+   "name": "WZ.55 Striga",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4"
+  },
+  {
+   "id": "kastov-762",
+   "name": "Kastov 762",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4"
+  },
+  {
+   "id": "apoc-338",
+   "name": "Apoc-338",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4"
+  },
+  {
+   "id": "cronen-squall",
+   "name": "Cronen Squall",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4"
+  },
+  {
+   "id": "finn-lmg",
+   "name": "FiNN LMG",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4"
+  },
+  {
+   "id": "krait-p68",
+   "name": "Krait P68",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4"
+  },
+  {
+   "id": "rezi-12",
+   "name": "Rezi 12",
+   "type": "Schrotflinte",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4"
+  },
+  {
+   "id": "signal-50",
+   "name": "Signal 50",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4"
+  },
+  {
+   "id": "warlord",
+   "name": "Warlord",
+   "type": "Schrotflinte",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4"
+  },
+  {
+   "id": "hyeon-burst",
+   "name": "Hyeon Burst",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4"
+  },
+  {
+   "id": "csg-35",
+   "name": "CSG-35",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4"
+  },
+  {
+   "id": "type-73",
+   "name": "Type 73",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4"
+  },
+  {
+   "id": "oris-86",
+   "name": "Oris 8.6",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4"
+  },
+  {
+   "id": "mar-9",
+   "name": "MAR-9",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4"
+  },
+  {
+   "id": "sang-9mm",
+   "name": "Sang 9mm",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4"
+  },
+  {
+   "id": "50-gs",
+   "name": ".50 GS",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4"
+  },
+  {
+   "id": "mojave-357",
+   "name": "Mojave .357",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4"
+  }
  ]
 }
