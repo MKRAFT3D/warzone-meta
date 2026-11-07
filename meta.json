@@ -1,0 +1,383 @@
+{
+ "updated": "2026-11-07",
+ "dataDate": "6. November 2026",
+ "season": "Season 1 · Modern Warfare 4",
+ "combo": {
+  "long": "cronen-osprey",
+  "close": "iso-nightshade",
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung: Sturmgewehr für Distanz, MP für Nahkampf."
+ },
+ "sources": [
+  {
+   "name": "WZ Stats",
+   "url": "https://wzstats.gg/warzone/meta/resurgence"
+  },
+  {
+   "name": "Warzone Loadout (CODMunity)",
+   "url": "https://warzoneloadout.games/"
+  },
+  {
+   "name": "WZ Hub",
+   "url": "https://wzhub.gg/loadouts"
+  },
+  {
+   "name": "CODMunity Resurgence",
+   "url": "https://codmunity.gg/resurgence"
+  }
+ ],
+ "weapons": [
+  {
+   "id": "cronen-osprey",
+   "name": "Cronen Osprey",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "META",
+   "rank": "#1 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Locus PX3 Canted",
+     "lvl": 32
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 21
+    },
+    {
+     "slot": "Lauf",
+     "name": "IO-556 Tac 18\"",
+     "lvl": 54
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Mag",
+     "lvl": 42
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 68
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Tac90 Grip",
+     "lvl": 6
+    },
+    {
+     "slot": "Laser",
+     "name": "SA Laz-500",
+     "lvl": 52
+    },
+    {
+     "slot": "Schaft",
+     "name": "Fade Tac 9L",
+     "lvl": 57
+    }
+   ],
+   "src": "Alle 4 Quellen: Top-Waffe. Build bei 4 von 5 Teilen gleich.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "han-86",
+   "name": "Han 86",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "META",
+   "rank": "#2 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 19
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 6
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit Lightning-7 465mm",
+     "lvl": 18
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Drum",
+     "lvl": 10
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 70
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "SZ Micro D-3",
+     "lvl": 5
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit RK8 406.4mm",
+     "lvl": 7
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO Frangible",
+     "lvl": 8
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 3
+    },
+    {
+     "slot": "Schaft",
+     "name": "FR4 Retractable Stock",
+     "lvl": 4
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "XRK Justice II Grip",
+     "lvl": 14
+    }
+   ],
+   "src": "3 von 4 Quellen: Meta. Build bei 4 von 5 Teilen gleich.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "m4",
+   "name": "M4",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "A",
+   "rank": "#3 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 70
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 4
+    },
+    {
+     "slot": "Lauf",
+     "name": "16\" Highmark Barrel",
+     "lvl": 18
+    },
+    {
+     "slot": "Magazin",
+     "name": "45 Round Mag",
+     "lvl": 9
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 57
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "Slimline Elite",
+     "lvl": 13
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO Overpressured",
+     "lvl": 3
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "SZ Gen.6 PEQ",
+     "lvl": 2
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Brace DX Grip",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "PF1 Fixed Stock",
+     "lvl": 14
+    }
+   ],
+   "src": "Build in beiden Build-Quellen identisch. Rang schwankt zwischen Meta und A.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "iso-nightshade",
+   "name": "ISO Nightshade",
+   "type": "MP",
+   "range": "close",
+   "tier": "META",
+   "rank": "#1 Nahkampf",
+   "meta": [
+    {
+     "slot": "Lauf",
+     "name": "ZLR Mag-Z 9\"",
+     "lvl": 2
+    },
+    {
+     "slot": "Magazin",
+     "name": "40 Round Mag",
+     "lvl": null
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Demo STP-1",
+     "lvl": 6
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP G2-44 Stock",
+     "lvl": 5
+    },
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum High Velocity",
+     "lvl": null
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Crackdown",
+     "lvl": 4
+    }
+   ],
+   "src": "Alle 4 Quellen: Top-MP. Warzone-Build von Warzone Loadout, Level von WZ Stats.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "vel-46",
+   "name": "VEL 46",
+   "type": "MP",
+   "range": "close",
+   "tier": "META",
+   "rank": "#2 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "212 LC40 Comp",
+     "lvl": 27
+    },
+    {
+     "slot": "Lauf",
+     "name": "VB-46 Series 11",
+     "lvl": 3
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Tac90 Grip",
+     "lvl": 46
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Drum",
+     "lvl": 33
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP U-Turn Stock",
+     "lvl": 37
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Crackdown",
+     "lvl": 4
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "VEL 46 Extended",
+     "lvl": 20
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP Lockdown Stock",
+     "lvl": 15
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "V46 R-Skel Grip",
+     "lvl": 9
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager Visiv-5",
+     "lvl": 23
+    }
+   ],
+   "src": "3 von 4 Quellen: Top-MP. Build von WZ Stats (nur dort für die neue VEL 46).",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "x-58-nyx",
+   "name": "X-58 Nyx",
+   "type": "MP",
+   "range": "close",
+   "tier": "A",
+   "rank": "#3 Nahkampf",
+   "meta": [
+    {
+     "slot": "Lauf",
+     "name": "Doksa 4F 304.8mm",
+     "lvl": 37
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "Mire-50 Tac Grip",
+     "lvl": 7
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Mag",
+     "lvl": 9
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "BOK-980",
+     "lvl": 20
+    },
+    {
+     "slot": "Schaft",
+     "name": "Mugi HUL-73.M Stock",
+     "lvl": 3
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager Visiv-5",
+     "lvl": 12
+    }
+   ],
+   "src": "Build in beiden Build-Quellen identisch.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  }
+ ]
+}
