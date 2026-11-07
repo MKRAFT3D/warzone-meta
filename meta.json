@@ -391,265 +391,1528 @@
    "id": "mosin-nagant",
    "name": "Mosin-Nagant",
    "type": "Marksman",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4"
+   "tier": "META",
+   "rank": "#4 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Schlager 7X",
+     "lvl": 33
+    },
+    {
+     "slot": "Mündung",
+     "name": "FTAC Silent Recon",
+     "lvl": 34
+    },
+    {
+     "slot": "Lauf",
+     "name": "Mosin K025 Barrel",
+     "lvl": 3
+    },
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 20
+    },
+    {
+     "slot": "Munition",
+     "name": "7.62X54MMR High Velocity",
+     "lvl": 18
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "GL K230",
+     "lvl": 24
+    },
+    {
+     "slot": "Mündung",
+     "name": "DS RKT-90",
+     "lvl": 22
+    },
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 9
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Schaft",
+     "name": "Lockwood Eagle Stock",
+     "lvl": 27
+    },
+    {
+     "slot": "Magazin",
+     "name": "10 Round Mag",
+     "lvl": 10
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "axion",
    "name": "Axion",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4"
+   "tier": "A",
+   "rank": "#5 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 13
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 28
+    },
+    {
+     "slot": "Lauf",
+     "name": "SA DMN-L 30\"",
+     "lvl": 6
+    },
+    {
+     "slot": "Magazin",
+     "name": "40 Round Mag",
+     "lvl": 65
+    },
+    {
+     "slot": "Schaft",
+     "name": "TA Harrow Stock",
+     "lvl": 2
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Magazin",
+     "name": "100 Round Drum",
+     "lvl": 38
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 7
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 9
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "GS50 Grip",
+     "lvl": 55
+    },
+    {
+     "slot": "Munition",
+     "name": ".300 BLK Frangible",
+     "lvl": 48
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "kg-7-vulcan",
    "name": "KG-7 Vulcan",
    "type": "Scharfschützengewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4"
+   "tier": "A",
+   "rank": "#1 Scharfschütze",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "Gauge-12 Mono",
+     "lvl": 32
+    },
+    {
+     "slot": "Lauf",
+     "name": "Haebang RMT762 29\"",
+     "lvl": 43
+    },
+    {
+     "slot": "Schaft",
+     "name": "TT G76-RP Stock",
+     "lvl": 47
+    },
+    {
+     "slot": "Munition",
+     "name": "7.62X54MMR High Velocity",
+     "lvl": 71
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Lauf",
+     "name": "Haebang Naseon V.5 26\"",
+     "lvl": 22
+    },
+    {
+     "slot": "Lauf",
+     "name": "TT Baem 12\"",
+     "lvl": 5
+    },
+    {
+     "slot": "Mündung",
+     "name": "DS RKT-90",
+     "lvl": 4
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 7
+    },
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 3
+    },
+    {
+     "slot": "Visier",
+     "name": "Hanbit 3080 Fireline",
+     "lvl": 14
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "astaroth-57",
    "name": "Astaroth .57",
    "type": "Scharfschützengewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4"
+   "tier": "A",
+   "rank": "#2 Scharfschütze",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "Usenko 900 BL-X",
+     "lvl": 33
+    },
+    {
+     "slot": "Lauf",
+     "name": "FTAC Harbinger 45",
+     "lvl": 22
+    },
+    {
+     "slot": "Schaft",
+     "name": "Usenko V8-LKR",
+     "lvl": 3
+    },
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 27
+    },
+    {
+     "slot": "Munition",
+     "name": ".57 Cal High Velocity",
+     "lvl": 50
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Moodkiller",
+     "lvl": 5
+    },
+    {
+     "slot": "Lauf",
+     "name": "FTAC Crosswind 30",
+     "lvl": 4
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "FJX S-TAC Grip",
+     "lvl": 44
+    },
+    {
+     "slot": "Visier",
+     "name": "Schlager 7x",
+     "lvl": 9
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "oden",
    "name": "Oden",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4"
+   "tier": "A",
+   "rank": "#6 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "SZ Lonewolf Holo",
+     "lvl": 15
+    },
+    {
+     "slot": "Mündung",
+     "name": "TV Multical-77",
+     "lvl": 4
+    },
+    {
+     "slot": "Lauf",
+     "name": "Rockfall-900 Barrel",
+     "lvl": 5
+    },
+    {
+     "slot": "Magazin",
+     "name": "30 Round Mag",
+     "lvl": 10
+    },
+    {
+     "slot": "Munition",
+     "name": "12.7X55MM High Velocity",
+     "lvl": 61
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "Slimline Elite",
+     "lvl": 13
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 22
+    },
+    {
+     "slot": "Schaft",
+     "name": "Haebang Stal-W5",
+     "lvl": 3
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 6
+    },
+    {
+     "slot": "Schaft",
+     "name": "VLK NVS-32 Pad",
+     "lvl": 36
+    },
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 47
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "patriot-xmr",
    "name": "Patriot XMR",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4"
+   "tier": "A",
+   "rank": "#7 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 13
+    },
+    {
+     "slot": "Mündung",
+     "name": "EXP Undertow GEN. 2",
+     "lvl": 25
+    },
+    {
+     "slot": "Lauf",
+     "name": "SO 898F 19\"",
+     "lvl": 60
+    },
+    {
+     "slot": "Magazin",
+     "name": "50 Round Drum Mag",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "Hanbit B56T-L9",
+     "lvl": 22
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "HET-S6 Comp",
+     "lvl": 14
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "Schlager Attack-7 Grip",
+     "lvl": 30
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 33
+    },
+    {
+     "slot": "Laser",
+     "name": "SA LAZ-500",
+     "lvl": 12
+    },
+    {
+     "slot": "Laser",
+     "name": "SZ GEN.6 PEQ",
+     "lvl": 23
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "ppsh-41",
    "name": "PPSh-41",
    "type": "MP",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4"
+   "tier": "A",
+   "rank": "#4 Nahkampf",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "ZLR Type C",
+     "lvl": 7
+    },
+    {
+     "slot": "Mündung",
+     "name": "Full Port Comp",
+     "lvl": 48
+    },
+    {
+     "slot": "Lauf",
+     "name": "TT Banseok-24N",
+     "lvl": 49
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "MIRE-50 Tac Grip",
+     "lvl": 52
+    },
+    {
+     "slot": "Schaft",
+     "name": "MT-L5 Jinhwa",
+     "lvl": 41
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Lauf",
+     "name": "Hanbit RDR-Tiger 50",
+     "lvl": 33
+    },
+    {
+     "slot": "Mündung",
+     "name": "1/2X28 Dual Port",
+     "lvl": 29
+    },
+    {
+     "slot": "Schaft",
+     "name": "Hanbit Jangun-H9",
+     "lvl": 25
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit RDR-Tiger 50-XL",
+     "lvl": 15
+    },
+    {
+     "slot": "Mündung",
+     "name": "FTAC Silent Recon",
+     "lvl": 12
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit Chimmuk-Intr",
+     "lvl": 5
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS TAC90 Grip",
+     "lvl": 2
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 4
+    },
+    {
+     "slot": "Magazin",
+     "name": "53 Round Mag",
+     "lvl": 3
+    },
+    {
+     "slot": "Munition",
+     "name": "7.62 Tokarev Overpressured",
+     "lvl": 9
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "wz55-striga",
    "name": "WZ.55 Striga",
    "type": "MP",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4"
+   "tier": "A",
+   "rank": "#5 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "Full Port Comp",
+     "lvl": 3
+    },
+    {
+     "slot": "Lauf",
+     "name": "GW Sender 500",
+     "lvl": 5
+    },
+    {
+     "slot": "Magazin",
+     "name": "50 Round Drum Mag",
+     "lvl": 49
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Matuzek 532-L Grip",
+     "lvl": 15
+    },
+    {
+     "slot": "Schaft",
+     "name": "Wire Stock",
+     "lvl": 52
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Magazin",
+     "name": "35 Round Mag",
+     "lvl": 10
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 32
+    },
+    {
+     "slot": "Laser",
+     "name": "QFL-S4.5",
+     "lvl": 45
+    },
+    {
+     "slot": "Visier",
+     "name": "SZ Prima-4 Dot",
+     "lvl": 59
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "kastov-762",
    "name": "Kastov 762",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4"
+   "tier": "A",
+   "rank": "#8 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 26
+    },
+    {
+     "slot": "Mündung",
+     "name": "Gauge-12 Mono",
+     "lvl": 34
+    },
+    {
+     "slot": "Lauf",
+     "name": "BCS-K 589.28MM Barrel",
+     "lvl": 24
+    },
+    {
+     "slot": "Magazin",
+     "name": "45 Round Mag 7.62",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "Hanbit Blitz V.9",
+     "lvl": 67
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Schaft",
+     "name": "Kastov Dogfighter 27",
+     "lvl": 42
+    },
+    {
+     "slot": "Schaft",
+     "name": "Spetsnaz S10 Stock",
+     "lvl": 19
+    },
+    {
+     "slot": "Mündung",
+     "name": "FT Hyperport 408",
+     "lvl": 16
+    },
+    {
+     "slot": "Lauf",
+     "name": "Haebang MT-414MM",
+     "lvl": 14
+    },
+    {
+     "slot": "Lauf",
+     "name": "TT 414-R Hightac",
+     "lvl": 2
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 3
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 30
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Hanbit Techgrip",
+     "lvl": 4
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "apoc-338",
    "name": "Apoc-338",
    "type": "LMG",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4"
+   "tier": "A",
+   "rank": "#9 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "SZ Helios Holo",
+     "lvl": 6
+    },
+    {
+     "slot": "Mündung",
+     "name": "TV Multical-77",
+     "lvl": 2
+    },
+    {
+     "slot": "Lauf",
+     "name": "SA Trident 24.5\"",
+     "lvl": 4
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "FSS TCB-1 Grip",
+     "lvl": 7
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP ARC-7 Stock",
+     "lvl": 47
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Schaft",
+     "name": "DEMO BAR-7 Stock",
+     "lvl": 15
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "SZ GEN.6 PEQ",
+     "lvl": 10
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "Bruen Renegade Grip",
+     "lvl": 8
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "cronen-squall",
    "name": "Cronen Squall",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4"
+   "tier": "A",
+   "rank": "#10 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 15
+    },
+    {
+     "slot": "Mündung",
+     "name": "EXP Undertow GEN. 2",
+     "lvl": 22
+    },
+    {
+     "slot": "Lauf",
+     "name": "FJX Sypher 27\"",
+     "lvl": 55
+    },
+    {
+     "slot": "Magazin",
+     "name": "30 Round Mag",
+     "lvl": 10
+    },
+    {
+     "slot": "Munition",
+     "name": "6.8 WRATH High Velocity",
+     "lvl": 63
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Munition",
+     "name": "6.8 WRATH Frangible",
+     "lvl": 43
+    },
+    {
+     "slot": "Lauf",
+     "name": "Bryson Longhorn 20\"",
+     "lvl": 35
+    },
+    {
+     "slot": "Mündung",
+     "name": "Octa-63 Comp",
+     "lvl": 12
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "SZ GEN.6 PEQ",
+     "lvl": 6
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "finn-lmg",
    "name": "FiNN LMG",
    "type": "LMG",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4"
+   "tier": "A",
+   "rank": "#11 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "SZ Helios Holo",
+     "lvl": 43
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 35
+    },
+    {
+     "slot": "Lauf",
+     "name": "TA Sustain-99 20\"",
+     "lvl": 33
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Schlager KM60-G",
+     "lvl": 25
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 Nato High Velocity",
+     "lvl": 42
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FTAC Dominion",
+     "lvl": 9
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "XRK Aura-5",
+     "lvl": 8
+    },
+    {
+     "slot": "Visier",
+     "name": "Slimline Elite",
+     "lvl": 7
+    },
+    {
+     "slot": "Lauf",
+     "name": "FTAC Firebase-70 15\"",
+     "lvl": 2
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Schaft",
+     "name": "Hanbit TECH50 GEN.5",
+     "lvl": 5
+    },
+    {
+     "slot": "Magazin",
+     "name": "75 Round Box Mag",
+     "lvl": 38
+    },
+    {
+     "slot": "Laser",
+     "name": "SZ GEN.6 PEQ",
+     "lvl": 50
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "Bruen Renegade Grip",
+     "lvl": 51
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "krait-p68",
    "name": "Krait P68",
    "type": "Pistole",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4"
+   "tier": "A",
+   "rank": "#6 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "SFO Proto-33",
+     "lvl": 29
+    },
+    {
+     "slot": "Lauf",
+     "name": "XRK DOC-40 6\"",
+     "lvl": 23
+    },
+    {
+     "slot": "Magazin",
+     "name": "20 Round Mag",
+     "lvl": 30
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Shonay R-Wrap",
+     "lvl": 35
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "Magtac .45",
+     "lvl": 5
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "GW 700-V",
+     "lvl": 20
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "rezi-12",
    "name": "Rezi 12",
    "type": "Schrotflinte",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4"
+   "tier": "A",
+   "rank": "#7 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "Haebang Bulsae-10",
+     "lvl": 28
+    },
+    {
+     "slot": "Lauf",
+     "name": "Haebang 635R-7",
+     "lvl": 26
+    },
+    {
+     "slot": "Schaft",
+     "name": "No Stock",
+     "lvl": 18
+    },
+    {
+     "slot": "Laser",
+     "name": "Pulse-MW Laser",
+     "lvl": 48
+    },
+    {
+     "slot": "Munition",
+     "name": "12G Slug Rounds",
+     "lvl": 10
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "EXP Firelite 12",
+     "lvl": 24
+    },
+    {
+     "slot": "Mündung",
+     "name": "Sakin Omega 13",
+     "lvl": 13
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 5
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Visier",
+     "name": "ZLR Type C",
+     "lvl": 14
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "signal-50",
    "name": "Signal 50",
    "type": "Scharfschützengewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4"
+   "tier": "A",
+   "rank": "#3 Scharfschütze",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "FSS HOC-30",
+     "lvl": 59
+    },
+    {
+     "slot": "Lauf",
+     "name": "MR50 Tyrant 29\"",
+     "lvl": 15
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "EXP TRIM-54F",
+     "lvl": 5
+    },
+    {
+     "slot": "Schaft",
+     "name": "Cronen SN-PAD50",
+     "lvl": 26
+    },
+    {
+     "slot": "Munition",
+     "name": ".50 Cal High Velocity",
+     "lvl": 69
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Moodkiller",
+     "lvl": 33
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 40
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "warlord",
    "name": "Warlord",
    "type": "Schrotflinte",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4"
+   "tier": "A",
+   "rank": "#8 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "WX-600 Choke",
+     "lvl": 44
+    },
+    {
+     "slot": "Lauf",
+     "name": "NK Gangta-12G",
+     "lvl": 40
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "MIRE-50 Tac Grip",
+     "lvl": 55
+    },
+    {
+     "slot": "Laser",
+     "name": "Bruen 22-LPW",
+     "lvl": 23
+    },
+    {
+     "slot": "Munition",
+     "name": "12G Slug Rounds",
+     "lvl": 10
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "Mugi Kalnal-H 12G",
+     "lvl": 34
+    },
+    {
+     "slot": "Lauf",
+     "name": "Mugi Chujeok-800",
+     "lvl": 6
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Schaft",
+     "name": "Mugi D40 Stock",
+     "lvl": 5
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "DV3-SINSQK Grip",
+     "lvl": 8
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "hyeon-burst",
    "name": "Hyeon Burst",
    "type": "Sturmgewehr",
-   "tier": "",
-   "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4"
+   "tier": "A",
+   "rank": "#12 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 12
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 67
+    },
+    {
+     "slot": "Lauf",
+     "name": "Mugi Seungri-Op 609.6MM",
+     "lvl": 36
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "HYN-Meipeul",
+     "lvl": 8
+    },
+    {
+     "slot": "Munition",
+     "name": "6.8X43MM High Velocity",
+     "lvl": 52
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS IS40",
+     "lvl": 20
+    },
+    {
+     "slot": "Mündung",
+     "name": "ZLR REVERB90",
+     "lvl": 19
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS TAC90 Grip",
+     "lvl": 41
+    },
+    {
+     "slot": "Laser",
+     "name": "SZ GEN.6 PEQ",
+     "lvl": 4
+    },
+    {
+     "slot": "Schaft",
+     "name": "Hvy-80 Stockpad",
+     "lvl": 5
+    },
+    {
+     "slot": "Laser",
+     "name": "SA LAZ-500",
+     "lvl": 51
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "csg-35",
    "name": "CSG-35",
    "type": "MP",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "EXP Forage-Hvy",
+     "lvl": 35
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "CQC Stop",
+     "lvl": 28
+    },
+    {
+     "slot": "Magazin",
+     "name": "40 Round Mag",
+     "lvl": 17
+    },
+    {
+     "slot": "Schaft",
+     "name": "XRK Slight Stock",
+     "lvl": 26
+    },
+    {
+     "slot": "Laser",
+     "name": "SA Laz-500",
+     "lvl": 40
+    }
+   ],
    "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4"
+   "extras": [
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum Frangible",
+     "lvl": 2
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Matuzek Fire-Pro",
+     "lvl": 39
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "type-73",
    "name": "Type 73",
    "type": "LMG",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4"
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "SZ Helios Holo",
+     "lvl": 45
+    },
+    {
+     "slot": "Mündung",
+     "name": "Gauge-12 Mono",
+     "lvl": 43
+    },
+    {
+     "slot": "Lauf",
+     "name": "Haebang ET-9D 772.16MM",
+     "lvl": 37
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Assault-L5 Grip",
+     "lvl": 44
+    },
+    {
+     "slot": "Schaft",
+     "name": "FTAC RZR0 Stock",
+     "lvl": 22
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "Iota-D",
+     "lvl": 38
+    },
+    {
+     "slot": "Mündung",
+     "name": "Ivanov QR600",
+     "lvl": 12
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "EXP ZBR-904",
+     "lvl": 9
+    },
+    {
+     "slot": "Visier",
+     "name": "FJX 708 Pro",
+     "lvl": 8
+    },
+    {
+     "slot": "Lauf",
+     "name": "RSS-40F 12\"",
+     "lvl": 4
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "QFL-S4.5",
+     "lvl": 6
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 27
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "oris-86",
    "name": "Oris 8.6",
    "type": "Marksman",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4"
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "SZ Helios Holo",
+     "lvl": 46
+    },
+    {
+     "slot": "Lauf",
+     "name": "EXP Shadow-70 14\"",
+     "lvl": 55
+    },
+    {
+     "slot": "Magazin",
+     "name": "20 Round Mag",
+     "lvl": 61
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Bruen C-Wrap 60",
+     "lvl": 49
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Lauf",
+     "name": "EXP Crosstac 22\"",
+     "lvl": 37
+    },
+    {
+     "slot": "Visier",
+     "name": "SZ Micro D-3",
+     "lvl": 31
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Bruen R7-TC Grip",
+     "lvl": 30
+    },
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 12
+    },
+    {
+     "slot": "Magazin",
+     "name": "6 Round Mag",
+     "lvl": 11
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager VISIV-5",
+     "lvl": 8
+    },
+    {
+     "slot": "Mündung",
+     "name": "EXP Undertow GEN. 2",
+     "lvl": 56
+    },
+    {
+     "slot": "Schaft",
+     "name": "No Stock",
+     "lvl": 3
+    },
+    {
+     "slot": "Mündung",
+     "name": "Matuzek Blackveil",
+     "lvl": 14
+    },
+    {
+     "slot": "Schaft",
+     "name": "BR7 Invader",
+     "lvl": 23
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "mar-9",
    "name": "MAR-9",
    "type": "Marksman",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "FJX 708 Pro",
+     "lvl": 54
+    },
+    {
+     "slot": "Lauf",
+     "name": "Bruen Reaper-X",
+     "lvl": 22
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS TAC90 Grip",
+     "lvl": 4
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Hanbit Wrap 76",
+     "lvl": 38
+    },
+    {
+     "slot": "Laser",
+     "name": "SA LAZ-500",
+     "lvl": 35
+    }
+   ],
    "alts": [],
    "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4"
+   "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4",
+   "src": "Build von WZ Stats. Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07",
+   "note": "Kein eigener Warzone-Build, Mehrspieler-Build."
   },
   {
    "id": "sang-9mm",
    "name": "Sang 9mm",
    "type": "Pistole",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4"
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "SFO Proto-33",
+     "lvl": 36
+    },
+    {
+     "slot": "Lauf",
+     "name": "TT CP-9mm Barrel",
+     "lvl": 6
+    },
+    {
+     "slot": "Magazin",
+     "name": "17 Round Mag",
+     "lvl": 5
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "XRK M-Line Grip",
+     "lvl": 11
+    },
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum High Velocity",
+     "lvl": 32
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "Expedite Drill L4",
+     "lvl": 23
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Visier",
+     "name": "Z-Dot 9",
+     "lvl": 8
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "50-gs",
    "name": ".50 GS",
    "type": "Pistole",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4"
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "FTAC Hvy-S50",
+     "lvl": 33
+    },
+    {
+     "slot": "Lauf",
+     "name": "Matuzek Monarch",
+     "lvl": 29
+    },
+    {
+     "slot": "Magazin",
+     "name": "14 Round Mag",
+     "lvl": 9
+    },
+    {
+     "slot": "Munition",
+     "name": ".50 Pistol High Velocity",
+     "lvl": 47
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "TA SVG-50K",
+     "lvl": 2
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "TT Bulkkot Grip",
+     "lvl": 39
+    },
+    {
+     "slot": "Visier",
+     "name": "Bruen Field-Op",
+     "lvl": 18
+    },
+    {
+     "slot": "Laser",
+     "name": "GW 700-V",
+     "lvl": 36
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   },
   {
    "id": "mojave-357",
    "name": "Mojave .357",
    "type": "Pistole",
-   "tier": "",
+   "tier": "D",
    "rank": "",
-   "meta": [],
-   "alts": [],
-   "extras": [],
-   "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4"
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "Matuzek H357-M Comp",
+     "lvl": 2
+    },
+    {
+     "slot": "Lauf",
+     "name": "XRK Greywolf 7.5",
+     "lvl": 7
+    },
+    {
+     "slot": "Magazin",
+     "name": "Mojave Speed Cylinder",
+     "lvl": 9
+    },
+    {
+     "slot": "Laser",
+     "name": "GW MDL-2",
+     "lvl": 5
+    },
+    {
+     "slot": "Munition",
+     "name": ".357 Magnum Snake Shot",
+     "lvl": 42
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Munition",
+     "name": ".357 Magnum Overpressured",
+     "lvl": 19
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "CP37 Grip",
+     "lvl": 35
+    }
+   ],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4",
+   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-07"
   }
  ]
 }
