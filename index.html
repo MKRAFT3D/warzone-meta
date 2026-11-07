@@ -127,6 +127,10 @@ h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.015em;text-wrap:balance}
 .slot .lv{font-size:14px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
 .tag{font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:980px;margin-left:8px;vertical-align:3px}
 .t-meta{background:var(--ok-bg);color:var(--ok)} .t-swap{background:var(--swap-bg);color:var(--swap)} .t-extra{background:var(--extra-bg);color:var(--extra)}
+.stylebox{margin:48px auto 0;max-width:760px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.stylebox .chip{background:var(--alt);font-size:15px;padding:10px 18px}
+.stylebox .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.t-style{background:rgba(0,113,227,.12);color:var(--link)}
 .maxrow{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}
 .maxrow .link{font-size:15px}
 .maxok{color:var(--ok)}
@@ -2447,6 +2451,77 @@ loadData().then(function(DATA){
     return {out, locked};
   }
 
+  // Spielstile: Meta = genau wie im Netz. Andere Stile stellen den Build aus den
+  // Meta-Teilen, Alternativen und Extras der Waffe neu zusammen.
+  const STYLES = [
+    {id:'meta',    name:'Meta',            desc:'Genau so, wie die Meta-Seiten es empfehlen.'},
+    {id:'move',    name:'Schnell bewegen', desc:'Schneller zielen und sprinten. Gut, wenn du viel rennst.'},
+    {id:'ammo',    name:'Viel Munition',   desc:'Größtes Magazin. Weniger nachladen im Kampf gegen mehrere.'},
+    {id:'range',   name:'Weite Distanz',   desc:'Mehr Reichweite und schnellere Kugeln für weite Schüsse.'},
+    {id:'control', name:'Wenig Rückstoß',  desc:'Ruhigere Waffe beim Dauerfeuer. Leichter zu treffen.'}
+  ];
+  const SLOT_W = {
+    move:    {'Laser':3,'Schaft':2,'Hinterer Griff':2,'Lauf':1,'Munition':1,'Mündung':-1,'Unterlauf':-1},
+    range:   {'Mündung':3,'Lauf':3,'Munition':2,'Unterlauf':1,'Visier':1,'Laser':-1},
+    control: {'Mündung':3,'Unterlauf':3,'Hinterer Griff':2,'Schaft':1,'Lauf':1,'Laser':-1},
+    ammo:    {'Magazin':6}
+  };
+  let style = STYLES.some(s=>s.id===store.get('rm-style','meta')) ? store.get('rm-style','meta') : 'meta';
+  function size(p){
+    let m;
+    if(p.slot==='Magazin'){ m = p.name.match(/(\d+)\s*Round/i); return m ? +m[1] : null; }
+    if(p.slot==='Lauf'){
+      m = p.name.match(/(\d+(?:\.\d+)?)\s*"/); if(m) return +m[1];
+      m = p.name.match(/(\d+(?:\.\d+)?)\s*mm/i); if(m) return +m[1]/25.4;
+    }
+    return null;
+  }
+  function score(p, st, pool){
+    let s = p.kind==='meta' ? 3 : p.kind==='swap' ? 2 : 1;           // Meta bleibt bevorzugt
+    if(p.tags && p.tags.includes(st)) s += 5;                         // aus Quellen markiert
+    s += (SLOT_W[st]||{})[p.slot] || 0;
+    const n = p.name.toLowerCase(), v = size(p);
+    if(v!=null){
+      const vs = pool.filter(q=>q.slot===p.slot).map(size).filter(x=>x!=null);
+      const mx = Math.max(...vs), mn = Math.min(...vs), rel = mx>mn ? (v-mn)/(mx-mn) : 0;
+      if(p.slot==='Magazin'){ if(st==='ammo') s += 6*rel; if(st==='move') s -= rel; }
+      if(p.slot==='Lauf'){ if(st==='range') s += 3*rel; if(st==='move') s += 3*(1-rel); }
+    }
+    if(p.slot==='Schaft' && /no stock|wire|slight|retract|light|skel/.test(n)) s += st==='move' ? 3 : st==='control' ? -2 : 0;
+    if(p.slot==='Munition'){
+      if(/high velocity/.test(n) && st==='range') s += 2;
+      if(/frangible|snake/.test(n)) s += st==='move' ? 1 : st==='range' ? -1 : 0;
+    }
+    if(p.slot==='Mündung' && /comp|brake|port/.test(n) && st==='control') s += 2;
+    return s;
+  }
+  function styleBuild(w, L, st){
+    const base = build(w, L);
+    if(st==='meta') return base;
+    const atMax = !!(w.maxSure && w.maxLvl && L >= w.maxLvl);
+    const ok = l => l!=null ? l <= L : atMax;
+    const pool = [].concat(
+      w.meta.map(p=>({...p, kind:'meta'})),
+      (w.alts||[]).map(p=>({...p, kind:'swap'})),
+      (w.extras||[]).map(p=>({...p, kind:'extra'}))
+    ).filter(p=>ok(p.lvl));
+    const best = {};
+    for(const p of pool){
+      const s = score(p, st, pool);
+      if(!best[p.slot] || s > best[p.slot].s) best[p.slot] = {p, s};
+    }
+    const ORDER = ['Visier','Mündung','Lauf','Unterlauf','Magazin','Hinterer Griff','Schaft','Laser','Munition'];
+    const picked = Object.values(best).sort((a,b)=>b.s-a.s).slice(0, SLOTS).map(x=>x.p)
+      .sort((a,b)=>ORDER.indexOf(a.slot)-ORDER.indexOf(b.slot));
+    const metaBySlot = Object.fromEntries(w.meta.map(m=>[m.slot,m]));
+    const out = picked.map(p=>{
+      const m = metaBySlot[p.slot];
+      if(p.kind==='meta') return {...p, kind:'meta'};
+      return {...p, kind:'style', for: m && m.name!==p.name ? m : null};
+    });
+    return {out, locked: base.locked, changed: out.filter(a=>a.kind!=='meta').length};
+  }
+
   function select(id, scroll){
     current = id; store.set('rm-weapon', current); render();
     if(scroll) document.getElementById('build').scrollIntoView({behavior:'smooth'});
@@ -2516,11 +2591,19 @@ loadData().then(function(DATA){
       ni.innerHTML = '<h2 class="h2">Als Nächstes.</h2><p class="lead">Sobald der Build da ist, siehst du hier, welche Aufsätze du als Nächstes freischaltest.</p>';
       return;
     }
-    const {out, locked} = build(w, L);
-    const metaCount = out.filter(a=>a.kind==='meta').length;
+    const {out, locked, changed} = styleBuild(w, L, style);
+    const metaCount = build(w, L).out.filter(a=>a.kind==='meta').length;
+    const st = STYLES.find(s=>s.id===style);
+    const styleBox = '<div class="stylebox"><span class="small">Dein Spielstil</span><div class="chips" id="style-chips">'+
+      STYLES.map(s=>'<button type="button" class="chip" data-style="'+s.id+'" aria-pressed="'+(s.id===style)+'">'+esc(s.name)+'</button>').join('')+
+      '</div><span class="small">'+esc(st.desc)+'</span>'+
+      (style!=='meta' ? '<p class="notice" style="margin-top:4px">'+(changed
+        ? changed+' '+(changed===1?'Teil weicht':'Teile weichen')+' von der Meta ab. Zusammengestellt aus den Meta-Teilen und bewährten Alternativen dieser Waffe.'
+        : 'Für diesen Stil kenne ich bei dieser Waffe noch keine passenderen Teile. Du siehst den Meta-Build.')+'</p>' : '')+
+      '</div>';
     const slots = out.length ? '<ul class="slots">'+out.map(a=>{
-      const tag = a.kind==='meta' ? '<span class="tag t-meta">Meta</span>' : a.kind==='swap' ? '<span class="tag t-swap">Ersatz</span>' : '<span class="tag t-extra">Füller</span>';
-      const sub = a.kind==='swap' ? '<em>bis '+esc(a.for.name)+' frei ist'+(a.for.lvl!=null?' (Level '+a.for.lvl+')':'')+'</em>' : a.kind==='extra' ? '<em>füllt einen freien Platz</em>' : '';
+      const tag = a.kind==='meta' ? '<span class="tag t-meta">Meta</span>' : a.kind==='swap' ? '<span class="tag t-swap">Ersatz</span>' : a.kind==='style' ? '<span class="tag t-style">'+esc(st.name)+'</span>' : '<span class="tag t-extra">Füller</span>';
+      const sub = a.kind==='swap' ? '<em>bis '+esc(a.for.name)+' frei ist'+(a.for.lvl!=null?' (Level '+a.for.lvl+')':'')+'</em>' : a.kind==='extra' ? '<em>füllt einen freien Platz</em>' : a.kind==='style' ? '<em>'+(a.for?'statt '+esc(a.for.name)+' (Meta)':'passt zu deinem Spielstil')+'</em>' : '';
       return '<li class="slot"><span class="s">'+esc(a.slot)+'</span><span class="n">'+esc(a.name)+tag+sub+'</span><span class="lv">'+(a.lvl==null?'Max-Level':'ab Lv '+a.lvl)+'</span></li>';
     }).join('')+'</ul>' : '<p class="empty">Auf Level '+L+' ist noch nichts Passendes frei. Spiel die Waffe ein paar Runden, das erste Teil kommt bald.</p>';
 
@@ -2529,7 +2612,7 @@ loadData().then(function(DATA){
       '<div class="lvnum"><button type="button" id="lvl-dec" aria-label="Level runter">−</button><input type="number" id="lvl-num" min="1" max="'+maxOf(w)+'" value="'+L+'" aria-label="Waffenlevel"><button type="button" id="lvl-inc" aria-label="Level hoch">+</button></div>'+
       '<input type="range" id="lvl-range" min="1" max="'+maxOf(w)+'" value="'+L+'" aria-label="Waffenlevel Regler">'+
       (w.maxSure ? '<div class="maxrow"><span class="small">Maximallevel: '+w.maxLvl+'</span>'+(L<w.maxLvl?'<button type="button" class="link" id="lvl-max">Auf Max setzen ›</button>':'<span class="small maxok">✓ Waffe ist voll gelevelt</span>')+'</div>'
-                 : '<div class="maxrow"><span class="small">Maximallevel noch nicht bekannt</span></div>')+'</div>'+ slots +
+                 : '<div class="maxrow"><span class="small">Maximallevel noch nicht bekannt</span></div>')+'</div>'+ styleBox + slots +
       '<div class="ctas"><a class="link" href="'+esc(w.codeUrl||'https://wzhub.gg/loadouts')+'" target="_blank" rel="noopener">Waffencode holen ›</a></div>';
 
     ni.innerHTML = locked.length
@@ -2541,6 +2624,10 @@ loadData().then(function(DATA){
     document.getElementById('lvl-dec').onclick = ()=>setLevel(L-1);
     document.getElementById('lvl-inc').onclick = ()=>setLevel(L+1);
     const mx = document.getElementById('lvl-max'); if(mx) mx.onclick = ()=>setLevel(w.maxLvl);
+    document.getElementById('style-chips').onclick = e=>{
+      const b = e.target.closest('.chip'); if(!b) return;
+      style = b.dataset.style; store.set('rm-style', style); render();
+    };
     num.onchange = ()=>setLevel(num.value);
     rng.oninput = ()=>{ num.value = rng.value; };
     rng.onchange = ()=>setLevel(rng.value);
