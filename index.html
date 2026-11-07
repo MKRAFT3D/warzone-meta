@@ -98,6 +98,12 @@ h1 span{color:var(--accent)}
 .favchip{display:flex;align-items:stretch}
 .favchip .chip{border-top-right-radius:0;border-bottom-right-radius:0}
 .fav-del{border:1px solid var(--line);border-left:0;background:var(--panel);color:var(--muted);border-radius:0 4px 4px 0;padding:0 9px;cursor:pointer;font-size:1rem}
+.bug{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.bug h3{font:700 1.05rem var(--display);margin:0}
+.bug p{margin:0}
+.bug-form{display:flex;flex-direction:column;gap:8px}
+.bug-form input,.bug-form textarea{width:100%;box-sizing:border-box;padding:8px 10px;font:500 .95rem var(--body);border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);resize:vertical}
+.bug-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 footer{font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
 footer a{color:var(--muted)}
 @media (max-width:420px){ .slot{grid-template-columns:1fr auto} .slot .s{grid-column:1/-1} .level{grid-template-columns:1fr} }
@@ -117,6 +123,16 @@ footer a{color:var(--muted)}
   <nav class="picker" id="picker" aria-label="Waffe wählen"></nav>
 
   <section class="card" id="card" aria-live="polite"></section>
+
+  <section class="bug" aria-labelledby="bug-h">
+    <h3 id="bug-h">Fehler gefunden?</h3>
+    <p class="count">Schreib kurz, was nicht stimmt, z. B. ein falscher Aufsatz oder ein Knopf, der nicht geht. Die Meldung geht an Matti und wird automatisch geprüft.</p>
+    <form id="bug-form" class="bug-form">
+      <input id="bug-name" maxlength="40" placeholder="Dein Name (freiwillig)" autocomplete="off" aria-label="Dein Name">
+      <textarea id="bug-text" maxlength="500" rows="3" placeholder="Was ist falsch?" aria-label="Fehlerbeschreibung" required></textarea>
+      <div class="bug-row"><button type="submit" class="fav-add" id="bug-send">Fehler melden</button><span class="count" id="bug-msg" role="status"></span></div>
+    </form>
+  </section>
 
   <footer id="foot"></footer>
 </div>
@@ -942,6 +958,29 @@ loadData().then(function(DATA){
   document.getElementById('foot').innerHTML =
     '<span>Quelle: '+DATA.sources.map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>').join(' · ')+'</span>'+
     '<span>Mittelwert aus mehreren Quellen. Lädt bei jedem Öffnen den neuesten Stand. Zuletzt: '+esc(DATA.updated)+'. Deine Level bleiben in diesem Browser gespeichert.</span>';
+
+  const BUG_HOOK = 'https://hooks.nabu.casa/gAAAAABq75Skexz-_msHhAk5p-3ho_YqENMJkX3hdADLu5EwSRgsUrix4xZwR3v3tcMALqPKE_kb0T6HbiQhngQgu5kqRV9QTodaWxuvFixHYckFI11gUn8SVVDgHPP5zJ-0XUZsf48Zny5HF8uKPmsQJuJf7jckq_06xp0Irm1ZI9_IPFpJqjw=';
+  document.getElementById('bug-form').addEventListener('submit', async e=>{
+    e.preventDefault();
+    const msg = document.getElementById('bug-msg'), btn = document.getElementById('bug-send');
+    const text = document.getElementById('bug-text').value.trim();
+    const name = document.getElementById('bug-name').value.trim();
+    if(text.length < 4){ msg.textContent = 'Bitte schreib ein paar Worte mehr.'; return; }
+    const last = store.get('rm-bug-last', 0);
+    if(Date.now() - last < 60000){ msg.textContent = 'Bitte warte kurz, bevor du noch einen Fehler meldest.'; return; }
+    const w = byId[current];
+    const body = new URLSearchParams({ text: text + (w ? ' [Waffe: '+w.name+', Lv '+(levels[current]||1)+']' : ''), name: name });
+    btn.disabled = true; msg.textContent = 'Wird gesendet …';
+    try{
+      await fetch(BUG_HOOK, { method:'POST', mode:'no-cors', body });
+      store.set('rm-bug-last', Date.now());
+      document.getElementById('bug-text').value = '';
+      msg.textContent = 'Danke! Deine Meldung ist angekommen.';
+    }catch(err){
+      msg.textContent = 'Senden hat nicht geklappt. Bist du online? Versuch es gleich nochmal.';
+    }
+    btn.disabled = false;
+  });
 
   render();
 });
