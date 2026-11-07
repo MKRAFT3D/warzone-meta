@@ -1,0 +1,948 @@
+<title>Resurgence Meta</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one narrow column that also works as a small desktop widget; weapon picker, level control, then the 5 attachment slots */
+:root{
+  --bg:#eef0f2; --panel:#ffffff; --line:#d5dade; --ink:#1b2128; --muted:#5d6872;
+  --accent:#d9620b; --accent-ink:#ffffff; --ok:#1f7a4d; --swap:#9a6b00; --extra:#3d5f8a; --lock:#8a939b;
+  --ok-bg:#e3f2ea; --swap-bg:#fbf0d6; --extra-bg:#e3ebf5;
+  --display:"Chakra Petch", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#14191f; --panel:#1c232b; --line:#2d3740; --ink:#e7ebee; --muted:#9aa6b0;
+  --accent:#ff8a2b; --accent-ink:#1a1206; --ok:#5ccf93; --swap:#e7b64a; --extra:#8db3e6; --lock:#6c7781;
+  --ok-bg:#163326; --swap-bg:#3a2f12; --extra-bg:#1b2a3d; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#14191f; --panel:#1c232b; --line:#2d3740; --ink:#e7ebee; --muted:#9aa6b0;
+  --accent:#ff8a2b; --accent-ink:#1a1206; --ok:#5ccf93; --swap:#e7b64a; --extra:#8db3e6; --lock:#6c7781;
+  --ok-bg:#163326; --swap-bg:#3a2f12; --extra-bg:#1b2a3d; color-scheme:dark }
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 28px}
+.wrap{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:700;font-size:1.7rem;margin:0;letter-spacing:.02em;text-wrap:balance}
+h1 span{color:var(--accent)}
+.stamp{font-family:var(--mono);font-size:.75rem;color:var(--muted);text-align:right}
+.label{font-family:var(--display);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+
+.combo{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}
+.combo b{font-family:var(--display);font-size:1.05rem}
+
+.picker{display:flex;flex-direction:column;gap:8px}
+.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.group .label{width:100%}
+.chip{font:600 .9rem var(--display);letter-spacing:.03em;border:1px solid var(--line);background:var(--panel);color:var(--ink);
+  padding:7px 12px;border-radius:4px;cursor:pointer;display:flex;gap:6px;align-items:center}
+.chip small{font:500 .68rem var(--mono);color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip[aria-pressed="true"] small{color:var(--accent-ink);opacity:.8}
+.chip:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:14px}
+.whead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.whead h2{font-family:var(--display);font-size:1.5rem;margin:0;line-height:1.1}
+.whead .sub{color:var(--muted);font-size:.85rem}
+.tier{font:700 .75rem var(--display);letter-spacing:.1em;padding:4px 8px;border-radius:3px;border:1px solid currentColor}
+.tier.meta{color:var(--accent)} .tier.a{color:var(--extra)}
+.note{font-size:.82rem;color:var(--swap);background:var(--swap-bg);padding:6px 10px;border-radius:4px}
+
+.level{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
+.level .ctl{display:flex;align-items:center;gap:4px}
+.level button{width:34px;height:34px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:4px;font:700 1.1rem var(--mono);cursor:pointer}
+.level input[type=number]{width:58px;height:34px;text-align:center;font:600 1.1rem var(--mono);border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.level input[type=range]{width:100%;accent-color:var(--accent);min-width:0}
+.lvl-head{display:flex;justify-content:space-between;align-items:baseline}
+.count{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+
+.slots{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.slot{display:grid;grid-template-columns:96px 1fr auto;gap:10px;align-items:center;padding:9px 10px;border-radius:5px;border:1px solid var(--line)}
+.slot .s{font:600 .72rem var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.slot .n{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.slot .n em{display:block;font-style:normal;font-weight:400;font-size:.76rem;color:var(--muted)}
+.slot .lv{font:500 .75rem var(--mono);color:var(--muted);text-align:right;white-space:nowrap}
+.tag{font:700 .64rem var(--display);letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-left:6px;vertical-align:middle}
+.t-meta{background:var(--ok-bg);color:var(--ok)} .t-swap{background:var(--swap-bg);color:var(--swap)} .t-extra{background:var(--extra-bg);color:var(--extra)}
+.empty{padding:12px;border:1px dashed var(--line);border-radius:5px;color:var(--muted);font-size:.88rem}
+
+.next{display:flex;flex-direction:column;gap:6px}
+.next ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.next li{display:flex;justify-content:space-between;gap:10px;font-size:.88rem;padding:4px 0;border-bottom:1px solid var(--line)}
+.next li:last-child{border-bottom:0}
+.next li span:last-child{font-family:var(--mono);color:var(--lock);white-space:nowrap}
+.done{color:var(--ok);font-weight:600;font-size:.9rem}
+
+.status{font-weight:600;color:var(--accent)} .status.ok{color:var(--ok)} .status.old{color:var(--swap)}
+.codebtn{font:600 .8rem var(--display);letter-spacing:.04em;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:6px 10px;align-self:flex-start}
+.combo{gap:8px}
+.combo-picks{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.pick{flex:1 1 140px;display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:6px;padding:10px 14px;cursor:pointer;text-align:left}
+.pick-role{font:600 .68rem var(--display);text-transform:uppercase;letter-spacing:.12em;opacity:.85}
+.pick-name{font:700 1.3rem var(--display);line-height:1.1}
+.plus{align-self:center;font:700 1.4rem var(--display);color:var(--accent)}
+.chip .rk{font:700 .78rem var(--mono);color:var(--muted)}
+.chip.best{border-color:var(--accent);border-width:2px}
+.chip .star{font:700 .6rem var(--display);letter-spacing:.08em;background:var(--accent);color:var(--accent-ink);padding:2px 5px;border-radius:3px}
+.chip[aria-pressed="true"] .rk{color:var(--accent-ink)}
+.chip[aria-pressed="true"] .star{background:var(--accent-ink);color:var(--accent)}
+.fav{display:flex;flex-direction:column;gap:8px}
+.fav-form{display:flex;gap:6px;flex-wrap:wrap}
+.fav-form input{flex:1 1 200px;min-width:0;height:38px;padding:0 10px;font:500 .95rem var(--body);border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--ink)}
+.fav-add{height:38px;padding:0 14px;font:600 .9rem var(--display);border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:4px;cursor:pointer}
+.fav-chips{display:flex;flex-wrap:wrap;gap:6px}
+.favchip{display:flex;align-items:stretch}
+.favchip .chip{border-top-right-radius:0;border-bottom-right-radius:0}
+.fav-del{border:1px solid var(--line);border-left:0;background:var(--panel);color:var(--muted);border-radius:0 4px 4px 0;padding:0 9px;cursor:pointer;font-size:1rem}
+footer{font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+footer a{color:var(--muted)}
+@media (max-width:420px){ .slot{grid-template-columns:1fr auto} .slot .s{grid-column:1/-1} .level{grid-template-columns:1fr} }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Resurgence <span>Meta</span></h1>
+    <div class="stamp"><span id="stamp"></span><br><span id="status" class="status">Lade aktuelle Meta …</span></div>
+  </header>
+
+  <div class="combo" id="combo"></div>
+
+  <section class="fav" id="fav" aria-label="Lieblingswaffen"></section>
+
+  <nav class="picker" id="picker" aria-label="Waffe wählen"></nav>
+
+  <section class="card" id="card" aria-live="polite"></section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script id="fallback-data" type="application/json">
+{
+ "updated": "2026-11-07",
+ "dataDate": "6. November 2026",
+ "season": "Season 1 · Modern Warfare 4",
+ "combo": {
+  "long": "cronen-osprey",
+  "close": "iso-nightshade",
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung: Sturmgewehr für Distanz, MP für Nahkampf."
+ },
+ "sources": [
+  {
+   "name": "WZ Stats",
+   "url": "https://wzstats.gg/warzone/meta/resurgence"
+  },
+  {
+   "name": "Warzone Loadout (CODMunity)",
+   "url": "https://warzoneloadout.games/"
+  },
+  {
+   "name": "WZ Hub",
+   "url": "https://wzhub.gg/loadouts"
+  },
+  {
+   "name": "CODMunity Resurgence",
+   "url": "https://codmunity.gg/resurgence"
+  }
+ ],
+ "weapons": [
+  {
+   "id": "cronen-osprey",
+   "name": "Cronen Osprey",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "META",
+   "rank": "#1 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Locus PX3 Canted",
+     "lvl": 32
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 21
+    },
+    {
+     "slot": "Lauf",
+     "name": "IO-556 Tac 18\"",
+     "lvl": 54
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Mag",
+     "lvl": 42
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 68
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Tac90 Grip",
+     "lvl": 6
+    },
+    {
+     "slot": "Laser",
+     "name": "SA Laz-500",
+     "lvl": 52
+    },
+    {
+     "slot": "Schaft",
+     "name": "Fade Tac 9L",
+     "lvl": 57
+    }
+   ],
+   "src": "Alle 4 Quellen: Top-Waffe. Build bei 4 von 5 Teilen gleich.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "han-86",
+   "name": "Han 86",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "META",
+   "rank": "#2 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 19
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 6
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit Lightning-7 465mm",
+     "lvl": 18
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Drum",
+     "lvl": 10
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 70
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "SZ Micro D-3",
+     "lvl": 5
+    },
+    {
+     "slot": "Lauf",
+     "name": "Hanbit RK8 406.4mm",
+     "lvl": 7
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO Frangible",
+     "lvl": 8
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 3
+    },
+    {
+     "slot": "Schaft",
+     "name": "FR4 Retractable Stock",
+     "lvl": 4
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "XRK Justice II Grip",
+     "lvl": 14
+    }
+   ],
+   "src": "3 von 4 Quellen: Meta. Build bei 4 von 5 Teilen gleich.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "m4",
+   "name": "M4",
+   "type": "Sturmgewehr",
+   "range": "long",
+   "tier": "A",
+   "rank": "#3 Langstrecke",
+   "meta": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 70
+    },
+    {
+     "slot": "Mündung",
+     "name": "FSS IS300",
+     "lvl": 4
+    },
+    {
+     "slot": "Lauf",
+     "name": "16\" Highmark Barrel",
+     "lvl": 18
+    },
+    {
+     "slot": "Magazin",
+     "name": "45 Round Mag",
+     "lvl": 9
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 57
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Visier",
+     "name": "Slimline Elite",
+     "lvl": 13
+    },
+    {
+     "slot": "Munition",
+     "name": "5.56 NATO Overpressured",
+     "lvl": 3
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "SZ Gen.6 PEQ",
+     "lvl": 2
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Brace DX Grip",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "PF1 Fixed Stock",
+     "lvl": 14
+    }
+   ],
+   "src": "Build in beiden Build-Quellen identisch. Rang schwankt zwischen Meta und A.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "iso-nightshade",
+   "name": "ISO Nightshade",
+   "type": "MP",
+   "range": "close",
+   "tier": "META",
+   "rank": "#1 Nahkampf",
+   "meta": [
+    {
+     "slot": "Lauf",
+     "name": "ZLR Mag-Z 9\"",
+     "lvl": 2
+    },
+    {
+     "slot": "Magazin",
+     "name": "40 Round Mag",
+     "lvl": null
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "Demo STP-1",
+     "lvl": 6
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP G2-44 Stock",
+     "lvl": 5
+    },
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum High Velocity",
+     "lvl": null
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Crackdown",
+     "lvl": 4
+    }
+   ],
+   "src": "Alle 4 Quellen: Top-MP. Warzone-Build von Warzone Loadout, Level von WZ Stats.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "vel-46",
+   "name": "VEL 46",
+   "type": "MP",
+   "range": "close",
+   "tier": "META",
+   "rank": "#2 Nahkampf",
+   "meta": [
+    {
+     "slot": "Mündung",
+     "name": "212 LC40 Comp",
+     "lvl": 27
+    },
+    {
+     "slot": "Lauf",
+     "name": "VB-46 Series 11",
+     "lvl": 3
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Tac90 Grip",
+     "lvl": 46
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Drum",
+     "lvl": 33
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP U-Turn Stock",
+     "lvl": 37
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Crackdown",
+     "lvl": 4
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 10
+    },
+    {
+     "slot": "Schaft",
+     "name": "VEL 46 Extended",
+     "lvl": 20
+    },
+    {
+     "slot": "Schaft",
+     "name": "EXP Lockdown Stock",
+     "lvl": 15
+    }
+   ],
+   "extras": [
+    {
+     "slot": "Hinterer Griff",
+     "name": "V46 R-Skel Grip",
+     "lvl": 9
+    },
+    {
+     "slot": "Laser",
+     "name": "Schlager Visiv-5",
+     "lvl": 23
+    }
+   ],
+   "src": "3 von 4 Quellen: Top-MP. Build von WZ Stats (nur dort für die neue VEL 46).",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  },
+  {
+   "id": "x-58-nyx",
+   "name": "X-58 Nyx",
+   "type": "MP",
+   "range": "close",
+   "tier": "A",
+   "rank": "#3 Nahkampf",
+   "meta": [
+    {
+     "slot": "Lauf",
+     "name": "Doksa 4F 304.8mm",
+     "lvl": 37
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "Mire-50 Tac Grip",
+     "lvl": 7
+    },
+    {
+     "slot": "Magazin",
+     "name": "60 Round Mag",
+     "lvl": 9
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "BOK-980",
+     "lvl": 20
+    },
+    {
+     "slot": "Schaft",
+     "name": "Mugi HUL-73.M Stock",
+     "lvl": 3
+    }
+   ],
+   "alts": [],
+   "extras": [
+    {
+     "slot": "Laser",
+     "name": "Schlager Visiv-5",
+     "lvl": 12
+    }
+   ],
+   "src": "Build in beiden Build-Quellen identisch.",
+   "codeUrl": "https://wzhub.gg/loadouts"
+  }
+ ],
+ "library": [
+  {
+   "id": "mosin-nagant",
+   "name": "Mosin-Nagant",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4"
+  },
+  {
+   "id": "axion",
+   "name": "Axion",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4"
+  },
+  {
+   "id": "kg-7-vulcan",
+   "name": "KG-7 Vulcan",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4"
+  },
+  {
+   "id": "astaroth-57",
+   "name": "Astaroth .57",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4"
+  },
+  {
+   "id": "oden",
+   "name": "Oden",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4"
+  },
+  {
+   "id": "patriot-xmr",
+   "name": "Patriot XMR",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4"
+  },
+  {
+   "id": "ppsh-41",
+   "name": "PPSh-41",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4"
+  },
+  {
+   "id": "wz55-striga",
+   "name": "WZ.55 Striga",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4"
+  },
+  {
+   "id": "kastov-762",
+   "name": "Kastov 762",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4"
+  },
+  {
+   "id": "apoc-338",
+   "name": "Apoc-338",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4"
+  },
+  {
+   "id": "cronen-squall",
+   "name": "Cronen Squall",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4"
+  },
+  {
+   "id": "finn-lmg",
+   "name": "FiNN LMG",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4"
+  },
+  {
+   "id": "krait-p68",
+   "name": "Krait P68",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4"
+  },
+  {
+   "id": "rezi-12",
+   "name": "Rezi 12",
+   "type": "Schrotflinte",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4"
+  },
+  {
+   "id": "signal-50",
+   "name": "Signal 50",
+   "type": "Scharfschützengewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4"
+  },
+  {
+   "id": "warlord",
+   "name": "Warlord",
+   "type": "Schrotflinte",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4"
+  },
+  {
+   "id": "hyeon-burst",
+   "name": "Hyeon Burst",
+   "type": "Sturmgewehr",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4"
+  },
+  {
+   "id": "csg-35",
+   "name": "CSG-35",
+   "type": "MP",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4"
+  },
+  {
+   "id": "type-73",
+   "name": "Type 73",
+   "type": "LMG",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4"
+  },
+  {
+   "id": "oris-86",
+   "name": "Oris 8.6",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4"
+  },
+  {
+   "id": "mar-9",
+   "name": "MAR-9",
+   "type": "Marksman",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4"
+  },
+  {
+   "id": "sang-9mm",
+   "name": "Sang 9mm",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4"
+  },
+  {
+   "id": "50-gs",
+   "name": ".50 GS",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4"
+  },
+  {
+   "id": "mojave-357",
+   "name": "Mojave .357",
+   "type": "Pistole",
+   "tier": "",
+   "rank": "",
+   "meta": [],
+   "alts": [],
+   "extras": [],
+   "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4"
+  }
+ ]
+}
+</script>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/MKRAFT3D/warzone-meta/main/meta.json';
+const store0 = { get(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } }, set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} } };
+async function loadData(){
+  const st = document.getElementById('status');
+  try{
+    const r = await fetch(DATA_URL + '?t=' + Date.now(), {cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const d = await r.json();
+    if(!d.weapons || !d.weapons.length) throw new Error('leer');
+    if(!d.library){ try{ d.library = JSON.parse(document.getElementById('fallback-data').textContent).library || []; }catch(e){ d.library = []; } }
+    store0.set('rm-cache', d);
+    st.textContent = 'Gerade aktualisiert ✓'; st.className='status ok';
+    return d;
+  }catch(e){
+    const c = store0.get('rm-cache');
+    st.className='status old';
+    if(c){ st.textContent = 'Kein Internet – letzter Stand'; return c; }
+    st.textContent = 'Kein Internet – eingebauter Stand';
+    return JSON.parse(document.getElementById('fallback-data').textContent);
+  }
+}
+loadData().then(function(DATA){
+  const MAX_LVL = 80, SLOTS = 5;
+  const store = {
+    get(k,d){ try{ const v = localStorage.getItem(k); return v===null ? d : JSON.parse(v); }catch(e){ return d; } },
+    set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  };
+  const LIB = (DATA.library||[]).filter(l=>!DATA.weapons.some(w=>w.id===l.id));
+  const ALL = DATA.weapons.concat(LIB);
+  const byId = Object.fromEntries(ALL.map(w=>[w.id,w]));
+  let favs = (store.get('rm-favs', [])||[]).filter(id=>byId[id]);
+  let current = byId[store.get('rm-weapon','')] ? store.get('rm-weapon','') : DATA.combo.long;
+  const levels = store.get('rm-levels', {});
+  const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // Pick the best 5 attachments the weapon has unlocked at this level.
+  function build(w, L){
+    const out = [], used = new Set();
+    for(const m of w.meta){
+      if(m.lvl==null || m.lvl <= L){ out.push({...m, kind:'meta'}); used.add(m.slot); continue; }
+      const alt = w.alts.find(a => a.slot===m.slot && a.lvl<=L);
+      if(alt){ out.push({...alt, kind:'swap', for:m}); used.add(m.slot); }
+    }
+    for(const e of w.extras){
+      if(out.length >= SLOTS) break;
+      if(e.lvl <= L && !used.has(e.slot)){ out.push({...e, kind:'extra'}); used.add(e.slot); }
+    }
+    const locked = w.meta.filter(m => m.lvl!=null && m.lvl > L).sort((a,b)=>a.lvl-b.lvl);
+    return {out, locked};
+  }
+
+  document.getElementById('stamp').innerHTML =
+    esc(DATA.season)+'<br>Daten vom '+esc(DATA.dataDate);
+
+  const cl = byId[DATA.combo.long], cc = byId[DATA.combo.close];
+  document.getElementById('combo').innerHTML =
+    '<span class="label">Die Meta – nimm diese zwei</span>'+
+    '<div class="combo-picks">'+
+      '<button type="button" class="pick" data-id="'+cl.id+'"><span class="pick-role">Hauptwaffe</span><span class="pick-name">'+esc(cl.name)+'</span></button>'+
+      '<span class="plus">+</span>'+
+      '<button type="button" class="pick" data-id="'+cc.id+'"><span class="pick-role">Zweitwaffe</span><span class="pick-name">'+esc(cc.name)+'</span></button>'+
+    '</div><span class="count">'+esc(DATA.combo.why)+' Tipp: Antippen zeigt den Build.</span>';
+  document.getElementById('combo').addEventListener('click', e=>{
+    const b = e.target.closest('.pick'); if(!b) return;
+    current = b.dataset.id; store.set('rm-weapon', current); render();
+    document.getElementById('card').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  const favEl = document.getElementById('fav');
+  const byName = n => ALL.find(w=>w.name.toLowerCase()===String(n).trim().toLowerCase());
+  favEl.innerHTML =
+    '<span class="label">Deine Lieblingswaffen</span>'+
+    '<form class="fav-form" id="fav-form"><input id="fav-input" list="fav-list" placeholder="Waffe eintippen, z. B. Kastov 762" autocomplete="off" aria-label="Lieblingswaffe suchen">'+
+    '<datalist id="fav-list">'+ALL.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(w=>'<option value="'+esc(w.name)+'"></option>').join('')+'</datalist>'+
+    '<button type="submit" class="fav-add">Hinzufügen</button></form>'+
+    '<div class="fav-chips" id="fav-chips"></div><span class="count" id="fav-msg"></span>';
+  function drawFavs(){
+    const box = document.getElementById('fav-chips');
+    box.innerHTML = favs.length ? favs.map(id=>'<span class="favchip"><button type="button" class="chip" data-id="'+id+'" aria-pressed="false">★ '+esc(byId[id].name)+' <small>Lv '+(levels[id]||1)+'</small></button><button type="button" class="fav-del" data-del="'+id+'" aria-label="'+esc(byId[id].name)+' entfernen">×</button></span>').join('')
+      : '<span class="count">Noch keine. Tipp oben deine Waffe ein und klick auf Hinzufügen.</span>';
+  }
+  document.getElementById('fav-form').addEventListener('submit', e=>{
+    e.preventDefault();
+    const inp = document.getElementById('fav-input'), msg = document.getElementById('fav-msg');
+    const w = byName(inp.value);
+    if(!w){ msg.textContent = 'Diese Waffe kenne ich nicht. Wähl am besten einen Namen aus der Vorschlagsliste.'; return; }
+    if(!favs.includes(w.id)){ favs.push(w.id); store.set('rm-favs', favs); }
+    msg.textContent = ''; inp.value = '';
+    current = w.id; store.set('rm-weapon', current); drawFavs(); render();
+  });
+  favEl.addEventListener('click', e=>{
+    const del = e.target.closest('.fav-del');
+    if(del){ favs = favs.filter(id=>id!==del.dataset.del); store.set('rm-favs', favs); drawFavs(); render(); return; }
+    const b = e.target.closest('.chip'); if(!b) return;
+    current = b.dataset.id; store.set('rm-weapon', current); render();
+  });
+  drawFavs();
+
+  const picker = document.getElementById('picker');
+  const groups = [['long','Langstrecke · Hauptwaffe'],['close','Nahkampf · Zweitwaffe']];
+  picker.innerHTML = groups.map(([r,label]) =>
+    '<div class="group"><span class="label">'+label+' · nach Stärke sortiert</span>'+
+    DATA.weapons.filter(w=>w.range===r).map(w=>({w, n: parseInt((String(w.rank).match(/\d+/)||[99])[0],10)})).sort((a,b)=>a.n-b.n).map(({w,n},i) =>
+      '<button class="chip'+(i===0?' best':'')+'" type="button" id="chip-'+w.id+'" data-id="'+w.id+'" aria-pressed="false">'+
+      '<span class="rk">#'+(i+1)+'</span>'+esc(w.name)+(i===0?'<span class="star">BESTE WAHL</span>':'')+
+      ' <small>Lv '+(levels[w.id]||1)+'</small></button>').join('')+'</div>').join('');
+  picker.addEventListener('click', e=>{
+    const b = e.target.closest('.chip'); if(!b) return;
+    current = b.dataset.id; store.set('rm-weapon', current); render();
+  });
+
+  const card = document.getElementById('card');
+  function setLevel(v){
+    v = Math.max(1, Math.min(MAX_LVL, parseInt(v,10)||1));
+    levels[current] = v; store.set('rm-levels', levels);
+    render(true);
+  }
+
+  function render(keepFocus){
+    const w = byId[current], L = levels[current] || 1;
+    document.querySelectorAll('#picker .chip, #fav .chip').forEach(c=>{
+      c.setAttribute('aria-pressed', c.dataset.id===current ? 'true':'false');
+      c.querySelector('small').textContent = 'Lv '+(levels[c.dataset.id]||1);
+    });
+    if(!w.meta.length){
+      card.innerHTML = '<div class="whead"><div><h2>'+esc(w.name)+'</h2><div class="sub">'+esc(w.type)+(favs.includes(w.id)?' · ★ Lieblingswaffe':'')+'</div></div></div>'+
+        '<div class="note">Für diese Waffe habe ich noch keinen geprüften Build. Er kommt mit dem nächsten Update (täglich früh morgens). Öffne die Datei dann einfach nochmal.</div>'+
+        '<a class="codebtn" href="'+esc(w.codeUrl||'https://wzhub.gg/loadouts')+'" target="_blank" rel="noopener">Build und Code im Netz ansehen ↗</a>';
+      return;
+    }
+    const {out, locked} = build(w, L);
+    const tierCls = w.tier==='META' ? 'meta' : 'a';
+    const slotsHtml = out.length ? '<ul class="slots">'+out.map(a=>{
+      const tag = a.kind==='meta' ? '<span class="tag t-meta">Meta</span>'
+        : a.kind==='swap' ? '<span class="tag t-swap">Ersatz</span>'
+        : '<span class="tag t-extra">Füller</span>';
+      const sub = a.lvl==null ? '<em>Freischalt-Level unbekannt, bitte im Spiel prüfen</em>' : a.kind==='swap' ? '<em>bis '+esc(a.for.name)+' frei ist (Level '+a.for.lvl+')</em>'
+        : a.kind==='extra' ? '<em>füllt einen freien Platz, bis mehr Meta-Teile frei sind</em>' : '';
+      return '<li class="slot"><span class="s">'+esc(a.slot)+'</span><span class="n">'+esc(a.name)+tag+sub+'</span><span class="lv">'+(a.lvl==null?'Lv ?':'ab Lv '+a.lvl)+'</span></li>';
+    }).join('')+'</ul>'
+      : '<div class="empty">Auf Level '+L+' ist noch nichts Brauchbares frei. Spiel die Waffe ein paar Runden ohne Aufsätze, das erste Teil kommt bald.</div>';
+
+    const nextHtml = locked.length
+      ? '<div class="next"><span class="label">Als Nächstes freischalten</span><ul>'+
+        locked.map(m=>'<li><span>'+esc(m.name)+' <span class="count">· '+esc(m.slot)+'</span></span><span>Lv '+m.lvl+' · noch '+(m.lvl-L)+'</span></li>').join('')+'</ul></div>'
+      : '<div class="done">Alle Meta-Aufsätze sind frei. Das ist der volle Build.</div>';
+
+    const metaCount = out.filter(a=>a.kind==='meta').length;
+    card.innerHTML =
+      '<div class="whead"><div><h2>'+esc(w.name)+'</h2><div class="sub">'+esc(w.type)+(w.rank?' · '+esc(w.rank)+' in Wiederauferstehung':'')+(favs.includes(w.id)?' · ★ Lieblingswaffe':'')+'</div><div class="sub">'+esc(w.src||'')+'</div></div>'+(w.tier?'<span class="tier '+tierCls+'">'+(w.tier==='META'?'META':esc(w.tier)+'-TIER')+'</span>':'<span class="tier a">Nicht Meta</span>')+'</div>'+
+      (w.note ? '<div class="note">'+esc(w.note)+'</div>' : '')+
+      '<div><div class="lvl-head"><label class="label" for="lvl-num">Dein Waffenlevel</label><span class="count">'+metaCount+' von '+w.meta.length+' Meta-Teilen frei</span></div>'+
+      '<div class="level"><div class="ctl"><button type="button" id="lvl-dec" aria-label="Level runter">−</button><input type="number" id="lvl-num" min="1" max="'+MAX_LVL+'" value="'+L+'"><button type="button" id="lvl-inc" aria-label="Level hoch">+</button></div>'+
+      '<input type="range" id="lvl-range" min="1" max="'+MAX_LVL+'" value="'+L+'" aria-label="Waffenlevel Regler"><span class="count">max '+MAX_LVL+'</span></div></div>'+
+      '<div><span class="label">So baust du sie jetzt</span></div>'+slotsHtml+nextHtml+'<a class="codebtn" href="'+esc(w.codeUrl||'https://wzhub.gg/loadouts')+'" target="_blank" rel="noopener">Waffencode holen ↗</a>';
+
+    const num = card.querySelector('#lvl-num'), rng = card.querySelector('#lvl-range');
+    card.querySelector('#lvl-dec').onclick = ()=>setLevel(L-1);
+    card.querySelector('#lvl-inc').onclick = ()=>setLevel(L+1);
+    num.onchange = ()=>setLevel(num.value);
+    rng.oninput = ()=>{ num.value = rng.value; };
+    rng.onchange = ()=>setLevel(rng.value);
+    if(keepFocus===true && document.activeElement===document.body){}
+  }
+
+  document.getElementById('foot').innerHTML =
+    '<span>Quelle: '+DATA.sources.map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>').join(' · ')+'</span>'+
+    '<span>Mittelwert aus mehreren Quellen. Lädt bei jedem Öffnen den neuesten Stand. Zuletzt: '+esc(DATA.updated)+'. Deine Level bleiben in diesem Browser gespeichert.</span>';
+
+  render();
+});
+</script>
