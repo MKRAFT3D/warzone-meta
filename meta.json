@@ -79,7 +79,9 @@
     }
    ],
    "src": "Alle 4 Quellen: Top-Waffe. Build bei 4 von 5 Teilen gleich.",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "maxLvl": 70,
+   "maxSure": false
   },
   {
    "id": "han-86",
@@ -150,7 +152,9 @@
     }
    ],
    "src": "3 von 4 Quellen: Meta. Build bei 4 von 5 Teilen gleich.",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "maxLvl": 70,
+   "maxSure": false
   },
   {
    "id": "m4",
@@ -216,7 +220,9 @@
     }
    ],
    "src": "Build in beiden Build-Quellen identisch. Rang schwankt zwischen Meta und A.",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "maxLvl": 72,
+   "maxSure": false
   },
   {
    "id": "iso-nightshade",
@@ -267,7 +273,9 @@
     }
    ],
    "src": "Alle 4 Quellen: Top-MP. Warzone-Build von Warzone Loadout, Level von WZ Stats.",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "maxLvl": 63,
+   "maxSure": true
   },
   {
    "id": "vel-46",
@@ -338,7 +346,9 @@
     }
    ],
    "src": "3 von 4 Quellen: Top-MP. Build von WZ Stats (nur dort für die neue VEL 46).",
-   "codeUrl": "https://wzhub.gg/loadouts"
+   "codeUrl": "https://wzhub.gg/loadouts",
+   "maxLvl": 60,
+   "maxSure": false
   },
   {
    "id": "x-58-nyx",
@@ -451,7 +461,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 41,
+   "maxSure": false
   },
   {
    "id": "axion",
@@ -517,7 +529,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 69,
+   "maxSure": false
   },
   {
    "id": "kg-7-vulcan",
@@ -583,7 +597,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 71,
+   "maxSure": false
   },
   {
    "id": "astaroth-57",
@@ -644,7 +660,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 50,
+   "maxSure": false
   },
   {
    "id": "oden",
@@ -715,7 +733,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 65,
+   "maxSure": false
   },
   {
    "id": "patriot-xmr",
@@ -781,7 +801,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 62,
+   "maxSure": false
   },
   {
    "id": "ppsh-41",
@@ -872,7 +894,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 61,
+   "maxSure": false
   },
   {
    "id": "wz55-striga",
@@ -933,7 +957,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 60,
+   "maxSure": false
   },
   {
    "id": "kastov-762",
@@ -1014,7 +1040,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 71,
+   "maxSure": false
   },
   {
    "id": "apoc-338",
@@ -1070,7 +1098,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 47,
+   "maxSure": false
   },
   {
    "id": "cronen-squall",
@@ -1131,7 +1161,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 67,
+   "maxSure": false
   },
   {
    "id": "finn-lmg",
@@ -1212,7 +1244,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 51,
+   "maxSure": false
   },
   {
    "id": "krait-p68",
@@ -1258,7 +1292,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 38,
+   "maxSure": false
   },
   {
    "id": "rezi-12",
@@ -1319,7 +1355,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 60,
+   "maxSure": false
   },
   {
    "id": "signal-50",
@@ -1370,7 +1408,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 73,
+   "maxSure": false
   },
   {
    "id": "warlord",
@@ -1431,7 +1471,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 59,
+   "maxSure": false
   },
   {
    "id": "hyeon-burst",
@@ -1502,7 +1544,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 68,
+   "maxSure": false
   },
   {
    "id": "csg-35",
@@ -1552,7 +1596,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 42,
+   "maxSure": false
   },
   {
    "id": "type-73",
@@ -1628,7 +1674,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 64,
+   "maxSure": false
   },
   {
    "id": "oris-86",
@@ -1714,7 +1762,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 70,
+   "maxSure": false
   },
   {
    "id": "mar-9",
@@ -1754,7 +1804,9 @@
    "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4",
    "src": "Build von WZ Stats. Freischalt-Level aus denselben Daten.",
    "checked": "2026-11-07",
-   "note": "Kein eigener Warzone-Build, Mehrspieler-Build."
+   "note": "Kein eigener Warzone-Build, Mehrspieler-Build.",
+   "maxLvl": 54,
+   "maxSure": false
   },
   {
    "id": "sang-9mm",
@@ -1805,7 +1857,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 38,
+   "maxSure": false
   },
   {
    "id": "50-gs",
@@ -1861,7 +1915,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 50,
+   "maxSure": false
   },
   {
    "id": "mojave-357",
@@ -1912,7 +1968,9 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07"
+   "checked": "2026-11-07",
+   "maxLvl": 44,
+   "maxSure": false
   }
  ]
 }
