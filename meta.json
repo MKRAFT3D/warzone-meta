@@ -249,10 +249,16 @@
     {
      "slot": "Munition",
      "name": "9mm Parabellum High Velocity",
-     "lvl": null
+     "lvl": 61
     }
    ],
-   "alts": [],
+   "alts": [
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum Frangible",
+     "lvl": 8
+    }
+   ],
    "extras": [
     {
      "slot": "Mündung",

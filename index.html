@@ -389,10 +389,16 @@ footer a{color:var(--muted)}
     {
      "slot": "Munition",
      "name": "9mm Parabellum High Velocity",
-     "lvl": null
+     "lvl": 61
     }
    ],
-   "alts": [],
+   "alts": [
+    {
+     "slot": "Munition",
+     "name": "9mm Parabellum Frangible",
+     "lvl": 8
+    }
+   ],
    "extras": [
     {
      "slot": "Mündung",
@@ -829,15 +835,15 @@ loadData().then(function(DATA){
   function build(w, L){
     const out = [], used = new Set();
     for(const m of w.meta){
-      if(m.lvl==null || m.lvl <= L){ out.push({...m, kind:'meta'}); used.add(m.slot); continue; }
-      const alt = w.alts.find(a => a.slot===m.slot && a.lvl<=L);
+      if(m.lvl!=null && m.lvl <= L){ out.push({...m, kind:'meta'}); used.add(m.slot); continue; }
+      const alt = (w.alts||[]).find(a => a.slot===m.slot && a.lvl!=null && a.lvl<=L);
       if(alt){ out.push({...alt, kind:'swap', for:m}); used.add(m.slot); }
     }
-    for(const e of w.extras){
+    for(const e of (w.extras||[])){
       if(out.length >= SLOTS) break;
-      if(e.lvl <= L && !used.has(e.slot)){ out.push({...e, kind:'extra'}); used.add(e.slot); }
+      if(e.lvl!=null && e.lvl <= L && !used.has(e.slot)){ out.push({...e, kind:'extra'}); used.add(e.slot); }
     }
-    const locked = w.meta.filter(m => m.lvl!=null && m.lvl > L).sort((a,b)=>a.lvl-b.lvl);
+    const locked = w.meta.filter(m => m.lvl==null || m.lvl > L).sort((a,b)=>(a.lvl==null?999:a.lvl)-(b.lvl==null?999:b.lvl));
     return {out, locked};
   }
 
@@ -934,7 +940,7 @@ loadData().then(function(DATA){
 
     const nextHtml = locked.length
       ? '<div class="next"><span class="label">Als Nächstes freischalten</span><ul>'+
-        locked.map(m=>'<li><span>'+esc(m.name)+' <span class="count">· '+esc(m.slot)+'</span></span><span>Lv '+m.lvl+' · noch '+(m.lvl-L)+'</span></li>').join('')+'</ul></div>'
+        locked.map(m=>'<li><span>'+esc(m.name)+' <span class="count">· '+esc(m.slot)+'</span></span><span>'+(m.lvl==null?'Level unbekannt – im Spiel prüfen':'Lv '+m.lvl+' · noch '+(m.lvl-L))+'</span></li>').join('')+'</ul></div>'
       : '<div class="done">Alle Meta-Aufsätze sind frei. Das ist der volle Build.</div>';
 
     const metaCount = out.filter(a=>a.kind==='meta').length;
