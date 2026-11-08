@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-07",
- "dataDate": "6. November 2026",
+ "updated": "2026-11-08",
+ "dataDate": "8. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung: Sturmgewehr für Distanz, MP für Nahkampf."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 8. November): Sturmgewehr für Distanz, MP für Nahkampf."
  },
  "sources": [
   {
@@ -13,16 +13,16 @@
    "url": "https://wzstats.gg/warzone/meta/resurgence"
   },
   {
-   "name": "Warzone Loadout (CODMunity)",
-   "url": "https://warzoneloadout.games/"
+   "name": "CODMunity Resurgence",
+   "url": "https://codmunity.gg/resurgence"
   },
   {
    "name": "WZ Hub",
    "url": "https://wzhub.gg/loadouts"
   },
   {
-   "name": "CODMunity Resurgence",
-   "url": "https://codmunity.gg/resurgence"
+   "name": "Warzone Loadout",
+   "url": "https://warzoneloadout.games/warzone-meta"
   }
  ],
  "weapons": [
@@ -631,7 +631,7 @@
      "st": "hr-8,vr-8,hk-7,vk-8,ads9"
     }
    ],
-   "src": "Build in beiden Build-Quellen identisch. Rang schwankt zwischen Meta und A.",
+   "src": "Build in beiden Build-Quellen identisch. WZ Hub: Meta, WZ Stats und Warzone Loadout: A. Insgesamt vor der Kastov 762, die nur WZ Stats als Meta führt.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 72,
    "maxSure": false,
@@ -1334,7 +1334,7 @@
      "st": "ads-8,stf-17"
     }
    ],
-   "src": "Build in beiden Build-Quellen identisch.",
+   "src": "Build in beiden Build-Quellen identisch. WZ Hub: Meta, sonst A; knapp vor WZ.55 Striga und CSG-35.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "cat": [
     [
@@ -1455,7 +1455,7 @@
    "name": "Mosin-Nagant",
    "type": "Marksman",
    "tier": "META",
-   "rank": "#4 Langstrecke",
+   "rank": "#5 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -1522,7 +1522,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-08",
    "maxLvl": 41,
    "maxSure": false,
    "cat": [
@@ -1732,7 +1732,7 @@
    "name": "Axion",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#5 Langstrecke",
+   "rank": "#6 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -1797,7 +1797,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-08",
    "maxLvl": 69,
    "maxSure": false,
    "cat": [
@@ -2596,7 +2596,7 @@
    "name": "Oden",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#6 Langstrecke",
+   "rank": "#11 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -2853,7 +2853,7 @@
    "name": "Patriot XMR",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#7 Langstrecke",
+   "rank": "#8 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3101,7 +3101,7 @@
    "name": "PPSh-41",
    "type": "MP",
    "tier": "A",
-   "rank": "#4 Nahkampf",
+   "rank": "#6 Nahkampf",
    "meta": [
     {
      "slot": "Visier",
@@ -3327,7 +3327,7 @@
    "name": "WZ.55 Striga",
    "type": "MP",
    "tier": "A",
-   "rank": "#5 Nahkampf",
+   "rank": "#4 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -3387,7 +3387,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/wz55-striga-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-08",
    "maxLvl": 60,
    "maxSure": false,
    "cat": [
@@ -3530,8 +3530,8 @@
    "id": "kastov-762",
    "name": "Kastov 762",
    "type": "Sturmgewehr",
-   "tier": "A",
-   "rank": "#8 Langstrecke",
+   "tier": "META",
+   "rank": "#4 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3616,8 +3616,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats (Warzone-Build). Bei WZ Stats inzwischen Meta (#3), bei den anderen Quellen nur B bzw. weiter hinten.",
+   "checked": "2026-11-08",
    "maxLvl": 71,
    "maxSure": false,
    "cat": [
@@ -3809,7 +3809,7 @@
    "name": "Apoc-338",
    "type": "LMG",
    "tier": "A",
-   "rank": "#9 Langstrecke",
+   "rank": "#10 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -4027,7 +4027,7 @@
    "name": "Cronen Squall",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#10 Langstrecke",
+   "rank": "#9 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -4278,7 +4278,7 @@
    "name": "FiNN LMG",
    "type": "LMG",
    "tier": "A",
-   "rank": "#11 Langstrecke",
+   "rank": "#12 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -4497,7 +4497,7 @@
    "name": "Krait P68",
    "type": "Pistole",
    "tier": "A",
-   "rank": "#6 Nahkampf",
+   "rank": "#7 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -4642,7 +4642,7 @@
    "name": "Rezi 12",
    "type": "Schrotflinte",
    "tier": "A",
-   "rank": "#7 Nahkampf",
+   "rank": "#8 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -5242,7 +5242,7 @@
    "name": "Warlord",
    "type": "Schrotflinte",
    "tier": "A",
-   "rank": "#8 Nahkampf",
+   "rank": "#9 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -5446,7 +5446,7 @@
    "name": "Hyeon Burst",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#12 Langstrecke",
+   "rank": "#7 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -5714,8 +5714,8 @@
    "id": "csg-35",
    "name": "CSG-35",
    "type": "MP",
-   "tier": "D",
-   "rank": "",
+   "tier": "A",
+   "rank": "#5 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -5763,7 +5763,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-08",
    "maxLvl": 42,
    "maxSure": false,
    "cat": [
