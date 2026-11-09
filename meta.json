@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-08",
- "dataDate": "8. November 2026",
+ "updated": "2026-11-09",
+ "dataDate": "9. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 8. November): Sturmgewehr für Distanz, MP für Nahkampf."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 9. November): Sturmgewehr für Distanz, MP für Nahkampf."
  },
  "sources": [
   {
@@ -1142,7 +1142,7 @@
      "st": "ads-8,stf-17"
     }
    ],
-   "src": "3 von 4 Quellen: Top-MP. Build von WZ Stats (nur dort für die neue VEL 46).",
+   "src": "3 von 4 Quellen: Top-MP (WZ Hub: Absolute Meta, Warzone Loadout: S). Build von WZ Stats (Resurgence-Build); Warzone Loadout zeigt einen abweichenden Build, daher Resurgence-Build bevorzugt.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 60,
    "maxSure": false,
@@ -1334,7 +1334,7 @@
      "st": "ads-8,stf-17"
     }
    ],
-   "src": "Build in beiden Build-Quellen identisch. WZ Hub: Meta, sonst A; knapp vor WZ.55 Striga und CSG-35.",
+   "src": "WZ Hub: Meta, sonst A. WZ Stats sieht die WZ.55 Striga knapp vorn, CODMunity und Warzone Loadout die X-58 Nyx. Build in WZ Stats und Warzone Loadout identisch.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "cat": [
     [
@@ -1446,7 +1446,9 @@
      }
     ],
     "url": "https://codmunity.gg/weapon/mw4/x-58-nyx"
-   }
+   },
+   "maxLvl": 51,
+   "maxSure": false
   }
  ],
  "library": [
@@ -1455,7 +1457,7 @@
    "name": "Mosin-Nagant",
    "type": "Marksman",
    "tier": "META",
-   "rank": "#5 Langstrecke",
+   "rank": "#1 Scharfschütze",
    "meta": [
     {
      "slot": "Visier",
@@ -1732,7 +1734,7 @@
    "name": "Axion",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#6 Langstrecke",
+   "rank": "#4 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -2002,7 +2004,7 @@
    "name": "KG-7 Vulcan",
    "type": "Scharfschützengewehr",
    "tier": "A",
-   "rank": "#1 Scharfschütze",
+   "rank": "#2 Scharfschütze",
    "meta": [
     {
      "slot": "Mündung",
@@ -2025,6 +2027,11 @@
      "slot": "Munition",
      "name": "7.62X54MMR High Velocity",
      "lvl": 71
+    },
+    {
+     "slot": "Verschluss",
+     "name": "KT76 Light Bolt",
+     "lvl": 63
     }
    ],
    "alts": [
@@ -2066,8 +2073,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats (Resurgence-Build), von Warzone Loadout bestätigt. Freischalt-Level von WZ Stats.",
+   "checked": "2026-11-09",
    "maxLvl": 71,
    "maxSure": false,
    "cat": [
@@ -2356,7 +2363,7 @@
    "name": "Astaroth .57",
    "type": "Scharfschützengewehr",
    "tier": "A",
-   "rank": "#2 Scharfschütze",
+   "rank": "#3 Scharfschütze",
    "meta": [
     {
      "slot": "Mündung",
@@ -2415,7 +2422,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 50,
    "maxSure": false,
    "cat": [
@@ -2596,7 +2603,7 @@
    "name": "Oden",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#11 Langstrecke",
+   "rank": "#10 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -2667,7 +2674,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 65,
    "maxSure": false,
    "cat": [
@@ -2853,7 +2860,7 @@
    "name": "Patriot XMR",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#8 Langstrecke",
+   "rank": "#7 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -2920,7 +2927,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 62,
    "maxSure": false,
    "cat": [
@@ -3195,7 +3202,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 61,
    "maxSure": false,
    "cat": [
@@ -3327,7 +3334,7 @@
    "name": "WZ.55 Striga",
    "type": "MP",
    "tier": "A",
-   "rank": "#4 Nahkampf",
+   "rank": "#3 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
@@ -3531,7 +3538,7 @@
    "name": "Kastov 762",
    "type": "Sturmgewehr",
    "tier": "META",
-   "rank": "#4 Langstrecke",
+   "rank": "#2 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3809,7 +3816,7 @@
    "name": "Apoc-338",
    "type": "LMG",
    "tier": "A",
-   "rank": "#10 Langstrecke",
+   "rank": "#9 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3864,7 +3871,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 47,
    "maxSure": false,
    "cat": [
@@ -4027,7 +4034,7 @@
    "name": "Cronen Squall",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#9 Langstrecke",
+   "rank": "#8 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -4085,7 +4092,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 67,
    "maxSure": false,
    "cat": [
@@ -4278,7 +4285,7 @@
    "name": "FiNN LMG",
    "type": "LMG",
    "tier": "A",
-   "rank": "#12 Langstrecke",
+   "rank": "#11 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -4358,7 +4365,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-09",
    "maxLvl": 51,
    "maxSure": false,
    "cat": [
@@ -4887,7 +4894,7 @@
    "name": "Signal 50",
    "type": "Scharfschützengewehr",
    "tier": "A",
-   "rank": "#3 Scharfschütze",
+   "rank": "#4 Scharfschütze",
    "meta": [
     {
      "slot": "Mündung",
@@ -5446,7 +5453,7 @@
    "name": "Hyeon Burst",
    "type": "Sturmgewehr",
    "tier": "A",
-   "rank": "#7 Langstrecke",
+   "rank": "#6 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -5715,7 +5722,7 @@
    "name": "CSG-35",
    "type": "MP",
    "tier": "A",
-   "rank": "#5 Nahkampf",
+   "rank": "#4 Nahkampf",
    "meta": [
     {
      "slot": "Mündung",
