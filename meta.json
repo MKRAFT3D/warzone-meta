@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-09",
- "dataDate": "9. November 2026",
+ "updated": "2026-11-10",
+ "dataDate": "10. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 9. November): Sturmgewehr für Distanz, MP für Nahkampf."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 10. November): Sturmgewehr für Distanz, MP für Nahkampf."
  },
  "sources": [
   {
@@ -4527,6 +4527,11 @@
      "name": "Shonay R-Wrap",
      "lvl": 35,
      "st": "ads-5,hr3,vr3,hk3,vk3"
+    },
+    {
+     "slot": "Abzug",
+     "name": "P68 Tapper 9",
+     "lvl": 33
     }
    ],
    "alts": [
@@ -4545,8 +4550,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), CODMunity zeigt denselben Build. Freischalt-Level von WZ Stats.",
+   "checked": "2026-11-10",
    "maxLvl": 38,
    "maxSure": false,
    "cat": [
@@ -4708,7 +4713,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-10",
    "maxLvl": 60,
    "maxSure": false,
    "cat": [
@@ -4942,7 +4947,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-10",
    "maxLvl": 73,
    "maxSure": false,
    "cat": [
@@ -5309,7 +5314,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-10",
    "maxLvl": 59,
    "maxSure": false,
    "cat": [
@@ -5525,7 +5530,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-10",
    "maxLvl": 68,
    "maxSure": false,
    "cat": [
@@ -5970,10 +5975,10 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats und CODMunity identisch. Maximallevel 64 laut vollständiger Aufsatzliste bei Warzone Loadout.",
+   "checked": "2026-11-10",
    "maxLvl": 64,
-   "maxSure": false,
+   "maxSure": true,
    "cat": [
     [
      "Hinterer Griff",
@@ -6160,6 +6165,11 @@
      "slot": "Hinterer Griff",
      "name": "Bruen C-Wrap 60",
      "lvl": 49
+    },
+    {
+     "slot": "Verschluss",
+     "name": "Lightfire-5 Quick Bolt",
+     "lvl": 45
     }
    ],
    "alts": [
@@ -6223,8 +6233,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), CODMunity zeigt denselben Build. Freischalt-Level von WZ Stats.",
+   "checked": "2026-11-10",
    "maxLvl": 70,
    "maxSure": false,
    "cat": [
@@ -6467,7 +6477,7 @@
    "extras": [],
    "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4",
    "src": "Build von WZ Stats. Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-10",
    "note": "Kein eigener Warzone-Build, Mehrspieler-Build.",
    "maxLvl": 54,
    "maxSure": false
