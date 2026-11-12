@@ -1,28 +1,32 @@
 {
- "updated": "2026-11-11",
- "dataDate": "10. November 2026",
+ "updated": "2026-11-12",
+ "dataDate": "11.–12. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 10. November): Sturmgewehr für Distanz, MP für Nahkampf. Alle 4 Quellen führen beide ganz oben."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 12. November): Sturmgewehr für Distanz, MP für Nahkampf. WZ Stats, WZ Hub und BotLobbies führen beide ganz oben."
  },
  "sources": [
   {
    "name": "WZ Stats",
-   "url": "https://wzstats.gg/warzone/meta/resurgence/loadouts"
-  },
-  {
-   "name": "CODMunity Resurgence",
-   "url": "https://codmunity.gg/ranked/meta/resurgence"
+   "url": "https://wzstats.gg/warzone/meta/resurgence"
   },
   {
    "name": "WZ Hub",
    "url": "https://wzhub.gg/loadouts"
   },
   {
+   "name": "CODMunity",
+   "url": "https://codmunity.gg/ranked/meta/resurgence"
+  },
+  {
+   "name": "BotLobbies",
+   "url": "https://botlobbies.com/warzone-meta"
+  },
+  {
    "name": "Warzone Loadout",
-   "url": "https://warzoneloadout.games/"
+   "url": "https://warzoneloadout.games/mw4"
   }
  ],
  "weapons": [
@@ -59,13 +63,20 @@
      "st": "mag2,spr-2,mov-2,tac-2,adm-3,str-2,ads6,rel16"
     },
     {
-     "slot": "Munition",
-     "name": "5.56 NATO High Velocity",
-     "lvl": 68,
-     "st": "vel20"
+     "slot": "Schaft",
+     "name": "XR-9 Tac V2",
+     "lvl": 69,
+     "st": "hr-7,vr-7,hk-7,vk-7,ads7"
     }
    ],
-   "alts": [],
+   "alts": [
+    {
+     "slot": "Schaft",
+     "name": "Fade Tac 9L",
+     "lvl": 57,
+     "st": "spr1,mov4,tac1,adm10,str4,sway18"
+    }
+   ],
    "extras": [
     {
      "slot": "Unterlauf",
@@ -74,18 +85,17 @@
      "st": "sway-30"
     },
     {
+     "slot": "Munition",
+     "name": "5.56 NATO High Velocity",
+     "lvl": 68
+    },
+    {
      "slot": "Laser",
      "name": "SA Laz-500",
      "lvl": 52
-    },
-    {
-     "slot": "Schaft",
-     "name": "Fade Tac 9L",
-     "lvl": 57,
-     "st": "spr1,mov4,tac1,adm10,str4,sway18"
     }
    ],
-   "src": "Alle 4 Quellen: Top-Waffe. Build bei 4 von 5 Teilen gleich.",
+   "src": "Alle Quellen: Top-Waffe. Visier, Mündung, Lauf und Magazin bei WZ Stats und CODMunity gleich; 5. Teil uneinig, daher Resurgence-Build von WZ Stats (Schaft XR-9 Tac V2).",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 70,
    "maxSure": false,
@@ -277,9 +287,9 @@
    "meta": [
     {
      "slot": "Visier",
-     "name": "Cronen R808",
-     "lvl": 19,
-     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads13"
+     "name": "Locus PX3 Canted",
+     "lvl": 20,
+     "st": "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads13"
     },
     {
      "slot": "Mündung",
@@ -307,6 +317,11 @@
     }
    ],
    "alts": [
+    {
+     "slot": "Visier",
+     "name": "Cronen R808",
+     "lvl": 19
+    },
     {
      "slot": "Visier",
      "name": "SZ Micro D-3",
@@ -344,7 +359,7 @@
      "st": "ads-7,hr3,vr3,hk3,vk3"
     }
    ],
-   "src": "3 von 4 Quellen: Meta (WZ Stats, WZ Hub; CODMunity #7). Build bei 4 von 5 Teilen gleich.",
+   "src": "WZ Stats, WZ Hub und BotLobbies: Meta. Lauf, Mündung, Magazin und Munition bei WZ Stats und BotLobbies gleich; Visier laut WZ Stats-Resurgence-Build (CODMunity: Cronen R808).",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 70,
    "maxSure": false,
@@ -572,9 +587,9 @@
    "meta": [
     {
      "slot": "Visier",
-     "name": "Cronen R808",
-     "lvl": 70,
-     "st": "hr-10,vr-10,hk-30,vk-30,adm-7,ads14"
+     "name": "Locus PX3 Canted",
+     "lvl": 46,
+     "st": "hr-30,vr-30,sway-5,hk-40,vk-40,adm-10,ads14"
     },
     {
      "slot": "Mündung",
@@ -589,14 +604,15 @@
     },
     {
      "slot": "Magazin",
-     "name": "45 Round Mag",
-     "lvl": 9,
-     "st": "mag2,spr-1,mov-1,tac-1,adm-1,str-1,ads3,rel15"
+     "name": "60 Round Drum",
+     "lvl": 39,
+     "st": "mag2,spr-3,mov-2,tac-3,adm-4,str-2,ads8,rel26"
     },
     {
-     "slot": "Munition",
-     "name": "5.56 NATO High Velocity",
-     "lvl": 57
+     "slot": "Schaft",
+     "name": "PF1 Fixed Stock",
+     "lvl": 14,
+     "st": "hr-8,vr-8,hk-7,vk-8,ads9"
     }
    ],
    "alts": [
@@ -606,9 +622,9 @@
      "lvl": 13
     },
     {
-     "slot": "Munition",
-     "name": "5.56 NATO Overpressured",
-     "lvl": 3
+     "slot": "Magazin",
+     "name": "45 Round Mag",
+     "lvl": 9
     }
    ],
    "extras": [
@@ -625,13 +641,12 @@
      "st": "hr-6,vr-6,hk-6,vk-6,ads6,stf4"
     },
     {
-     "slot": "Schaft",
-     "name": "PF1 Fixed Stock",
-     "lvl": 14,
-     "st": "hr-8,vr-8,hk-7,vk-8,ads9"
+     "slot": "Munition",
+     "name": "5.56 NATO Overpressured",
+     "lvl": 3
     }
    ],
-   "src": "Build in beiden Build-Quellen identisch. WZ Hub: Meta, WZ Stats und Warzone Loadout: A. Insgesamt vor der Kastov 762, die nur WZ Stats als Meta führt.",
+   "src": "WZ Hub: Meta, WZ Stats und BotLobbies: A. Mündung und Lauf überall gleich; WZ Stats (Resurgence) und CODMunity uneinig bei Visier/Magazin/5. Teil, daher Resurgence-Build von WZ Stats.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 72,
    "maxSure": false,
@@ -858,49 +873,76 @@
    "rank": "#1 Nahkampf",
    "meta": [
     {
+     "slot": "Mündung",
+     "name": "XRK Herder 40",
+     "lvl": 17,
+     "st": "ads9"
+    },
+    {
+     "slot": "Lauf",
+     "name": "RT Outride-X 8\"",
+     "lvl": 22
+    },
+    {
+     "slot": "Unterlauf",
+     "name": "FSS Tac90 Grip",
+     "lvl": 55,
+     "st": "sway-30"
+    },
+    {
+     "slot": "Magazin",
+     "name": "50 Round Drum Mag",
+     "lvl": 53
+    },
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 33,
+     "st": "ads-5"
+    }
+   ],
+   "alts": [
+    {
+     "slot": "Mündung",
+     "name": "FSS Crackdown",
+     "lvl": 4,
+     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads17"
+    },
+    {
      "slot": "Lauf",
      "name": "ZLR Mag-Z 9\"",
      "lvl": 2
     },
     {
+     "slot": "Unterlauf",
+     "name": "FSS Fireline Grip",
+     "lvl": 23,
+     "st": "hr-8,vr-8,hk-8,vk-8,ads11,stf14"
+    },
+    {
      "slot": "Magazin",
      "name": "40 Round Mag",
-     "lvl": null
-    },
+     "lvl": 10
+    }
+   ],
+   "extras": [
     {
      "slot": "Hinterer Griff",
      "name": "Demo STP-1",
-     "lvl": 6,
-     "st": "ads-6,hr3,vr3,hk3,vk3"
+     "lvl": 6
     },
     {
      "slot": "Schaft",
      "name": "EXP G2-44 Stock",
-     "lvl": 5,
-     "st": "ads-7,hr5,vr5,hk5,vk5"
+     "lvl": 5
     },
-    {
-     "slot": "Munition",
-     "name": "9mm Parabellum High Velocity",
-     "lvl": 61
-    }
-   ],
-   "alts": [
     {
      "slot": "Munition",
      "name": "9mm Parabellum Frangible",
      "lvl": 8
     }
    ],
-   "extras": [
-    {
-     "slot": "Mündung",
-     "name": "FSS Crackdown",
-     "lvl": 4,
-     "st": "hr-6,vr-6,vel12,hk-6,vk-6,sway15,mov-2,adm-2,str-2,ads17"
-    }
-   ],
-   "src": "Alle 4 Quellen: Top-MP. Warzone-Build von Warzone Loadout, Level von WZ Stats.",
+   "src": "Alle Quellen: Top-MP. WZ Stats (Resurgence) und BotLobbies zeigen denselben Build (4 von 5 Teilen gleich); CODMunity hat einen anderen, daher Mehrheits-Build.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 63,
    "maxSure": true,
@@ -1075,14 +1117,9 @@
    "meta": [
     {
      "slot": "Mündung",
-     "name": "212 LC40 Comp",
-     "lvl": 27
-    },
-    {
-     "slot": "Lauf",
-     "name": "VB-46 Series 11",
-     "lvl": 3,
-     "st": "hr-4,vr-4,sway-8,vel15,hk-4,vk-4,spr-1,mov-2,tac-1,adm-2,str-3,ads16,stf9"
+     "name": "TA Lightning R3M",
+     "lvl": 35,
+     "st": "hr-3,vr-3,hk-3,vk-3"
     },
     {
      "slot": "Unterlauf",
@@ -1100,9 +1137,20 @@
      "name": "EXP U-Turn Stock",
      "lvl": 37,
      "st": "spr1,mov4,tac1,adm7,str4,sway18"
+    },
+    {
+     "slot": "Laser",
+     "name": "XRK Clutch-LS",
+     "lvl": 39,
+     "st": "ads-4"
     }
    ],
    "alts": [
+    {
+     "slot": "Mündung",
+     "name": "212 LC40 Comp",
+     "lvl": 27
+    },
     {
      "slot": "Mündung",
      "name": "FSS Crackdown",
@@ -1126,14 +1174,6 @@
      "name": "EXP Lockdown Stock",
      "lvl": 15,
      "st": "hr-4,vr-4,sway-10,hk-4,vk-4,spr-1,mov-1,tac-1,adm-1,str-1,ads5,stf5"
-    }
-   ],
-   "extras": [
-    {
-     "slot": "Hinterer Griff",
-     "name": "V46 R-Skel Grip",
-     "lvl": 9,
-     "st": "hr-6,vr-6,hk-6,vk-6,ads5,stf7"
     },
     {
      "slot": "Laser",
@@ -1142,7 +1182,20 @@
      "st": "ads-8,stf-17"
     }
    ],
-   "src": "3 von 4 Quellen: Top-MP (WZ Hub: Absolute Meta, Warzone Loadout: S). Build von WZ Stats (Resurgence-Build); Warzone Loadout zeigt einen abweichenden Build, daher Resurgence-Build bevorzugt.",
+   "extras": [
+    {
+     "slot": "Lauf",
+     "name": "VB-46 Series 11",
+     "lvl": 3
+    },
+    {
+     "slot": "Hinterer Griff",
+     "name": "V46 R-Skel Grip",
+     "lvl": 9,
+     "st": "hr-6,vr-6,hk-6,vk-6,ads5,stf7"
+    }
+   ],
+   "src": "WZ Stats, WZ Hub (Absolute Meta) und BotLobbies: Meta. WZ Stats (Resurgence) und BotLobbies: 4 von 5 Teilen gleich; CODMunity weicht ab.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 60,
    "maxSure": false,
@@ -2134,8 +2187,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
-   "src": "Build von WZ Stats (Resurgence-Build), von Warzone Loadout bestätigt. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-09",
+   "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level von WZ Stats.",
+   "checked": "2026-11-12",
    "maxLvl": 71,
    "maxSure": false,
    "cat": [
@@ -2482,8 +2535,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-12",
    "maxLvl": 50,
    "maxSure": false,
    "cat": [
@@ -2734,8 +2787,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-12",
    "maxLvl": 65,
    "maxSure": false,
    "cat": [
@@ -2987,8 +3040,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-12",
    "maxLvl": 62,
    "maxSure": false,
    "cat": [
@@ -3262,8 +3315,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/ppsh-41-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
+   "checked": "2026-11-12",
    "maxLvl": 61,
    "maxSure": false,
    "cat": [
@@ -3394,8 +3447,8 @@
    "id": "kastov-762",
    "name": "Kastov 762",
    "type": "Sturmgewehr",
-   "tier": "A",
-   "rank": "#3 Langstrecke",
+   "tier": "META",
+   "rank": "#2 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
