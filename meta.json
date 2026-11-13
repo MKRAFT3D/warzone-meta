@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-12",
- "dataDate": "11.–12. November 2026",
+ "updated": "2026-11-13",
+ "dataDate": "12. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 12. November): Sturmgewehr für Distanz, MP für Nahkampf. WZ Stats, WZ Hub und BotLobbies führen beide ganz oben."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 12. November): Sturmgewehr für Distanz, MP für Nahkampf. Cronen Osprey ist bei allen Quellen #1; ISO Nightshade führt bei WZ Stats und WZ Hub (Absolute Meta)."
  },
  "sources": [
   {
@@ -21,12 +21,8 @@
    "url": "https://codmunity.gg/ranked/meta/resurgence"
   },
   {
-   "name": "BotLobbies",
-   "url": "https://botlobbies.com/warzone-meta"
-  },
-  {
    "name": "Warzone Loadout",
-   "url": "https://warzoneloadout.games/mw4"
+   "url": "https://warzoneloadout.games/"
   }
  ],
  "weapons": [
@@ -359,7 +355,7 @@
      "st": "ads-7,hr3,vr3,hk3,vk3"
     }
    ],
-   "src": "WZ Stats, WZ Hub und BotLobbies: Meta. Lauf, Mündung, Magazin und Munition bei WZ Stats und BotLobbies gleich; Visier laut WZ Stats-Resurgence-Build (CODMunity: Cronen R808).",
+   "src": "WZ Stats und WZ Hub: Meta, Warzone Loadout: A (#2 Langstrecke). Lauf, Mündung, Magazin und Munition bei WZ Stats und BotLobbies gleich; Visier laut WZ Stats-Resurgence-Build (CODMunity: Cronen R808).",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 70,
    "maxSure": false,
@@ -646,7 +642,7 @@
      "lvl": 3
     }
    ],
-   "src": "WZ Hub: Meta, WZ Stats und BotLobbies: A. Mündung und Lauf überall gleich; WZ Stats (Resurgence) und CODMunity uneinig bei Visier/Magazin/5. Teil, daher Resurgence-Build von WZ Stats.",
+   "src": "WZ Hub: Meta, WZ Stats und Warzone Loadout: A; CODMunity knapp vor Kastov 762. Mündung und Lauf überall gleich; WZ Stats (Resurgence) und CODMunity uneinig bei Visier/Magazin/5. Teil, daher Resurgence-Build von WZ Stats.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 72,
    "maxSure": false,
@@ -942,7 +938,7 @@
      "lvl": 8
     }
    ],
-   "src": "Alle Quellen: Top-MP. WZ Stats (Resurgence) und BotLobbies zeigen denselben Build (4 von 5 Teilen gleich); CODMunity hat einen anderen, daher Mehrheits-Build.",
+   "src": "WZ Stats: Meta, WZ Hub: Absolute Meta, Warzone Loadout: A. WZ Stats (Resurgence) und BotLobbies zeigen denselben Build (4 von 5 Teilen gleich); CODMunity hat einen anderen, daher Mehrheits-Build.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 63,
    "maxSure": true,
@@ -1346,7 +1342,7 @@
    "name": "WZ.55 Striga",
    "type": "MP",
    "range": "close",
-   "tier": "A",
+   "tier": "META",
    "rank": "#3 Nahkampf",
    "meta": [
     {
@@ -1405,7 +1401,7 @@
      "lvl": 59
     }
    ],
-   "src": "WZ Hub: Meta, sonst A. WZ Stats und Warzone Loadout sehen die WZ.55 Striga jetzt vor der X-58 Nyx, CODMunity knapp dahinter. Build bei WZ Stats (Warzone und Resurgence), Warzone Loadout und CODMunity identisch.",
+   "src": "WZ Hub: Meta, Warzone Loadout: S-Tier, CODMunity: #2 der Top-20, WZ Stats: A. Build bei WZ Stats (Warzone und Resurgence), Warzone Loadout und CODMunity identisch.",
    "codeUrl": "https://codmunity.gg/weapon/mw4/wz55-striga",
    "checked": "2026-11-11",
    "maxLvl": 60,
@@ -3448,7 +3444,7 @@
    "name": "Kastov 762",
    "type": "Sturmgewehr",
    "tier": "META",
-   "rank": "#2 Langstrecke",
+   "rank": "#3 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3775,7 +3771,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/apoc-338-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "checked": "2026-11-13",
    "maxLvl": 47,
    "maxSure": false,
    "cat": [
@@ -3996,7 +3992,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/cronen-squall-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "checked": "2026-11-13",
    "maxLvl": 67,
    "maxSure": false,
    "cat": [
@@ -4269,7 +4265,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/finn-lmg-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-09",
+   "checked": "2026-11-13",
    "maxLvl": 51,
    "maxSure": false,
    "cat": [
@@ -4455,7 +4451,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/krait-p68-mw4",
    "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), CODMunity zeigt denselben Build. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-13",
    "maxLvl": 38,
    "maxSure": false,
    "cat": [
@@ -4617,7 +4613,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/rezi-12-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-13",
    "maxLvl": 60,
    "maxSure": false,
    "cat": [
@@ -4851,7 +4847,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/signal-50-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-13",
    "maxLvl": 73,
    "maxSure": false,
    "cat": [
@@ -5434,7 +5430,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/hyeon-burst-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-13",
    "maxLvl": 68,
    "maxSure": false,
    "cat": [
