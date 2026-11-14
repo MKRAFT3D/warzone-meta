@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-13",
- "dataDate": "12. November 2026",
+ "updated": "2026-11-14",
+ "dataDate": "13. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 12. November): Sturmgewehr für Distanz, MP für Nahkampf. Cronen Osprey ist bei allen Quellen #1; ISO Nightshade führt bei WZ Stats und WZ Hub (Absolute Meta)."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 13. November): Sturmgewehr für Distanz, MP für Nahkampf. Cronen Osprey ist bei allen Quellen #1; ISO Nightshade führt bei WZ Stats und WZ Hub (Absolute Meta)."
  },
  "sources": [
   {
@@ -5214,7 +5214,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/warlord-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-14",
    "maxLvl": 59,
    "maxSure": false,
    "cat": [
@@ -5876,7 +5876,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/type-73-mw4",
    "src": "Build von WZ Stats und CODMunity identisch. Maximallevel 64 laut vollständiger Aufsatzliste bei Warzone Loadout.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-14",
    "maxLvl": 64,
    "maxSure": true,
    "cat": [
@@ -6134,7 +6134,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oris-86-mw4",
    "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), CODMunity zeigt denselben Build. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-14",
    "maxLvl": 70,
    "maxSure": false,
    "cat": [
@@ -6377,7 +6377,7 @@
    "extras": [],
    "codeUrl": "https://wzstats.gg/best-loadouts/mar-9-mw4",
    "src": "Build von WZ Stats. Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-10",
+   "checked": "2026-11-14",
    "note": "Kein eigener Warzone-Build, Mehrspieler-Build.",
    "maxLvl": 54,
    "maxSure": false
@@ -6437,7 +6437,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/sang-9mm-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-14",
    "maxLvl": 38,
    "maxSure": false,
    "cat": [
@@ -6592,6 +6592,11 @@
      "slot": "Munition",
      "name": ".50 Pistol High Velocity",
      "lvl": 47
+    },
+    {
+     "slot": "Abzug",
+     "name": "Corio Lightning N6",
+     "lvl": 41
     }
    ],
    "alts": [
@@ -6599,6 +6604,11 @@
      "slot": "Mündung",
      "name": "TA SVG-50K",
      "lvl": 2
+    },
+    {
+     "slot": "Abzug",
+     "name": "Schlager GS Match",
+     "lvl": 6
     }
    ],
    "extras": [
@@ -6621,8 +6631,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/50-gs-mw4",
-   "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), CODMunity-Build identisch. Freischalt-Level von WZ Stats.",
+   "checked": "2026-11-14",
    "maxLvl": 50,
    "maxSure": false,
    "cat": [
@@ -6795,7 +6805,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mojave-357-mw4",
    "src": "Build von WZ Stats (Warzone-Build). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-07",
+   "checked": "2026-11-14",
    "maxLvl": 44,
    "maxSure": false,
    "cat": [
@@ -6927,7 +6937,7 @@
     }
    ],
    "src": "Aus der Meta gefallen: WZ Hub weiter Meta, WZ Stats A, Warzone Loadout nur noch B; CODMunity #8. Build in WZ Stats und Warzone Loadout identisch.",
-   "codeUrl": "https://wzhub.gg/loadouts",
+   "codeUrl": "https://wzstats.gg/best-loadouts/x-58-nyx-mw4",
    "cat": [
     [
      "Lauf",
@@ -7041,7 +7051,7 @@
    },
    "maxLvl": 51,
    "maxSure": false,
-   "checked": "2026-11-10"
+   "checked": "2026-11-14"
   }
  ]
 }
