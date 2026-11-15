@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-14",
- "dataDate": "13. November 2026",
+ "updated": "2026-11-15",
+ "dataDate": "14. November 2026",
  "season": "Season 1 · Modern Warfare 4",
  "combo": {
   "long": "cronen-osprey",
   "close": "iso-nightshade",
-  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 13. November): Sturmgewehr für Distanz, MP für Nahkampf. Cronen Osprey ist bei allen Quellen #1; ISO Nightshade führt bei WZ Stats und WZ Hub (Absolute Meta)."
+  "why": "Die zwei stärksten Waffen in Wiederauferstehung (Stand 14. November): Sturmgewehr für Distanz, MP für Nahkampf. Cronen Osprey ist bei allen Quellen #1; ISO Nightshade führt bei WZ Stats und WZ Hub (Absolute Meta)."
  },
  "sources": [
   {
@@ -642,7 +642,7 @@
      "lvl": 3
     }
    ],
-   "src": "WZ Hub: Meta, WZ Stats und Warzone Loadout: A; CODMunity knapp vor Kastov 762. Mündung und Lauf überall gleich; WZ Stats (Resurgence) und CODMunity uneinig bei Visier/Magazin/5. Teil, daher Resurgence-Build von WZ Stats.",
+   "src": "WZ Hub: Meta, WZ Stats (#5) und Warzone Loadout: A; CODMunity #5 der Top-20. Kastov 762 ist bei WZ Stats inzwischen #2, aber bei WZ Hub nicht gelistet, bei Warzone Loadout B und CODMunity #9 – Mehrheit daher weiter für M4. Build: Resurgence-Build von WZ Stats.",
    "codeUrl": "https://wzhub.gg/loadouts",
    "maxLvl": 72,
    "maxSure": false,
@@ -1401,7 +1401,7 @@
      "lvl": 59
     }
    ],
-   "src": "WZ Hub: Meta, Warzone Loadout: S-Tier, CODMunity: #2 der Top-20, WZ Stats: A. Build bei WZ Stats (Warzone und Resurgence), Warzone Loadout und CODMunity identisch.",
+   "src": "WZ Hub: Meta, Warzone Loadout: S-Tier, CODMunity: #2 der Top-20, WZ Stats: A (#3 Nahkampf). Build bei WZ Stats (Warzone und Resurgence), Warzone Loadout und CODMunity identisch.",
    "codeUrl": "https://codmunity.gg/weapon/mw4/wz55-striga",
    "checked": "2026-11-11",
    "maxLvl": 60,
@@ -1616,7 +1616,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/mosin-nagant-mw4",
    "src": "Build von WZ Stats (Warzone- und Resurgence-Build gleich), von Warzone Loadout bestätigt. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-11",
+   "checked": "2026-11-15",
    "maxLvl": 41,
    "maxSure": false,
    "cat": [
@@ -1909,7 +1909,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/axion-mw4",
    "src": "Build von WZ Stats (Resurgence-Build, neu mit Locus PX3 Canted, DC-Forge-Lauf und Tac90-Griff); CODMunity zeigt noch Cronen R808 und TA Harrow Stock. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-11",
+   "checked": "2026-11-15",
    "maxLvl": 69,
    "maxSure": false,
    "cat": [
@@ -2184,7 +2184,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kg-7-vulcan-mw4",
    "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level von WZ Stats.",
-   "checked": "2026-11-12",
+   "checked": "2026-11-15",
    "maxLvl": 71,
    "maxSure": false,
    "cat": [
@@ -2532,7 +2532,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/astaroth-57-mw4",
    "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-12",
+   "checked": "2026-11-15",
    "maxLvl": 50,
    "maxSure": false,
    "cat": [
@@ -2784,7 +2784,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/oden-mw4",
    "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-12",
+   "checked": "2026-11-15",
    "maxLvl": 65,
    "maxSure": false,
    "cat": [
@@ -3037,7 +3037,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/patriot-xmr-mw4",
    "src": "Build von WZ Stats (Resurgence-Build), am 12.11. erneut geprüft. Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-12",
+   "checked": "2026-11-15",
    "maxLvl": 62,
    "maxSure": false,
    "cat": [
@@ -3444,7 +3444,7 @@
    "name": "Kastov 762",
    "type": "Sturmgewehr",
    "tier": "META",
-   "rank": "#3 Langstrecke",
+   "rank": "#2 Langstrecke",
    "meta": [
     {
      "slot": "Visier",
@@ -3523,8 +3523,8 @@
     }
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/kastov-762-mw4",
-   "src": "WZ Stats nur noch A, Warzone Loadout B. Build von WZ Stats (Resurgence-Build, neu mit Locus PX3 Canted und Haebang-Lauf); CODMunity nutzt Cronen R808 und BCS-K-Lauf, Rest gleich.",
-   "checked": "2026-11-11",
+   "src": "WZ Stats: Meta (#2 Langstrecke), aber Warzone Loadout B, CODMunity #9, WZ Hub nicht gelistet. Build von WZ Stats (Resurgence-Build, am 15.11. unverändert); CODMunity nutzt Cronen R808 und BCS-K-Lauf, Rest gleich.",
+   "checked": "2026-11-15",
    "maxLvl": 71,
    "maxSure": false,
    "cat": [
@@ -5675,7 +5675,7 @@
    ],
    "codeUrl": "https://wzstats.gg/best-loadouts/csg-35-mw4",
    "src": "Build von WZ Stats (Warzone, Resurgence und Mehrspieler gleich). Freischalt-Level aus denselben Daten.",
-   "checked": "2026-11-11",
+   "checked": "2026-11-15",
    "maxLvl": 42,
    "maxSure": false,
    "cat": [
